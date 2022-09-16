@@ -1,6 +1,6 @@
 <style>
 .flex {
-    display = flexbox;
+  display = flex;
   align-items = center;
   justify-content = center;
 }
