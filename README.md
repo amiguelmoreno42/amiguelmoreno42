@@ -1,21 +1,23 @@
-<h1 align="center">Hi 👋, I'm Miguel Moreno</h1>
-<h3 align="center">A passionate Junior Developer </h3>
-
+<h1 align="center">Hi 👋, I'm Migue Moreno 💻</h1>
+<br><br/>
+<p>
+  Passionate about technology and constant improvement as a way of life. I always try to find the most optimal way to do things, both professionally and personally. 🧠⏳🛠
+  
+  I am currently part of 42 Malaga, one of the most innovative programming campus in the world, with a pioneering pedagogical model based on peer learning and gamification. Inside the 42 methodology, we carry out projects that suppose a challenge in which students like me are protagonists of the process, based on teamwork. 🍍
+  
+  Also, in my free time I am studying Web Development, delving into HTML5, CSS3, JavaScript, Git, React, as well as other essential frameworks and libraries. 🙋🏻‍♂️
+  
+  Here, you will find all the interesting projects that I have done. 😁👍
+</p> 
+<br><br/>
 <p align="center">
   <a href="#">
-    <img src="https://skillicons.dev/icons?i=html,css,bootstrap,js,git,vscode,c,vim" />
+    <img src="https://skillicons.dev/icons?i=html,css,bootstrap,js,git,vscode,c,vim,react,nodejs,typescript" />
   </a>
-</p>   
+</p> 
 
-<div align='center'>   
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amiguelmoreno&show_icons=true&theme=tokyonight" />
-  <br><br/> 
-  
-  
-  <div align='center'>   
-    
-  ![antmoren's 42 stats](https://badge42.vercel.app/api/v2/cl47airxk008409law51ifuyg/stats?cursusId=21&coalitionId=piscine)
- <div/>
-  <br><br/> 
- <div/>
+
+
+
+
 
