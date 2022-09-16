@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Jose Moyano - Moyanius  💻☕</h1>
+<h1 align="center">Hi 👋, I'm Miguel Moreno</h1>
 <h3 align="center">A passionate Junior Developer </h3>
 
 <p align="center">
