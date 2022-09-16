@@ -8,7 +8,7 @@
 </p>   
 
 
-![Migue's GitHub stats](https://github-readme-stats.vercel.app/api?username=amiguelmoreno&show_icons=true&theme=gruvbox)
+![Migue's GitHub stats](https://github-readme-stats.vercel.app/api?username=amiguelmoreno&show_icons=true&theme=tokionight)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=moyanius&show_icons=true&theme=radical)
 
