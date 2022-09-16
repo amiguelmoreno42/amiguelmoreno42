@@ -1,3 +1,13 @@
+<style>
+.flex {
+    display = flexbox;
+  align-items = center;
+  justify-content = center;
+}
+</style>
+
+
+
 <h1 align="center">Hi 👋, I'm Miguel Moreno</h1>
 <h3 align="center">A passionate Junior Developer </h3>
 
@@ -7,7 +17,7 @@
   </a>
 </p>   
 
-<div>
+<div class="flex">
   
 ![Migue's GitHub stats](https://github-readme-stats.vercel.app/api?username=amiguelmoreno&show_icons=true&theme=tokyonight)
 
