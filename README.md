@@ -8,7 +8,7 @@
 </p>   
 
 
-[![Migue's GitHub stats](https://github-readme-stats.vercel.app/api?username=amiguelmoreno)](https://github.com/anuraghazra/github-readme-stats)
+[![Migue's GitHub stats](https://github-readme-stats.vercel.app/api?username=amiguelmoreno)]
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=moyanius&show_icons=true&theme=radical)
 
