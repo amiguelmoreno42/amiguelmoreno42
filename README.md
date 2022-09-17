@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Migue Moreno 🙋🏻‍♂️</h1>
+<h1 align="center">Hi 👋, I'm Miguel Moreno 🙋🏻‍♂️</h1>
 <br><br/>
 <p>
   Passionate about technology and constant improvement as a way of life. I always try to find the most optimal way to do things, both professionally and personally. 🧠⏳🛠
