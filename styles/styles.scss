@@ -17,6 +17,9 @@ $white: rgb(255, 255, 255);
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+}
+
+html {
     font-size: 62.5%;
 }
 
@@ -53,7 +56,7 @@ body {
             justify-content: center;
             padding-top: 0.4rem;
             text-decoration: none;
-            column-gap: 3.2rem;
+            column-gap: 2.4rem;
 
             a {
                 color: $secundary-color;
@@ -61,8 +64,9 @@ body {
                 .download-icon {
                     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
                     fill: $secundary-color;
-                    height: 3.2rem;
-                    width: 3.2rem;
+                    margin-right: 3.2rem;
+                    height: 3.8rem;
+                    width: 3.8rem;
                     transition: fill 0.3s, transform 0.3s;
 
                     &:hover {
