@@ -1,48 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Silkscreen&display=swap");
+/*
+- FONT SIZE (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 56 / 64 / 80 / 96 / 128
+*/
 *,
 *::after,
 *::before {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  font-size: 62.5%;
 }
 
 body {
-  background-color: rgb(42, 69, 69);
+  background-color: rgb(232, 234, 237);
 }
-body header {
-  background-color: rgb(0, 0, 0);
+body .header {
+  background-color: rgb(33, 37, 41);
   height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1.7rem;
+  padding: 0.8rem 2.4rem 0.8rem 1.6rem;
 }
-body header .logo {
+body .header .logo .header-logo {
+  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
+  fill: rgb(232, 234, 237);
+  height: 5.6rem;
+  width: 5.6rem;
+  cursor: pointer;
+  transition: fill 0.3s, transform 0.3s;
+}
+body .header .logo .header-logo:hover {
+  fill: rgb(255, 255, 255);
+  transform: scale(1.05);
+}
+body .header .icons {
   display: flex;
-  line-height: 1;
-  align-items: baseline;
-  font-family: Quicksand, "Courier New", Courier, monospace;
-  overflow: visible;
-  background-color: rgb(0, 0, 0);
-}
-body header .logo img {
-  width: 3rem;
-  background-color: rgb(170, 170, 170);
-}
-body header .logo :hover {
-  background-color: white;
-}
-body header .icons {
-  display: flex;
-  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.4rem;
   text-decoration: none;
-  -moz-column-gap: 1.2rem;
-       column-gap: 1.2rem;
+  -moz-column-gap: 3.2rem;
+       column-gap: 3.2rem;
 }
-body header .icons a {
-  color: rgb(170, 170, 170);
+body .header .icons a {
+  color: rgb(232, 234, 237);
 }
-body header .icons a :hover {
-  color: white;
+body .header .icons a .download-icon {
+  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
+  fill: rgb(232, 234, 237);
+  height: 3.2rem;
+  width: 3.2rem;
+  transition: fill 0.3s, transform 0.3s;
+}
+body .header .icons a .download-icon:hover {
+  fill: rgb(255, 255, 255);
+  transform: scale(1.05);
+}
+body .header .icons a .icon {
+  font-size: 3.8rem;
+  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.2));
+  transition: color 0.3s, transform 0.3s;
+}
+body .header .icons a .icon:hover {
+  transform: scale(1.05);
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=styles.css.map */
