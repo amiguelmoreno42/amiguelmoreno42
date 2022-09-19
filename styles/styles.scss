@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 
 /*
 - FONT SIZE (px)
@@ -7,8 +7,9 @@
     2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 56 / 64 / 80 / 96 / 128
 */
 
-$primary-color: rgb(33, 37, 41);
+$primary-color: #212529;
 $secundary-color: rgb(232, 234, 237);
+$terciary-color: #bcbebf;
 $white: rgb(255, 255, 255);
 
 *,
@@ -17,17 +18,36 @@ $white: rgb(255, 255, 255);
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    font-family: Quicksand, sans-serif;
+    scroll-behavior: smooth;
 }
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: $secundary-color;
+    background-color: $terciary-color;
+    height: 200vh;
+
+    /******************************************/
+    /********* REUSABLE ITEMS ++++++++++++++++/
+    /*****************************************/
+
+    .container {
+        /* 1140px */
+        max-width: 120rem;
+        padding: 0 3.2rem;
+        margin: 0 auto;
+    }
+
+    /******************************************/
+    /********* HEADER         ++++++++++++++++/
+    /*****************************************/
 
     .header {
-        background-color: rgb(33, 37, 41);
+        background-color: $primary-color;
         height: auto;
         display: flex;
         align-items: center;
@@ -50,41 +70,111 @@ body {
             }
         }
 
-        .icons {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-top: 0.4rem;
-            text-decoration: none;
-            column-gap: 2.4rem;
+        .features {
+            .features-list {
+                display: flex;
+                gap: 3.2rem;
+                list-style: none;
+                text-decoration: none;
 
-            a {
-                color: $secundary-color;
-
-                .download-icon {
+                .feature {
                     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-                    fill: $secundary-color;
-                    margin-right: 3.2rem;
-                    height: 3.8rem;
-                    width: 3.8rem;
-                    transition: fill 0.3s, transform 0.3s;
-
-                    &:hover {
-                        fill: $white;
-                        transform: scale(1.05);
-                    }
-                }
-
-                .icon {
-                    font-size: 3.8rem;
-                    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+                    padding: 0.8rem;
+                    font-size: 1.8rem;
+                    display: block;
                     transition: color 0.3s, transform 0.3s;
+
+                    a {
+                        text-decoration: none;
+                        color: $secundary-color;
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            height: 0.2rem;
+                            width: 0%;
+                            border-radius: 1px;
+                            background-color: $white;
+                            transition: 0.6s;
+                            left: 0;
+                            bottom: -0.5rem;
+                        }
+
+                        &:hover::before {
+                            width: 80%;
+                        }
+                    }
 
                     &:hover {
                         transform: scale(1.05);
                         color: $white;
                     }
                 }
+            }
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 0.4rem;
+            text-decoration: none;
+            column-gap: 1.8rem;
+
+            a {
+                color: $secundary-color;
+                .icon {
+                    font-size: 3.2rem;
+                    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+                    transition: color 0.3s, transform 0.3s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    /******************************************/
+    /********* INTRODUCTION    ++++++++++++++++/
+    /*****************************************/
+
+    .section-introduction {
+        background-color: aqua;
+        padding: 4.8rem 0 9.6rem 0;
+
+        .introduction {
+            display: flex;
+            gap: 4.4rem;
+            align-items: center;
+            justify-content: space-around;
+
+            .profile {
+                width: 100rem;
+                display: flex;
+                gap: 4.4rem;
+                flex-direction: column;
+                align-items: center;
+
+                &-name {
+                    font-size: 3.2rem;
+                }
+
+                &-img {
+                    text-align: center;
+                    img {
+                        width: 70%;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            .description {
+                max-width: 60%;
+                font-size: 1.8rem;
             }
         }
     }
