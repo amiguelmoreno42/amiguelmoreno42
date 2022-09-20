@@ -143,8 +143,23 @@ body {
     /*****************************************/
 
     .section-introduction {
-        background-color: aqua;
-        padding: 4.8rem 0 9.6rem 0;
+        background-color: $secundary-color;
+        padding: 4.8rem 0 4.8rem 0;
+
+        .title {
+            padding-bottom: 4.8rem;
+            .name {
+                font-size: 4.4rem;
+                text-align: center;
+                padding-bottom: 1.2rem;
+            }
+
+            .position {
+                text-align: center;
+                font-size: 2.4rem;
+                font-weight: 500;
+            }
+        }
 
         .introduction {
             display: flex;
@@ -159,22 +174,54 @@ body {
                 flex-direction: column;
                 align-items: center;
 
-                &-name {
-                    font-size: 3.2rem;
-                }
-
                 &-img {
                     text-align: center;
                     img {
-                        width: 70%;
-                        border-radius: 50%;
+                        width: 65%;
+                        border-radius: 2%;
+                    }
+                }
+
+                &-cv {
+                    color: $secundary-color;
+                    cursor: pointer;
+                    background-color: $primary-color;
+                    border-radius: 1rem;
+                    transition: transform 0.5s;
+                    border: none;
+
+                    a {
+                        padding: 1.2rem;
+                        font-size: 1.4rem;
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        color: $secundary-color;
+                        gap: 0.8rem;
+                        font-weight: 500;
+
+                        .down-icon {
+                            font-size: 1.8rem;
+                        }
+                    }
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+
+                    &:active {
+                        transform: scale(1.03);
                     }
                 }
             }
 
             .description {
+                align-self: flex-start;
                 max-width: 60%;
                 font-size: 1.8rem;
+                display: flex;
+                flex-direction: column;
+                gap: 2.5rem;
             }
         }
     }
