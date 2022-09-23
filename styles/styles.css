@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
 /*
 - FONT SIZE (px)
     10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
@@ -11,7 +11,7 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-  font-family: Quicksand, sans-serif;
+  font-family: "Nunito", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -23,6 +23,7 @@ html {
 body {
   background-color: #bcbebf;
   height: 200vh;
+  color: #212529;
   /******************************************/
   /********* REUSABLE ITEMS ++++++++++++++++/
   /*****************************************/
@@ -49,7 +50,7 @@ body .header {
 }
 body .header .logo .header-logo {
   filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
-  fill: rgb(232, 234, 237);
+  fill: white;
   height: 5.6rem;
   width: 5.6rem;
   cursor: pointer;
@@ -74,7 +75,7 @@ body .header .features .features-list .feature {
 }
 body .header .features .features-list .feature a {
   text-decoration: none;
-  color: rgb(232, 234, 237);
+  color: white;
   position: relative;
 }
 body .header .features .features-list .feature a::before {
@@ -105,7 +106,7 @@ body .header .icons {
        column-gap: 1.8rem;
 }
 body .header .icons a {
-  color: rgb(232, 234, 237);
+  color: white;
 }
 body .header .icons a .icon {
   font-size: 3.2rem;
@@ -117,11 +118,11 @@ body .header .icons a .icon:hover {
   color: rgb(255, 255, 255);
 }
 body .section-introduction {
-  background-color: rgb(232, 234, 237);
-  padding: 4.8rem 0 4.8rem 0;
+  background-color: white;
+  padding: 9.6rem 0 9.6rem 0;
 }
 body .section-introduction .title {
-  padding-bottom: 4.8rem;
+  padding-bottom: 9.6rem;
 }
 body .section-introduction .title .name {
   font-size: 4.4rem;
@@ -142,7 +143,7 @@ body .section-introduction .introduction {
 body .section-introduction .introduction .profile {
   width: 100rem;
   display: flex;
-  gap: 4.4rem;
+  gap: 3.2rem;
   flex-direction: column;
   align-items: center;
 }
@@ -150,35 +151,8 @@ body .section-introduction .introduction .profile-img {
   text-align: center;
 }
 body .section-introduction .introduction .profile-img img {
-  width: 65%;
+  width: 70%;
   border-radius: 2%;
-}
-body .section-introduction .introduction .profile-cv {
-  color: rgb(232, 234, 237);
-  cursor: pointer;
-  background-color: #212529;
-  border-radius: 1rem;
-  transition: transform 0.5s;
-  border: none;
-}
-body .section-introduction .introduction .profile-cv a {
-  padding: 1.2rem;
-  font-size: 1.4rem;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: rgb(232, 234, 237);
-  gap: 0.8rem;
-  font-weight: 500;
-}
-body .section-introduction .introduction .profile-cv a .down-icon {
-  font-size: 1.8rem;
-}
-body .section-introduction .introduction .profile-cv:hover {
-  transform: scale(1.05);
-}
-body .section-introduction .introduction .profile-cv:active {
-  transform: scale(1.03);
 }
 body .section-introduction .introduction .description {
   align-self: flex-start;
@@ -187,4 +161,82 @@ body .section-introduction .introduction .description {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+}
+body .section-education {
+  background-color: #bcbebf;
+  padding: 9.6rem 0;
+}
+body .section-education .title {
+  justify-content: center;
+  font-size: 4.4rem;
+  font-weight: 700;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+body .section-education .title-icon {
+  font-size: 5.6rem;
+  padding-bottom: 0.3rem;
+}
+body .section-education .education {
+  padding: 9.6rem 6.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 9.6rem;
+}
+body .section-education .education .edu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 8rem;
+       column-gap: 8rem;
+  justify-content: center;
+}
+body .section-education .education .edu-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+body .section-education .education .edu-item .logo img {
+  width: 16rem;
+}
+body .section-education .education .edu-item .name {
+  align-self: flex-start;
+}
+body .section-education .education .edu-item .name h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+body .section-education .education .edu-item .name p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+body .section-education .education .edu-item .description {
+  width: 40rem;
+  font-size: 1.6rem;
+}
+body footer .cv-btn {
+  color: white;
+  cursor: pointer;
+  background-color: #212529;
+  border-radius: 1rem;
+  transition: transform 0.5s;
+  border: none;
+}
+body footer .cv-btn a {
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  gap: 0.8rem;
+  font-weight: 500;
+}
+body footer .cv-btn a .down-icon {
+  font-size: 1.8rem;
+}
+body footer .cv-btn:hover {
+  transform: scale(1.05);
+}
+body footer .cv-btn:active {
+  transform: scale(1.03);
 }/*# sourceMappingURL=styles.css.map */
