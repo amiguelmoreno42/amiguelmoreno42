@@ -33,6 +33,9 @@ body {
   /******************************************/
   /********* INTRODUCTION    ++++++++++++++++/
   /*****************************************/
+  /******************************************/
+  /********* EDUCATION    ++++++++++++++++/
+  /*****************************************/
 }
 body .container {
   /* 1140px */
@@ -50,7 +53,7 @@ body .header {
 }
 body .header .logo .header-logo {
   filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
-  fill: white;
+  fill: rgb(232, 234, 237);
   height: 5.6rem;
   width: 5.6rem;
   cursor: pointer;
@@ -75,7 +78,7 @@ body .header .features .features-list .feature {
 }
 body .header .features .features-list .feature a {
   text-decoration: none;
-  color: white;
+  color: rgb(232, 234, 237);
   position: relative;
 }
 body .header .features .features-list .feature a::before {
@@ -106,7 +109,7 @@ body .header .icons {
        column-gap: 1.8rem;
 }
 body .header .icons a {
-  color: white;
+  color: rgb(232, 234, 237);
 }
 body .header .icons a .icon {
   font-size: 3.2rem;
@@ -118,18 +121,18 @@ body .header .icons a .icon:hover {
   color: rgb(255, 255, 255);
 }
 body .section-introduction {
-  background-color: white;
-  padding: 9.6rem 0 9.6rem 0;
+  background-color: rgb(232, 234, 237);
+  padding: 9.6rem 0;
 }
-body .section-introduction .title {
+body .section-introduction .intro-title {
   padding-bottom: 9.6rem;
 }
-body .section-introduction .title .name {
+body .section-introduction .intro-title .name {
   font-size: 4.4rem;
   text-align: center;
   padding-bottom: 1.2rem;
 }
-body .section-introduction .title .position {
+body .section-introduction .intro-title .position {
   text-align: center;
   font-size: 2.4rem;
   font-weight: 500;
@@ -163,11 +166,12 @@ body .section-introduction .introduction .description {
   gap: 2.5rem;
 }
 body .section-education {
-  background-color: #bcbebf;
+  background-color: #212529;
   padding: 9.6rem 0;
 }
 body .section-education .title {
   justify-content: center;
+  color: rgb(255, 255, 255);
   font-size: 4.4rem;
   font-weight: 700;
   display: flex;
@@ -179,42 +183,48 @@ body .section-education .title-icon {
   padding-bottom: 0.3rem;
 }
 body .section-education .education {
-  padding: 9.6rem 6.4rem;
+  padding: 9.6rem 6.4rem 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 9.6rem;
 }
 body .section-education .education .edu-item {
   display: flex;
+  width: 80%;
   flex-direction: row;
   align-items: center;
   -moz-column-gap: 8rem;
        column-gap: 8rem;
-  justify-content: center;
+  background-color: rgb(232, 234, 237);
+  border-radius: 1rem;
+  padding: 4.4rem;
+  transition: transform 0.5s, background-color 0.5s;
 }
-body .section-education .education .edu-item:nth-child(even) {
-  flex-direction: row-reverse;
+body .section-education .education .edu-item:hover {
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.05);
+}
+body .section-education .education .edu-item .logo {
+  max-width: 25rem;
 }
 body .section-education .education .edu-item .logo img {
-  width: 16rem;
+  width: 100%;
 }
-body .section-education .education .edu-item .name {
-  align-self: flex-start;
-}
-body .section-education .education .edu-item .name h3 {
-  font-size: 2.4rem;
+body .section-education .education .edu-item .edu-name h3 {
+  font-size: 2.8rem;
+  line-height: 2.4rem;
   margin-bottom: 1rem;
 }
-body .section-education .education .edu-item .name p {
-  text-align: center;
-  font-size: 1.4rem;
+body .section-education .education .edu-item .edu-name h4 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
 }
-body .section-education .education .edu-item .description {
-  width: 40rem;
+body .section-education .education .edu-item .edu-name p {
   font-size: 1.6rem;
 }
 body footer .cv-btn {
-  color: white;
+  color: rgb(232, 234, 237);
   cursor: pointer;
   background-color: #212529;
   border-radius: 1rem;
@@ -227,7 +237,7 @@ body footer .cv-btn a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: rgb(232, 234, 237);
   gap: 0.8rem;
   font-weight: 500;
 }

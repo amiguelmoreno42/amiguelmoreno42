@@ -7,7 +7,7 @@
 */
 
 $primary-color: #212529;
-$secundary-color: white; // rgb(232, 234, 237);
+$secundary-color: rgb(232, 234, 237);
 $terciary-color: #bcbebf;
 $white: rgb(255, 255, 255);
 
@@ -144,9 +144,9 @@ body {
 
     .section-introduction {
         background-color: $secundary-color;
-        padding: 9.6rem 0 9.6rem 0;
+        padding: 9.6rem 0;
 
-        .title {
+        .intro-title {
             padding-bottom: 9.6rem;
             .name {
                 font-size: 4.4rem;
@@ -194,12 +194,16 @@ body {
         }
     }
 
+    /******************************************/
+    /********* EDUCATION    ++++++++++++++++/
+    /*****************************************/
     .section-education {
-        background-color: $terciary-color;
+        background-color: $primary-color;
         padding: 9.6rem 0;
 
         .title {
             justify-content: center;
+            color: $white;
             font-size: 4.4rem;
             font-weight: 700;
             display: flex;
@@ -213,43 +217,51 @@ body {
         }
 
         .education {
-            padding: 9.6rem 6.4rem;
+            padding: 9.6rem 6.4rem 0;
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 9.6rem;
 
             .edu-item {
                 display: flex;
+                width: 80%;
                 flex-direction: row;
                 align-items: center;
-                column-gap: 8rem;
-                justify-content: center;
 
-                &:nth-child(even) {
-                    flex-direction: row-reverse;
+                column-gap: 8rem;
+
+                background-color: $secundary-color;
+                border-radius: 1rem;
+                padding: 4.4rem;
+                transition: transform 0.5s, background-color 0.5s;
+
+                &:hover {
+                    background-color: $white;
+                    transform: scale(1.05);
                 }
 
                 .logo {
+                    max-width: 25rem;
+
                     img {
-                        width: 16rem;
+                        width: 100%;
                     }
                 }
 
-                .name {
-                    align-self: flex-start;
+                .edu-name {
                     h3 {
-                        font-size: 2.4rem;
+                        font-size: 2.8rem;
+                        line-height: 2.4rem;
                         margin-bottom: 1rem;
                     }
-                    p {
-                        text-align: center;
-                        font-size: 1.4rem;
+                    h4 {
+                        font-size: 1.6rem;
+                        margin-bottom: 2rem;
                     }
-                }
-
-                .description {
-                    width: 40rem;
-                    font-size: 1.6rem;
+                    p {
+                        font-size: 1.6rem;
+                    }
                 }
             }
         }
