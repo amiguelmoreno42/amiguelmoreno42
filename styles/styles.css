@@ -34,7 +34,10 @@ body {
   /********* INTRODUCTION    ++++++++++++++++/
   /*****************************************/
   /******************************************/
-  /********* EDUCATION    ++++++++++++++++/
+  /********* EDUCATION            ++++++++++/
+  /*****************************************/
+  /******************************************/
+  /********* LABORAL            ++++++++++/
   /*****************************************/
   /******************************************/
   /********* CERTIFICATIONS    ++++++++++++++++/
@@ -56,7 +59,7 @@ body .header {
 }
 body .header .logo .header-logo {
   filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
-  fill: rgb(232, 234, 237);
+  fill: rgb(255, 255, 255);
   height: 5.6rem;
   width: 5.6rem;
   cursor: pointer;
@@ -81,7 +84,7 @@ body .header .features .features-list .feature {
 }
 body .header .features .features-list .feature a {
   text-decoration: none;
-  color: rgb(232, 234, 237);
+  color: rgb(255, 255, 255);
   position: relative;
 }
 body .header .features .features-list .feature a::before {
@@ -91,7 +94,7 @@ body .header .features .features-list .feature a::before {
   width: 0%;
   border-radius: 1px;
   background-color: rgb(255, 255, 255);
-  transition: 0.6s;
+  transition: 0.3s;
   left: 0;
   bottom: -0.5rem;
 }
@@ -112,7 +115,7 @@ body .header .icons {
        column-gap: 1.8rem;
 }
 body .header .icons a {
-  color: rgb(232, 234, 237);
+  color: rgb(255, 255, 255);
 }
 body .header .icons a .icon {
   font-size: 3.2rem;
@@ -124,15 +127,20 @@ body .header .icons a .icon:hover {
   color: rgb(255, 255, 255);
 }
 body .section-introduction {
-  background-color: rgb(232, 234, 237);
+  background-color: rgb(255, 255, 255);
   padding: 9.6rem 0;
 }
 body .section-introduction .introduction {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4.4rem;
+  row-gap: 4.4rem;
+  -moz-column-gap: 9.6rem;
+       column-gap: 9.6rem;
   align-items: center;
   justify-content: space-around;
+}
+body .section-introduction .introduction .intro-title {
+  justify-self: flex-end;
 }
 body .section-introduction .introduction .intro-title .name {
   font-size: 4.4rem;
@@ -147,7 +155,6 @@ body .section-introduction .introduction .intro-title .position {
 body .section-introduction .introduction .profile {
   display: flex;
   gap: 3.2rem;
-  flex-direction: column;
   align-items: center;
 }
 body .section-introduction .introduction .profile img {
@@ -191,20 +198,19 @@ body .section-education .education {
   gap: 6.4rem;
 }
 body .section-education .education .edu-item {
-  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(3px 5px 2px rgba(255, 255, 255, 0.4));
   display: flex;
   width: 90%;
   flex-direction: row;
   align-items: center;
   -moz-column-gap: 8rem;
        column-gap: 8rem;
-  background-color: rgb(232, 234, 237);
+  background-color: rgb(255, 255, 255);
   border-radius: 1rem;
-  padding: 3.2rem;
-  transition: transform 0.5s, background-color 0.5s;
+  padding: 2.4rem 3.2rem;
+  transition: transform 0.3s;
 }
 body .section-education .education .edu-item:hover {
-  background-color: rgb(255, 255, 255);
   transform: scale(1.05);
 }
 body .section-education .education .edu-item .logo {
@@ -225,13 +231,73 @@ body .section-education .education .edu-item .edu-name h4 {
 body .section-education .education .edu-item .edu-name p {
   font-size: 1.6rem;
 }
+body .section-laboral {
+  background-color: rgb(255, 255, 255);
+  padding: 9.6rem 0;
+}
+body .section-laboral .title {
+  justify-content: center;
+  color: #212529;
+  font-size: 4.4rem;
+  font-weight: 700;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+body .section-laboral .title-icon {
+  font-size: 5.6rem;
+  padding-bottom: 0.3rem;
+}
+body .section-laboral .laboral {
+  padding: 9.6rem 6.4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6.4rem;
+}
+body .section-laboral .laboral .lab-item {
+  border: 3px solid #212529;
+  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 8rem;
+       column-gap: 8rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  padding: 2.4rem 3.2rem;
+  transition: transform 0.5s, background-color 0.5s;
+}
+body .section-laboral .laboral .lab-item:hover {
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.05);
+}
+body .section-laboral .laboral .lab-item .logo {
+  max-width: 20rem;
+}
+body .section-laboral .laboral .lab-item .logo img {
+  width: 100%;
+}
+body .section-laboral .laboral .lab-item .lab-name h3 {
+  font-size: 2.8rem;
+  line-height: 2.4rem;
+  margin-bottom: 1rem;
+}
+body .section-laboral .laboral .lab-item .lab-name h4 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+body .section-laboral .laboral .lab-item .lab-name p {
+  font-size: 1.6rem;
+}
 body .section-certifications {
-  background-color: rgb(232, 234, 237);
+  background-color: #212529;
   padding: 9.6rem 0;
 }
 body .section-certifications .title {
   justify-content: center;
-  color: #212529;
+  color: rgb(255, 255, 255);
   font-size: 4.4rem;
   font-weight: 700;
   display: flex;
@@ -252,6 +318,7 @@ body .section-certifications .certifications {
   max-width: 130rem;
 }
 body .section-certifications .certifications .certi-item {
+  filter: drop-shadow(3px 5px 2px rgba(255, 255, 255, 0.4));
   display: flex;
   align-items: center;
   gap: 3.2rem;
@@ -260,6 +327,7 @@ body .section-certifications .certifications .certi-item {
   border: 3px solid #212529;
   border-radius: 1rem;
   background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
   width: 70%;
   transition: transform 0.3s, background-color 0.3s;
 }
@@ -284,7 +352,7 @@ body .section-certifications .certifications .certi-item .certi-name p {
   font-size: 1.8rem;
 }
 body footer .cv-btn {
-  color: rgb(232, 234, 237);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   background-color: #212529;
   border-radius: 1rem;
@@ -297,7 +365,7 @@ body footer .cv-btn a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: rgb(232, 234, 237);
+  color: rgb(255, 255, 255);
   gap: 0.8rem;
   font-weight: 500;
 }

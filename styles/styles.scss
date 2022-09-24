@@ -7,7 +7,7 @@
 */
 
 $primary-color: #212529;
-$secundary-color: rgb(232, 234, 237);
+$secundary-color: rgb(255, 255, 255);
 $terciary-color: #bcbebf;
 $white: rgb(255, 255, 255);
 
@@ -96,7 +96,7 @@ body {
                             width: 0%;
                             border-radius: 1px;
                             background-color: $white;
-                            transition: 0.6s;
+                            transition: 0.3s;
                             left: 0;
                             bottom: -0.5rem;
                         }
@@ -148,11 +148,14 @@ body {
         .introduction {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4.4rem;
+            row-gap: 4.4rem;
+            column-gap: 9.6rem;
             align-items: center;
             justify-content: space-around;
 
             .intro-title {
+                justify-self: flex-end;
+
                 .name {
                     font-size: 4.4rem;
                     text-align: center;
@@ -169,7 +172,6 @@ body {
             .profile {
                 display: flex;
                 gap: 3.2rem;
-                flex-direction: column;
                 align-items: center;
 
                 img {
@@ -193,7 +195,7 @@ body {
     }
 
     /******************************************/
-    /********* EDUCATION    ++++++++++++++++/
+    /********* EDUCATION            ++++++++++/
     /*****************************************/
     .section-education {
         background-color: $primary-color;
@@ -223,7 +225,7 @@ body {
             gap: 6.4rem;
 
             .edu-item {
-                filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+                filter: drop-shadow(3px 5px 2px rgba(255, 255, 255, 0.4));
                 display: flex;
                 width: 90%;
                 flex-direction: row;
@@ -231,11 +233,10 @@ body {
                 column-gap: 8rem;
                 background-color: $secundary-color;
                 border-radius: 1rem;
-                padding: 3.2rem;
-                transition: transform 0.5s, background-color 0.5s;
+                padding: 2.4rem 3.2rem;
+                transition: transform 0.3s;
 
                 &:hover {
-                    background-color: $white;
                     transform: scale(1.05);
                 }
 
@@ -266,16 +267,90 @@ body {
     }
 
     /******************************************/
-    /********* CERTIFICATIONS    ++++++++++++++++/
+    /********* LABORAL            ++++++++++/
     /*****************************************/
 
-    .section-certifications {
+    .section-laboral {
         background-color: $secundary-color;
         padding: 9.6rem 0;
 
         .title {
             justify-content: center;
             color: $primary-color;
+            font-size: 4.4rem;
+            font-weight: 700;
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+
+            &-icon {
+                font-size: 5.6rem;
+                padding-bottom: 0.3rem;
+            }
+        }
+
+        .laboral {
+            padding: 9.6rem 6.4rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6.4rem;
+
+            .lab-item {
+                border: 3px solid $primary-color;
+                filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
+                display: flex;
+                width: 90%;
+                flex-direction: row;
+                align-items: center;
+                column-gap: 8rem;
+                background-color: $secundary-color;
+                border-radius: 1rem;
+                padding: 2.4rem 3.2rem;
+                transition: transform 0.5s, background-color 0.5s;
+
+                &:hover {
+                    background-color: $white;
+                    transform: scale(1.05);
+                }
+
+                .logo {
+                    max-width: 20rem;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .lab-name {
+                    h3 {
+                        font-size: 2.8rem;
+                        line-height: 2.4rem;
+                        margin-bottom: 1rem;
+                    }
+                    h4 {
+                        font-size: 1.6rem;
+                        margin-bottom: 2rem;
+                    }
+                    p {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /******************************************/
+    /********* CERTIFICATIONS    ++++++++++++++++/
+    /*****************************************/
+
+    .section-certifications {
+        background-color: $primary-color;
+        padding: 9.6rem 0;
+
+        .title {
+            justify-content: center;
+            color: $secundary-color;
             font-size: 4.4rem;
             font-weight: 700;
             display: flex;
@@ -298,6 +373,7 @@ body {
             max-width: 130rem;
 
             .certi-item {
+                filter: drop-shadow(3px 5px 2px rgba(255, 255, 255, 0.4));
                 display: flex;
                 align-items: center;
                 gap: 3.2rem;
@@ -306,6 +382,7 @@ body {
                 border: 3px solid $primary-color;
                 border-radius: 1rem;
                 background-color: $white;
+                border: 3px solid $white;
                 width: 70%;
                 transition: transform 0.3s, background-color 0.3s;
 
