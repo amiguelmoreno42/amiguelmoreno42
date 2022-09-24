@@ -36,6 +36,9 @@ body {
   /******************************************/
   /********* EDUCATION    ++++++++++++++++/
   /*****************************************/
+  /******************************************/
+  /********* CERTIFICATIONS    ++++++++++++++++/
+  /*****************************************/
 }
 body .container {
   /* 1140px */
@@ -124,46 +127,43 @@ body .section-introduction {
   background-color: rgb(232, 234, 237);
   padding: 9.6rem 0;
 }
-body .section-introduction .intro-title {
-  padding-bottom: 9.6rem;
-}
-body .section-introduction .intro-title .name {
-  font-size: 4.4rem;
-  text-align: center;
-  padding-bottom: 1.2rem;
-}
-body .section-introduction .intro-title .position {
-  text-align: center;
-  font-size: 2.4rem;
-  font-weight: 500;
-}
 body .section-introduction .introduction {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 4.4rem;
   align-items: center;
   justify-content: space-around;
 }
+body .section-introduction .introduction .intro-title .name {
+  font-size: 4.4rem;
+  text-align: center;
+  padding-bottom: 1.2rem;
+}
+body .section-introduction .introduction .intro-title .position {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
 body .section-introduction .introduction .profile {
-  width: 100rem;
   display: flex;
   gap: 3.2rem;
   flex-direction: column;
   align-items: center;
 }
-body .section-introduction .introduction .profile-img {
+body .section-introduction .introduction .profile img {
   text-align: center;
-}
-body .section-introduction .introduction .profile-img img {
-  width: 70%;
+  width: 50%;
   border-radius: 2%;
 }
 body .section-introduction .introduction .description {
-  align-self: flex-start;
+  justify-self: center;
+  grid-column: span 2;
   max-width: 60%;
   font-size: 1.8rem;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  margin-top: 4.4rem;
 }
 body .section-education {
   background-color: #212529;
@@ -171,6 +171,7 @@ body .section-education {
 }
 body .section-education .title {
   justify-content: center;
+  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
   color: rgb(255, 255, 255);
   font-size: 4.4rem;
   font-weight: 700;
@@ -187,18 +188,19 @@ body .section-education .education {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 9.6rem;
+  gap: 6.4rem;
 }
 body .section-education .education .edu-item {
+  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
   display: flex;
-  width: 80%;
+  width: 90%;
   flex-direction: row;
   align-items: center;
   -moz-column-gap: 8rem;
        column-gap: 8rem;
   background-color: rgb(232, 234, 237);
   border-radius: 1rem;
-  padding: 4.4rem;
+  padding: 3.2rem;
   transition: transform 0.5s, background-color 0.5s;
 }
 body .section-education .education .edu-item:hover {
@@ -206,7 +208,7 @@ body .section-education .education .edu-item:hover {
   transform: scale(1.05);
 }
 body .section-education .education .edu-item .logo {
-  max-width: 25rem;
+  max-width: 20rem;
 }
 body .section-education .education .edu-item .logo img {
   width: 100%;
@@ -222,6 +224,64 @@ body .section-education .education .edu-item .edu-name h4 {
 }
 body .section-education .education .edu-item .edu-name p {
   font-size: 1.6rem;
+}
+body .section-certifications {
+  background-color: rgb(232, 234, 237);
+  padding: 9.6rem 0;
+}
+body .section-certifications .title {
+  justify-content: center;
+  color: #212529;
+  font-size: 4.4rem;
+  font-weight: 700;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+body .section-certifications .title-icon {
+  font-size: 5.6rem;
+  padding-bottom: 0.3rem;
+}
+body .section-certifications .certifications {
+  display: flex;
+  flex-direction: column;
+  padding: 9.6rem 6.4rem 0;
+  align-items: center;
+  justify-content: center;
+  row-gap: 3.2rem;
+  max-width: 130rem;
+}
+body .section-certifications .certifications .certi-item {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  color: #212529;
+  padding: 1.2rem 2.4rem;
+  border: 3px solid #212529;
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  transition: transform 0.3s, background-color 0.3s;
+}
+body .section-certifications .certifications .certi-item:hover {
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.05);
+}
+body .section-certifications .certifications .certi-item .certi-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+}
+body .section-certifications .certifications .certi-item .certi-logo img {
+  max-height: 6rem;
+  width: 100%;
+}
+body .section-certifications .certifications .certi-item .certi-name h3 {
+  font-size: 2rem;
+}
+body .section-certifications .certifications .certi-item .certi-name p {
+  font-size: 1.8rem;
 }
 body footer .cv-btn {
   color: rgb(232, 234, 237);
