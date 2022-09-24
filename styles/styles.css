@@ -134,13 +134,10 @@ body .section-introduction .introduction {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 4.4rem;
-  -moz-column-gap: 9.6rem;
-       column-gap: 9.6rem;
+  -moz-column-gap: 4.4rem;
+       column-gap: 4.4rem;
   align-items: center;
   justify-content: space-around;
-}
-body .section-introduction .introduction .intro-title {
-  justify-self: flex-end;
 }
 body .section-introduction .introduction .intro-title .name {
   font-size: 4.4rem;
@@ -156,6 +153,7 @@ body .section-introduction .introduction .profile {
   display: flex;
   gap: 3.2rem;
   align-items: center;
+  justify-content: center;
 }
 body .section-introduction .introduction .profile img {
   text-align: center;

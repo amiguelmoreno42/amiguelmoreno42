@@ -149,13 +149,11 @@ body {
             display: grid;
             grid-template-columns: 1fr 1fr;
             row-gap: 4.4rem;
-            column-gap: 9.6rem;
+            column-gap: 4.4rem;
             align-items: center;
             justify-content: space-around;
 
             .intro-title {
-                justify-self: flex-end;
-
                 .name {
                     font-size: 4.4rem;
                     text-align: center;
@@ -173,6 +171,7 @@ body {
                 display: flex;
                 gap: 3.2rem;
                 align-items: center;
+                justify-content: center;
 
                 img {
                     text-align: center;
