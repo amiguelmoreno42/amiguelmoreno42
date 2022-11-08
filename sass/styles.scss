@@ -447,4 +447,22 @@ body {
             }
         }
     }
+
+    .maintenance {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        background-color: rgba(255, 255, 255, 0.908);
+
+        p {
+            font-size: 6rem;
+            font-weight: 700;
+        }
+    }
 }
