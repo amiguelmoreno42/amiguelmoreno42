@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+:root {
+  --primary-color: #262b31;
+  --secundary-color: rgb(255, 255, 255);
+  --terciary-color: #77f8e9;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: Nunito, sans-serif;
+}
+
+.App {
+  background-color: var(--primary-color);
+}
+
+header {
+  height: 100vh;
+  width: 12rem;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+header .logo svg {
+  fill: var(--secundary-color);
+  width: 8rem;
+  height: 8rem;
+  transition: all 0.3s;
+}
+header .logo svg:hover {
+  transform: scale(1.1);
+  fill: var(--terciary-color);
+}
+header .sections-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1;
+}
+header .sections-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: rgb(71, 71, 71);
+  border-radius: 10px;
+  color: var(--secundary-color);
+  font-size: 3rem;
+  transition: color 0.4s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+header .sections-links a:hover {
+  color: var(--terciary-color);
+  transition: all 0.6s;
+}
+header .sections-links a:hover p {
+  transform: translateX(26rem);
+}
+header .sections-links a p {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: var(--secundary-color);
+  position: absolute;
+  white-space: nowrap;
+  padding: 2rem;
+  left: -18rem;
+  transition: all 0.5s;
+  z-index: -999;
+}
+header .social-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+header .social-links a {
+  font-size: 3.5rem;
+  color: var(--secundary-color);
+  transition: all 0.3s;
+}
+header .social-links a:hover {
+  transform: scale(1.1);
+  color: var(--terciary-color);
+}
+
+/*# sourceMappingURL=index.css.map */
