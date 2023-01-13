@@ -1,8 +1,12 @@
 header {
     height: 100vh;
-    width: 12rem;
+    width: 14rem;
+    margin-left: -14rem;
+    position: fixed;
+    background-color: var(--primary-color);
     display: grid;
     grid-template-rows: 1fr 3fr 1fr;
+    z-index: 9999;
 
     .logo {
         display: flex;
@@ -35,33 +39,37 @@ header {
             align-items: center;
             justify-content: center;
             text-decoration: none;
+            width: 6rem;
             padding: 1rem;
-            background-color: rgb(71, 71, 71);
+            background-color: var(--secundary-color);
             border-radius: 10px;
-            color: var(--secundary-color);
+            color: var(--primary-color);
             font-size: 3rem;
             transition: color 0.4s;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 
             &:hover {
                 color: var(--terciary-color);
                 transition: all 0.6s;
 
                 & p {
-                    transform: translateX(26rem);
+                    transform: translateX(29rem);
                 }
             }
 
             p {
                 font-size: 2rem;
-                margin: 1rem 0;
-                color: var(--secundary-color);
+                color: var(--primary-color);
+                background-color: var(--terciary-color);
                 position: absolute;
                 white-space: nowrap;
-                padding: 2rem;
-                left: -18rem;
+                padding: 0.5rem 2rem;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                left: -20rem;
                 transition: all 0.5s;
-                z-index: -999;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+                z-index: -1;
             }
         }
     }

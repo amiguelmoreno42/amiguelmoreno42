@@ -48,7 +48,7 @@ c34 -35 88 -34 120 1 l25 27 2 1103 3 1103 410 -575 c225 -317 415 -579 423
 
             <div className="sections-links">
                 <a href="#">
-                    <i class="fa-solid fa-user-graduate"></i>
+                    <i class="fa-solid fa-school"></i>
                     <p>Education</p>
                 </a>
 
@@ -58,16 +58,19 @@ c34 -35 88 -34 120 1 l25 27 2 1103 3 1103 410 -575 c225 -317 415 -579 423
                 </a>
 
                 <a href="#">
-                    <i class="fa-solid fa-code-fork"></i>
                     <p>Projects</p>
+                    <i class="fa-solid fa-code-fork"></i>
                 </a>
             </div>
 
             <div className="social-links">
-                <a href="#">
+                <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/miguelmoreno00/"
+                >
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="#">
+                <a target="_blank" href="https://github.com/amiguelmoreno">
                     <i class="fa-brands fa-square-github"></i>
                 </a>
             </div>

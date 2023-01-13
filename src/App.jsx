@@ -1,9 +1,11 @@
-import Header from "./components/Header/Header";
+import Nav from "./components/Nav/Nav";
+import Presentation from "./components/Presentation/Presentation";
 
 function App() {
     return (
         <div className="App">
-            <Header></Header>
+            <Nav></Nav>
+            <Presentation></Presentation>
         </div>
     );
 }
