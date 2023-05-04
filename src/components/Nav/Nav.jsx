@@ -1,9 +1,9 @@
 function Header() {
     return (
-        <header>
+        <div className="nav">
             <div className="logo">
                 <svg
-                    class="header-logo"
+                    className="header-logo"
                     version="1.0"
                     xmlns="http://www.w3.org/2000/svg"
                     width="500.000000pt"
@@ -47,19 +47,19 @@ c34 -35 88 -34 120 1 l25 27 2 1103 3 1103 410 -575 c225 -317 415 -579 423
             </div>
 
             <div className="sections-links">
-                <a href="#">
-                    <i class="fa-solid fa-school"></i>
+                <a href="#education">
+                    <i className="fa-solid fa-school"></i>
                     <p>Education</p>
                 </a>
 
                 <a href="#">
-                    <i class="fa-solid fa-briefcase"></i>
+                    <i className="fa-solid fa-briefcase"></i>
                     <p>Work Experience</p>
                 </a>
 
                 <a href="#">
                     <p>Projects</p>
-                    <i class="fa-solid fa-code-fork"></i>
+                    <i className="fa-solid fa-code-fork"></i>
                 </a>
             </div>
 
@@ -68,13 +68,13 @@ c34 -35 88 -34 120 1 l25 27 2 1103 3 1103 410 -575 c225 -317 415 -579 423
                     target="_blank"
                     href="https://www.linkedin.com/in/miguelmoreno00/"
                 >
-                    <i class="fa-brands fa-linkedin"></i>
+                    <i className="fa-brands fa-linkedin"></i>
                 </a>
                 <a target="_blank" href="https://github.com/amiguelmoreno">
-                    <i class="fa-brands fa-square-github"></i>
+                    <i className="fa-brands fa-square-github"></i>
                 </a>
             </div>
-        </header>
+        </div>
     );
 }
 

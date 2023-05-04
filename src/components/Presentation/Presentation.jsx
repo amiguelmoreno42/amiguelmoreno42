@@ -1,4 +1,4 @@
-function Header() {
+function Presentation() {
     return (
         <div className="presentation">
             <p className="hello">
@@ -6,11 +6,11 @@ function Header() {
             </p>
             <h1>MIGUEL MORENO</h1>
             <p className="position">Front End Developer</p>
-            <div className="arrow-down">
-                <i class="fa-solid fa-arrow-down"></i>
-            </div>
+            <a href="#education" className="arrow-down">
+                <i className="fa-solid fa-arrow-down"></i>
+            </a>
         </div>
     );
 }
 
-export default Header;
+export default Presentation;

@@ -4,13 +4,16 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+    position: relative;
     flex-direction: column;
     color: var(--secundary-color);
-    padding-left: 14rem;
+    align-items: center;
     position: relative;
     z-index: auto;
 
     .hello {
+        @include no-select;
+
         right: 0;
         top: 0;
         position: absolute;
@@ -21,6 +24,8 @@
     }
 
     h1 {
+        @include no-select;
+
         font-size: 12rem;
         color: transparent;
         line-height: 1.6;
@@ -34,6 +39,8 @@
     }
 
     .position {
+        @include no-select;
+
         font-size: 5rem;
         color: var(--terciary-color);
     }
@@ -42,17 +49,24 @@
         background-color: var(--terciary-color);
         font-size: 5rem;
         padding: 1rem;
+        text-decoration: none;
         display: flex;
         align-items: center;
         justify-content: center;
         line-height: 1;
         position: absolute;
         bottom: 2rem;
-        left: calc(50% - 14rem);
+        left: 50%;
         color: var(--primary-color);
-        border-radius: 100px;
-        animation: bounce2 2s ease infinite;
+        border-radius: 10px;
+        animation: zoom-in-zoom-out 2s ease infinite;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
         cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            color: var(--secundary-color);
+        }
     }
 }
 
@@ -99,18 +113,14 @@
     }
 }
 
-@keyframes bounce2 {
-    0%,
-    20%,
-    50%,
-    80%,
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.1, 1.1);
+    }
     100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-25px);
-    }
-    60% {
-        transform: translateY(-15px);
+        transform: scale(1, 1);
     }
 }

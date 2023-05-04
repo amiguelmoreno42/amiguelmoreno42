@@ -2,6 +2,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dangrek&display=swap");
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secundary-color);
+}
+.section-title i {
+  padding: 1.5rem;
+  font-size: 5rem;
+  border-radius: 10px;
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
+  z-index: 2;
+}
+.section-title h2 {
+  margin-left: -1rem;
+  z-index: 1;
+  border-radius: 10px;
+  line-height: 1;
+  font-size: 4rem;
+  padding: 1rem 3rem 1rem 4rem;
+  color: var(--primary-color);
+  background-color: var(--terciary-color);
+}
+
+.minimize {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+/* .minimize-description {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+} */
 :root {
   --primary-color: #262b31;
   --secundary-color: rgb(255, 255, 255);
@@ -28,7 +66,7 @@ html {
   margin-left: 14rem;
 }
 
-header {
+.nav {
   height: 100vh;
   width: 14rem;
   margin-left: -14rem;
@@ -36,25 +74,26 @@ header {
   background-color: var(--primary-color);
   display: grid;
   grid-template-rows: 1fr 3fr 1fr;
+  border-right: 6px solid var(--secundary-color);
   z-index: 9999;
 }
-header .logo {
+.nav .logo {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
 }
-header .logo svg {
+.nav .logo svg {
   fill: var(--secundary-color);
   width: 8rem;
   height: 8rem;
   transition: all 0.3s;
 }
-header .logo svg:hover {
+.nav .logo svg:hover {
   transform: scale(1.1);
   fill: var(--terciary-color);
 }
-header .sections-links {
+.nav .sections-links {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -62,7 +101,7 @@ header .sections-links {
   gap: 2rem;
   z-index: 1;
 }
-header .sections-links a {
+.nav .sections-links a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,14 +115,14 @@ header .sections-links a {
   transition: color 0.4s;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 }
-header .sections-links a:hover {
+.nav .sections-links a:hover {
   color: var(--terciary-color);
   transition: all 0.6s;
 }
-header .sections-links a:hover p {
+.nav .sections-links a:hover p {
   transform: translateX(29rem);
 }
-header .sections-links a p {
+.nav .sections-links a p {
   font-size: 2rem;
   color: var(--primary-color);
   background-color: var(--terciary-color);
@@ -97,7 +136,7 @@ header .sections-links a p {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
   z-index: -1;
 }
-header .social-links {
+.nav .social-links {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -105,12 +144,12 @@ header .social-links {
   gap: 1rem;
   margin-bottom: 2rem;
 }
-header .social-links a {
-  font-size: 3.5rem;
+.nav .social-links a {
+  font-size: 5rem;
   color: var(--secundary-color);
   transition: all 0.3s;
 }
-header .social-links a:hover {
+.nav .social-links a:hover {
   transform: scale(1.1);
   color: var(--terciary-color);
 }
@@ -121,13 +160,21 @@ header .social-links a:hover {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  position: relative;
   flex-direction: column;
   color: var(--secundary-color);
-  padding-left: 14rem;
+  align-items: center;
   position: relative;
   z-index: auto;
 }
 .presentation .hello {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+             supported by Chrome, Edge, Opera and Firefox */
   right: 0;
   top: 0;
   position: absolute;
@@ -137,6 +184,13 @@ header .social-links a:hover {
   align-self: flex-end;
 }
 .presentation h1 {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+             supported by Chrome, Edge, Opera and Firefox */
   font-size: 12rem;
   color: transparent;
   line-height: 1.6;
@@ -149,6 +203,13 @@ header .social-links a:hover {
   animation: back 30s linear infinite;
 }
 .presentation .position {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+             supported by Chrome, Edge, Opera and Firefox */
   font-size: 5rem;
   color: var(--terciary-color);
 }
@@ -156,17 +217,23 @@ header .social-links a:hover {
   background-color: var(--terciary-color);
   font-size: 5rem;
   padding: 1rem;
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
   line-height: 1;
   position: absolute;
   bottom: 2rem;
-  left: calc(50% - 14rem);
+  left: 50%;
   color: var(--primary-color);
-  border-radius: 100px;
-  animation: bounce2 2s ease infinite;
+  border-radius: 10px;
+  animation: zoom-in-zoom-out 2s ease infinite;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.presentation .arrow-down:hover {
+  color: var(--secundary-color);
 }
 
 .wave {
@@ -210,16 +277,79 @@ header .social-links a:hover {
     background-position: 2000px 0;
   }
 }
-@keyframes bounce2 {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
   }
-  40% {
-    transform: translateY(-25px);
+  50% {
+    transform: scale(1.1, 1.1);
   }
-  60% {
-    transform: translateY(-15px);
+  100% {
+    transform: scale(1, 1);
   }
+}
+.education-section {
+  padding: 10rem;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+.education-section .container {
+  margin-top: 8rem;
+  width: 80%;
+  height: 50rem;
+}
+.education-section .container .degree {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.education-section .container .degree-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: var(--terciary-color);
+}
+.education-section .container .degree-header h3 {
+  line-height: 2;
+  font-size: 2.2rem;
+}
+.education-section .container .degree-header .icon {
+  position: relative;
+  font-size: 2.5rem;
+  padding: 0 1rem;
+}
+.education-section .container .degree-header .icon i {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.education-section .container .degree-description {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: var(--secundary-color);
+}
+.education-section .container .degree-description-info {
+  grid-column: 1/6;
+  font-size: 1.5rem;
+}
+.education-section .container .degree-description-info ul {
+  columns: 2;
+  column-gap: 3rem;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-position: outside;
+}
+.education-section .container .degree-description-info ul li {
+  margin-bottom: 1rem;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
 }
 
 /*# sourceMappingURL=index.css.map */
