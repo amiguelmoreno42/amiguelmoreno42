@@ -1,73 +1,86 @@
 .education-section {
-    padding: 10rem;
-    background-color: white;
-    height: 100vh;
+    margin: 10rem;
+    padding-left: 14rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-color: var(--primary-color);
+    color: #1a1a1a;
+    flex-direction: column;
 
-    .container {
-        margin-top: 8rem;
-        width: 80%;
+    .title {
+        h2 {
+            margin-bottom: 3rem;
+            font-size: 6rem;
+            color: var(--terciary-color);
+            background-color: var(--primary-color);
+        }
+    }
 
-        height: 50rem;
+    p {
+        text-align: center;
+    }
 
-        .degree {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
+    .faq {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        width: 76.8rem;
+        font-weight: 400;
+        max-width: 90vw;
+        cursor: pointer;
+        background-color: white;
+        border: 3px solid var(--color-secundario);
+        border-radius: 0.8rem;
+        box-shadow: 0rem 0rem 1rem rgba(255, 255, 255, 0.2);
+        // transition: all 0.4s ease;
 
-            &-header {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 0 2rem;
-                background-color: var(--terciary-color);
+        .faq-question {
+            position: relative;
+            font-size: 1.6rem;
+            padding-right: 8rem;
+            transition: all 0.4s ease;
+            color: var(--color-secundario);
 
-                h3 {
-                    line-height: 2;
-                    font-size: 2.2rem;
-                }
+            @media only screen and (max-width: 600px) {
+                padding-right: 4rem;
+            }
 
-                .icon {
-                    position: relative;
-                    font-size: 2.5rem;
-                    padding: 0 1rem;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 45%;
+                right: 1rem;
+                transform: rotate(45deg) translateY(-50%);
+                width: 1.5rem;
+                height: 1.5rem;
+                background-image: url("../assets/icons/x-icon.png");
+                // filter: grayscale(100%) invert(100%);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: all 0.4s ease-out;
+            }
+        }
 
-                    i {
-                        transform: translate(-50%, -50%);
-                        position: absolute;
-                        transition: all 0.3s ease-in-out;
-                        -webkit-transition: all 0.3s ease-in-out;
-                    }
+        .faq-answer {
+            height: 0;
+            opacity: 0;
+            font-size: 1.5rem;
+            overflow-y: hidden;
+            transition: all 0.4s;
+        }
+
+        &.open {
+            .faq-question {
+                margin-bottom: 1.5rem;
+
+                &::after {
+                    transform: translateY(-50%) rotate(-90deg);
                 }
             }
 
-            &-description {
-                padding: 3rem;
-                display: grid;
-                grid-template-columns: repeat(6, 1fr);
-                background-color: var(--secundary-color);
-
-                &-info {
-                    grid-column: 1/6;
-                    font-size: 1.5rem;
-
-                    ul {
-                        columns: 2;
-                        column-gap: 3rem;
-                        -webkit-columns: 2;
-                        -moz-columns: 2;
-                        list-style-position: outside;
-
-                        li {
-                            margin-bottom: 1rem;
-                            page-break-inside: avoid;
-                            break-inside: avoid-column;
-                        }
-                    }
-                }
+            .faq-answer {
+                opacity: 1;
+                height: auto;
+                transition: all 0.4s 0.2s;
             }
         }
     }

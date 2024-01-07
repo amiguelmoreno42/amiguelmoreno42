@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #262b31;
+    --primary-color: #0b1c41;
     --secundary-color: rgb(255, 255, 255);
-    --terciary-color: #77f8e9;
+    --terciary-color: #05f9d8;
 }
 
 *,
@@ -17,9 +17,6 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     font-family: Nunito, sans-serif;
-}
-
-.App {
-    background-color: var(--primary-color);
-    margin-left: 14rem;
+    overflow-x: hidden;
+    //background-color: var(--primary-color);
 }

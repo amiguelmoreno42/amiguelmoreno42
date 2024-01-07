@@ -52,10 +52,10 @@ c34 -35 88 -34 120 1 l25 27 2 1103 3 1103 410 -575 c225 -317 415 -579 423
                     <p>Education</p>
                 </a>
 
-                <a href="#">
+            {/*  <a href="#">
                     <i className="fa-solid fa-briefcase"></i>
                     <p>Work Experience</p>
-                </a>
+                </a> */}
 
                 <a href="#">
                     <p>Projects</p>
@@ -66,7 +66,7 @@ c34 -35 88 -34 120 1 l25 27 2 1103 3 1103 410 -575 c225 -317 415 -579 423
             <div className="social-links">
                 <a
                     target="_blank"
-                    href="https://www.linkedin.com/in/miguelmoreno00/"
+                    href="https://www.linkedin.com/in/miguelmoreno00"
                 >
                     <i className="fa-brands fa-linkedin"></i>
                 </a>

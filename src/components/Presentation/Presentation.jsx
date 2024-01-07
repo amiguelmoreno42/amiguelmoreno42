@@ -5,7 +5,7 @@ function Presentation() {
                 "Hello, World!" <span className="wave">👋</span>
             </p>
             <h1>MIGUEL MORENO</h1>
-            <p className="position">Front End Developer</p>
+            <p className="position">Software Developer</p>
             <a href="#education" className="arrow-down">
                 <i className="fa-solid fa-arrow-down"></i>
             </a>
