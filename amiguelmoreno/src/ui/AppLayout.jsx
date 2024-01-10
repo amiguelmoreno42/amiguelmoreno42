@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Sidebar from "./Sidebar";
 
 const StyledAppLayout = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
 `;
 
@@ -16,8 +16,12 @@ const Main = styled.main`
 const Container = styled.div`
   margin: 0 auto;
   display: flex;
+  align-items: center;
+  //justify-content: center;
+  min-height: 100vh;
   flex-direction: column;
   gap: 3.2rem;
+  padding: 0rem 10rem;
 `;
 
 function AppLayout() {

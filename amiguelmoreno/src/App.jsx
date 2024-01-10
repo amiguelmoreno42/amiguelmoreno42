@@ -3,6 +3,9 @@ import Education from "./pages/Education";
 import AppLayout from "./ui/AppLayout";
 import Presentation from "./pages/Presentation";
 import GlobalStyles from "./styles/GlobalStyles";
+import Projects from "./pages/Projects";
+import Work from "./pages/Work";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
               element={<Presentation></Presentation>}
             ></Route>
             <Route path="education" element={<Education></Education>}></Route>
+            <Route path="work" element={<Work></Work>}></Route>
+            <Route path="projects" element={<Projects></Projects>}></Route>
+            <Route path="contact" element={<Contact></Contact>}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

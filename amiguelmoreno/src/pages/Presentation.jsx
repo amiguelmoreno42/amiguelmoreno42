@@ -1,13 +1,14 @@
 import styled from "styled-components";
-import { HiArrowDown } from "react-icons/hi2";
-import { Back, WaveAnimation, ZoomInZoomOut } from "../styles/Animations";
+//import { HiArrowDown } from "react-icons/hi2";
+import { Back, WaveAnimation } from "../styles/Animations";
 import { NoSelect } from "../styles/StylesHelpers";
-import backgroundImg from "../assets/background-name.png";
-import { Link } from "react-router-dom";
+import backgroundImg from "../assets/img/utils/background-name.png";
+import profileImg from "../assets/img/utils/profile-photo.jpeg";
 
 const StyledPresentation = styled.div`
   ${NoSelect} // class to not let people select 
-
+  
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -22,12 +23,13 @@ const HelloText = styled.p`
   top: 0;
   position: absolute;
   font-size: 2rem;
-  padding: 3rem;
+  font-weight: 600;
+  padding: 2rem 4rem;
   justify-self: self-start;
   align-self: flex-end;
 
   .wave {
-    padding-left: 1rem;
+    padding-left: 2rem;
     font-size: 4rem;
     animation-name: ${WaveAnimation};
     animation-duration: 3s;
@@ -35,6 +37,13 @@ const HelloText = styled.p`
     transform-origin: 70% 70%;
     display: inline-block;
   }
+`;
+
+const ProfileImage = styled.img`
+  border-radius: 100%;
+  width: 40rem;
+  border: 4px solid var(--terciary-color);
+  margin-bottom: 5rem;
 `;
 
 const Title = styled.h1`
@@ -56,7 +65,7 @@ const JobPosition = styled.p`
   color: var(--terciary-color);
 `;
 
-const ArrowDownLink = styled(Link)`
+/* const ArrowDownLink = styled(Link)`
   background-color: var(--terciary-color);
   font-size: 5rem;
   padding: 1rem;
@@ -66,7 +75,7 @@ const ArrowDownLink = styled(Link)`
   justify-content: center;
   position: absolute;
   bottom: 2rem;
-  left: 50%;
+
   color: var(--primary-color);
   border-radius: 5px;
   animation: ${ZoomInZoomOut} 2s ease infinite;
@@ -77,7 +86,7 @@ const ArrowDownLink = styled(Link)`
   &:hover {
     color: var(--secundary-color);
   }
-`;
+`; */
 
 function Presentation() {
   return (
@@ -85,11 +94,12 @@ function Presentation() {
       <HelloText>
         {"Hello, World!"} <span className="wave">👋</span>
       </HelloText>
-      <Title>MIGUEL MORENO</Title>
+      <ProfileImage src={profileImg} alt="profile image" />
+      <Title>Miguel Moreno</Title>
       <JobPosition>Software Developer</JobPosition>
-      <ArrowDownLink to="/education">
+      {/*  <ArrowDownLink to="/education">
         <HiArrowDown />
-      </ArrowDownLink>
+      </ArrowDownLink> */}
     </StyledPresentation>
   );
 }

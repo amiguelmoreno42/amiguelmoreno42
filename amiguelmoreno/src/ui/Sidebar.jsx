@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import { HiBriefcase, HiBuildingLibrary } from "react-icons/hi2";
-import { FaCodeFork, FaLinkedin } from "react-icons/fa6";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaBriefcase, FaCodeFork, FaSchool } from "react-icons/fa6";
+import { FaUser } from "react-icons/fa";
 import LogoM from "./LogoM";
 import { Link } from "react-router-dom";
 
@@ -45,17 +44,11 @@ const SectionsLinks = styled.div`
   z-index: 1;
 `;
 
-const SocialLinks = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-`;
-
 const SectionLinkContainer = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 1;
   text-decoration: none;
   position: relative;
   width: auto;
@@ -63,8 +56,8 @@ const SectionLinkContainer = styled(Link)`
   background-color: var(--secundary-color);
   border-radius: 5px;
   color: var(--primary-color);
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 3.5rem;
+  font-weight: 700;
   transition: color 0.4s;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 
@@ -83,25 +76,13 @@ const SectionLinkContainer = styled(Link)`
     background-color: var(--terciary-color);
     position: absolute;
     white-space: nowrap;
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     left: -30rem;
     transition: all 0.5s;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
     z-index: -1;
-  }
-`;
-
-const SocialLinkContainer = styled.a`
-  font-size: 5rem;
-  color: var(--secundary-color);
-  transition: all 0.3s;
-  line-height: 0;
-
-  &:hover {
-    transform: scale(1.1);
-    color: var(--terciary-color);
   }
 `;
 
@@ -114,38 +95,25 @@ function Sidebar() {
 
       <SectionsLinks>
         <SectionLinkContainer to="/education">
-          <HiBuildingLibrary />
+          <FaSchool />
           <p>Education</p>
         </SectionLinkContainer>
 
-        <SectionLinkContainer to="/">
-          <HiBriefcase />
+        <SectionLinkContainer to="/work">
+          <FaBriefcase />
           <p>Work Experience</p>
         </SectionLinkContainer>
 
-        <SectionLinkContainer to="/">
+        <SectionLinkContainer to="/projects">
           <FaCodeFork />
           <p>Projects</p>
         </SectionLinkContainer>
+
+        <SectionLinkContainer to="/contact">
+          <FaUser />
+          <p>Contact</p>
+        </SectionLinkContainer>
       </SectionsLinks>
-
-      <SocialLinks>
-        <SocialLinkContainer
-          target="_blank"
-          href="https://www.linkedin.com/in/miguelmoreno00/"
-          rel="noreferrer"
-        >
-          <FaLinkedin />
-        </SocialLinkContainer>
-
-        <SocialLinkContainer
-          target="_blank"
-          href="https://github.com/amiguelmoreno"
-          rel="noreferrer"
-        >
-          <FaGithubSquare />
-        </SocialLinkContainer>
-      </SocialLinks>
     </StyledSidebar>
   );
 }
