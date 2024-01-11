@@ -5,6 +5,7 @@ import Sidebar from "./Sidebar";
 const StyledAppLayout = styled.div`
   min-height: 100vh;
   display: flex;
+  overflow: hidden;
 `;
 
 const Main = styled.main`

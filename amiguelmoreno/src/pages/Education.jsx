@@ -16,7 +16,7 @@ function Education() {
 
   return (
     <Section>
-      <Heading as="h1">Work Experience</Heading>
+      <Heading as="h1">Education</Heading>
       <SectionDescription>
         Explore through my web development courses and trainings. Discover the
         skills and knowledge I&apos;ve gained in this exciting learning
@@ -28,6 +28,7 @@ function Education() {
           key={course.id}
           onToggleDetails={() => handleToggleDetails(index)}
           isVisible={visibleDetailsIndex === index}
+          typeItem="education"
         ></CourseCard>
       ))}
     </Section>

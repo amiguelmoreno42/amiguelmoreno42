@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiChevronRight } from "react-icons/hi2";
 import Heading from "./Heading";
@@ -7,11 +7,11 @@ const CourseContainer = styled(motion.div)`
   background-color: var(--primary-color-light);
   color: var(--secundary-color);
   border-radius: 5px;
-  margin: 10px;
+  margin: 2rem;
   padding: 1rem;
   width: 100%;
   position: relative;
-  max-width: 100rem;
+  max-width: 120rem;
   box-sizing: border-box;
   overflow: hidden;
 `;
@@ -19,7 +19,6 @@ const CourseContainer = styled(motion.div)`
 const CourseHeader = styled.div`
   display: flex;
   align-items: flex-start;
-
   gap: 3rem;
   justify-content: space-between;
 `;
@@ -31,6 +30,13 @@ const CourseDescription = styled.p`
 `;
 
 const CoverImage = styled.img`
+  ${(props) =>
+    props.typeItem === "work" &&
+    css`
+      background-color: white;
+      padding: 2rem;
+    `}
+
   align-self: center;
   border-radius: 5px;
   width: 100%;
@@ -48,6 +54,14 @@ const InstitutionImage = styled.img`
   position: absolute;
   right: 0;
   top: 0;
+`;
+
+const Date = styled.div`
+  position: absolute;
+  right: 0;
+  font-weight: 500;
+  color: var(--secundary-color);
+  padding: 1rem 2rem;
 `;
 
 const ButtonDetails = styled.button`
@@ -68,6 +82,8 @@ const ButtonDetails = styled.button`
 `;
 
 const CourseDetails = styled(motion.div)`
+  display: flex;
+  align-items: center;
   img {
     width: 10rem;
   }
@@ -89,6 +105,7 @@ const StyledList = styled.ul`
 
   p {
     font-size: 2.2rem;
+    font-weight: 500;
   }
 
   li {
@@ -99,7 +116,7 @@ const StyledList = styled.ul`
   }
 `;
 
-const CourseCard = ({ course, onToggleDetails, isVisible }) => {
+const CourseCard = ({ course, onToggleDetails, isVisible, typeItem }) => {
   const handleToggleDetails = () => {
     onToggleDetails(!isVisible);
   };
@@ -107,11 +124,27 @@ const CourseCard = ({ course, onToggleDetails, isVisible }) => {
   return (
     <CourseContainer>
       <CourseHeader>
-        <CoverImage src={course.imageEducation} alt={course.title} />
-        <InstitutionImage
-          src={course.imageInstitution}
-          alt={course.institution}
+        <CoverImage
+          typeItem={typeItem}
+          src={
+            typeItem === "education"
+              ? course.imageEducation
+              : course.imageCompany
+          }
+          alt={course.title}
         />
+        {typeItem === "education" && (
+          <InstitutionImage
+            src={course.imageInstitution}
+            alt={course.institution}
+          />
+        )}
+
+        {typeItem === "work" && (
+          <Date>
+            {course.date} ({course.duration})
+          </Date>
+        )}
         <div>
           <Heading as="h2">{course.title}</Heading>
           <CourseDescription>{course.description}</CourseDescription>
@@ -129,11 +162,15 @@ const CourseCard = ({ course, onToggleDetails, isVisible }) => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
           >
-            {course.duration && (
+            {course.duration && typeItem === "education" && (
               <Duration>Duration: {course.duration}</Duration>
             )}
             <StyledList>
-              <p>I learned...</p>
+              {typeItem === "education" ? (
+                <p>I learned...</p>
+              ) : (
+                <p>What did I do?</p>
+              )}
               {course.skills.map((skill) => (
                 <li key={skill}>
                   <HiChevronRight />

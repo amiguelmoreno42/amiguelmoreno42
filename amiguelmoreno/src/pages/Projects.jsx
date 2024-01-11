@@ -7,13 +7,13 @@ function Projects() {
     <Section>
       <Heading as="h1">Projects</Heading>
       <SectionDescription>
-        Though my current work experience may not be directly tied to web
-        development, it has granted me a unique perspective.Despite coming from
-        different fields, I&apos;m really keen on jumping into web development.
-        I&apos;m excited to take on new challenges and put my energy into
-        learning and growing in this dynamic field. I&apos;m ready for any
-        opportunity that comes my way and committed to making my mark in this
-        exciting industry.
+        Welcome to my projects section, each one reflects a step in my journey
+        of learning and development. From web applications to more experimental
+        projects, these works showcase my dedication to tackling diverse
+        challenges and applying creative solutions. Through every line of code,
+        you&apos;ll witness the evolution of my skills and my ongoing commitment
+        to technical improvement. Step into my project corner and explore the
+        culmination of my learning and development journey.
       </SectionDescription>
     </Section>
   );

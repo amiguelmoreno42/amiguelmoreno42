@@ -91,6 +91,24 @@ export const educationInfo = [
   },
   {
     id: 5,
+    title: "FrontEnd and Entrepreneurship",
+    institution: "Incyde Fundation",
+    date: "Sep 2021 - Nov 2021",
+    duration: "80 hours",
+    description:
+      "The course's primary objective was to impart a comprehensive understanding of diverse business functions, empowering individuals to discern market opportunities and formulate effective Business Plans. As a Front-End web developer, the focus was on utilizing management tools to enhance project implementation strategies.",
+    skills: [
+      "Introduction to Web Development and Gamification",
+      "Digital Marketing and Finance - SEO, SEM, SMO, and ASO",
+      "Gamification Solutions and Soft Skills",
+    ],
+    imageInstitution:
+      import.meta.env.BASE_URL + "../../education/logos/incyde-logo.png",
+    imageEducation:
+      import.meta.env.BASE_URL + "../../education/covers/marketing-front.webp",
+  },
+  {
+    id: 6,
     title: "Git & Github Bootcamp",
     institution: "Incyde Fundation",
     date: "Oct 2022",
@@ -115,7 +133,7 @@ export const educationInfo = [
       import.meta.env.BASE_URL + "../../education/covers/git-github.png",
   },
   {
-    id: 6,
+    id: 7,
     title: "Sofware Engineering",
     institution: "42 Malaga",
     date: "Feb 2022 - Dec 2023",
@@ -139,7 +157,7 @@ export const educationInfo = [
       import.meta.env.BASE_URL + "../../education/covers/42malaga.png",
   },
   {
-    id: 7,
+    id: 8,
     title: "React Course",
     institution: "Udemy",
     date: "Oct 2023 - Jan 2024",
