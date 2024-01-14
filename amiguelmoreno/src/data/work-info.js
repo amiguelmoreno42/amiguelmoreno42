@@ -48,7 +48,6 @@ export const workInfo = [
       "Learned communication skills, crucial for negotiation, sales, and building a strong network of contacts.",
       "Became a constant learner, acquiring new skills and staying updated in a dynamic business environment.",
     ],
-    imageCompany:
-      import.meta.env.BASE_URL + "../../work/logos/self-employed.png",
+    imageCompany: import.meta.env.BASE_URL + "../../work/logos/sv-logo.png",
   },
 ];

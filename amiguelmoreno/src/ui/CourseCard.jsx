@@ -40,8 +40,8 @@ const CoverImage = styled.img`
   align-self: center;
   border-radius: 5px;
   width: 100%;
-  min-width: 35rem;
-  max-width: 35rem;
+  min-width: 15rem;
+  max-width: 15rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `;
 
