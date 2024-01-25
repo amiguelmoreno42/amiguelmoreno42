@@ -79,7 +79,7 @@ const DeploymentButton = styled.a`
   }
 
   @media (width <= 680px) {
-    bottom: 5dvh;
+    bottom: 9rem;
   }
 `;
 
@@ -104,7 +104,7 @@ const GitHubtButton = styled.a`
   }
 
   @media (width <= 680px) {
-    bottom: 1dvh;
+    bottom: 4rem;
   }
 `;
 const TechEl = styled.div`
