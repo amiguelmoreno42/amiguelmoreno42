@@ -117,6 +117,10 @@ const InfoContainer = styled.div`
     gap: 4rem;
     margin-bottom: 5rem;
   }
+
+  @media (width <= 680px) {
+    margin-bottom: 2rem;
+  }
 `;
 
 function ProjectDetails({ project }) {
