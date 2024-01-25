@@ -15,7 +15,8 @@ const StyledProjectDetails = styled.div`
   }
 
   @media (width <= 600px) {
-    width: 38rem;
+    width: 100dvw;
+    height: 100dvh;
   }
 `;
 const ImageContainer = styled.div`
