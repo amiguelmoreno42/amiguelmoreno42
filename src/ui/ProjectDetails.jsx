@@ -14,7 +14,10 @@ const StyledProjectDetails = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (width <= 600px) {
+  @media (width <= 680px) {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     width: 100dvw;
     height: 100dvh;
   }
@@ -31,6 +34,11 @@ const Image = styled.img`
 
   @media (width <= 1000px) {
     border-radius: 5px;
+  }
+
+  @media (width <= 680px) {
+    width: 100dvw;
+    height: auto;
   }
 `;
 const Technologies = styled.div`
