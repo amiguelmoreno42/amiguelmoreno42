@@ -22,6 +22,10 @@ const CourseInfo = styled.div`
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+  @media (width <= 1000px) {
+    margin-bottom: -2rem;
+    margin-top: 1rem;
+  }
 `;
 
 const CourseHeader = styled.div`
@@ -29,6 +33,13 @@ const CourseHeader = styled.div`
   align-items: flex-start;
   gap: 3rem;
   justify-content: space-between;
+
+  @media (width <= 1000px) {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 2rem;
+  }
 `;
 
 const CourseDescription = styled.p`
@@ -52,6 +63,12 @@ const CoverImage = styled.img`
   min-width: 18rem;
   max-width: 18rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  @media (width <= 1000px) {
+    min-width: 25rem;
+    max-width: 25rem;
+    margin-top: 3rem;
+  }
 `;
 
 const InstitutionImage = styled.img`
@@ -72,6 +89,11 @@ const Date = styled.div`
   font-weight: 500;
   color: var(--secundary-color);
   padding: 1rem 2rem;
+
+  @media (width <= 1000px) {
+    padding: 1.3rem;
+    top: 0;
+  }
 `;
 
 const ButtonDetails = styled.button`
@@ -88,6 +110,9 @@ const ButtonDetails = styled.button`
 
   &:hover {
     background-color: var(--primary-color);
+  }
+
+  @media (width <= 1000px) {
   }
 `;
 

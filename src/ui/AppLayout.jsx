@@ -12,6 +12,10 @@ const Main = styled.main`
   background-color: var(--primary-color);
   margin-left: 14rem;
   flex: 1;
+
+  @media (width <= 800px) {
+    margin-left: 0rem;
+  }
 `;
 
 const Container = styled.div`

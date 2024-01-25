@@ -15,9 +15,14 @@ const HeaderProyectSect = styled.h2`
 `;
 
 const ProyectsContainer = styled.div`
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: auto; */
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   column-gap: 3rem;
   row-gap: 6rem;
 `;

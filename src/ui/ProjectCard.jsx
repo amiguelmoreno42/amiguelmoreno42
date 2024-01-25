@@ -2,20 +2,29 @@ import styled from "styled-components";
 
 const StyledProjectCard = styled.div`
   background-color: var(--primary-color-light);
+  width: 35rem;
+
   border-radius: 5px;
   position: relative;
   padding: 1rem;
+
+  @media (width <= 1350px) {
+    width: 70rem;
+  }
 `;
 const ImageContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
   border-radius: 5px;
 `;
 const Image = styled.img`
   height: 20rem;
   width: 100%;
   border-radius: 5px;
+
+  @media (width <= 1350px) {
+    height: 40rem;
+  }
 `;
 const Technologies = styled.div`
   position: absolute;

@@ -4,7 +4,7 @@ import FormContainer from "../ui/FormContainer";
 import Section from "../ui/Section";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithubSquare } from "react-icons/fa";
-import SectionDescription from "../ui/SectionDescription";
+//import SectionDescription from "../ui/SectionDescription";
 
 const SocialLinks = styled.div`
   display: flex;
@@ -17,6 +17,10 @@ const SocialLinkContainer = styled.a`
   color: var(--secundary-color);
   transition: all 0.3s;
   line-height: 0;
+
+  @media (width <= 800px) {
+    font-size: 7rem;
+  }
 
   &:hover {
     transform: scale(1.1);

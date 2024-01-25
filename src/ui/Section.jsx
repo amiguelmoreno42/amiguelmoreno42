@@ -8,6 +8,10 @@ const Section = styled.div`
   align-items: center;
   position: relative;
   padding: 5rem;
+
+  @media (width <= 800px) {
+    padding: 2rem;
+  }
 `;
 
 export default Section;

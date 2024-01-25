@@ -14,6 +14,17 @@ const StyledSidebar = styled.aside`
   grid-row: 1 / -1;
   //border-right: 1px dotted var(--secundary-color);
   z-index: 10;
+
+  @media (width <= 800px) {
+    height: 8rem;
+    width: 100dvw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    bottom: 0;
+    background-color: var(--primary-color);
+  }
 `;
 
 const LogoContainer = styled(Link)`
@@ -28,10 +39,26 @@ const LogoContainer = styled(Link)`
     height: 8rem;
     transition: all 0.3s;
 
+    @media (width <= 800px) {
+      width: 7rem;
+      height: 7rem;
+      fill: var(--terciary-color);
+    }
+
     &:hover {
       transform: scale(1.1);
       fill: var(--terciary-color);
     }
+  }
+
+  @media (width <= 800px) {
+    background-color: var(--primary-color-light);
+    margin-right: -2rem;
+    border: 1px solid var(--terciary-color);
+    padding: 0.2rem;
+    padding-bottom: 1.8rem;
+    padding-right: 1.8rem;
+    border-radius: 5px;
   }
 `;
 
@@ -42,6 +69,16 @@ const SectionsLinks = styled.div`
   align-items: center;
   gap: 3rem;
   z-index: 1;
+
+  @media (width <= 800px) {
+    flex-direction: row;
+    background-color: var(--primary-color-light);
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 0;
+    height: 100%;
+    border-top: 1px solid var(--terciary-color);
+  }
 `;
 
 const SectionLinkContainer = styled(Link)`
@@ -60,6 +97,15 @@ const SectionLinkContainer = styled(Link)`
   font-weight: 700;
   transition: color 0.4s;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+
+  @media (width <= 800px) {
+    background-color: unset;
+    color: var(--terciary-color);
+    box-shadow: unset;
+    font-size: 3.2rem;
+
+    width: 100%;
+  }
 
   &:hover {
     color: var(--terciary-color);
@@ -83,6 +129,10 @@ const SectionLinkContainer = styled(Link)`
     transition: all 0.5s;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
     z-index: -1;
+
+    @media (width <= 800px) {
+      display: none;
+    }
   }
 `;
 

@@ -8,6 +8,11 @@ const StyledProjectDetails = styled.div`
   position: relative;
 
   grid-template-columns: repeat(3, 1fr);
+
+  @media (width <= 1000px) {
+    width: 60rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 const ImageContainer = styled.div`
   border-radius: 5px;
@@ -18,18 +23,21 @@ const Image = styled.img`
   height: 100%;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
+
+  @media (width <= 1000px) {
+    border-radius: 5px;
+  }
 `;
 const Technologies = styled.div`
   display: flex;
   gap: 1rem;
-  margin: 2rem;
 `;
 const Title = styled.h3`
   font-size: 4.2rem;
   width: 100%;
   margin-top: 2rem;
+  line-height: 1;
   text-align: center;
-  line-height: 2.5;
   color: var(--secundary-color);
 `;
 const DeploymentButton = styled.a`
@@ -85,14 +93,22 @@ const TechEl = styled.div`
 
 const Description = styled.div`
   text-align: justify;
-  margin: 2rem 0 4rem;
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
   color: var(--secundary-color);
 `;
 const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 3rem;
+  justify-content: space-evenly;
+  padding: 3rem;
+
+  @media (width <= 1000px) {
+    grid-column: span 2;
+    gap: 4rem;
+    margin-bottom: 5rem;
+  }
 `;
 
 function ProjectDetails({ project }) {
@@ -109,17 +125,17 @@ function ProjectDetails({ project }) {
           ))}
         </Technologies>
         <Description>{project.description}</Description>{" "}
-        {project.deployLink && (
-          <DeploymentButton href={project.deployLink} target="_blank">
-            Go to Deployment Page
-          </DeploymentButton>
-        )}
-        {project.repoLink && (
-          <GitHubtButton href={project.repoLink} target="_blank">
-            GitHub Repo
-          </GitHubtButton>
-        )}
       </InfoContainer>
+      {project.deployLink && (
+        <DeploymentButton href={project.deployLink} target="_blank">
+          Go to Deployment Page
+        </DeploymentButton>
+      )}
+      {project.repoLink && (
+        <GitHubtButton href={project.repoLink} target="_blank">
+          GitHub Repo
+        </GitHubtButton>
+      )}
     </StyledProjectDetails>
   );
 }

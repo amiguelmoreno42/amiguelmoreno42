@@ -2,10 +2,18 @@ import styled from "styled-components";
 
 const StyledFormContainer = styled.div`
   padding: 2rem;
-  margin: 6rem;
+  margin: 6rem 0;
   background-color: var(--primary-color-light);
   border-radius: 5px;
   width: 80rem;
+
+  @media (width <= 1350px) {
+    width: 60rem;
+  }
+
+  @media (width <= 800px) {
+    width: 45rem;
+  }
 `;
 
 const Form = styled.form`
@@ -28,8 +36,16 @@ const Form = styled.form`
 
 const Name = styled.input`
   grid-column: span 2;
+
+  @media (width <= 800px) {
+    grid-column: span 3;
+  }
 `;
-const Phone = styled.input``;
+const Phone = styled.input`
+  @media (width <= 800px) {
+    grid-column: span 3;
+  }
+`;
 const Email = styled.input`
   grid-column: span 3;
 `;
@@ -43,6 +59,10 @@ const ButtonSubmit = styled.button`
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   font-weight: 600;
   transition: all 0.3s;
+
+  @media (width <= 800px) {
+    grid-column: 1/4;
+  }
 
   &:hover {
     color: var(--terciary-color);

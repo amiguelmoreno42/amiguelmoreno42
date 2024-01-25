@@ -38,9 +38,11 @@ const Button = styled.button`
   border-radius: 5px;
   color: red;
   background-color: var(--primary-color-light);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   &:hover {
     background-color: gray;
+    box-shadow: none;
   }
 
   & svg {

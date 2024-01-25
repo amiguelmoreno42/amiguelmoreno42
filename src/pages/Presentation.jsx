@@ -44,6 +44,10 @@ const ProfileImage = styled.img`
   width: 40rem;
   border: 4px solid var(--terciary-color);
   margin-bottom: 5rem;
+
+  @media (width <= 800px) {
+    width: 30rem;
+  }
 `;
 
 const Title = styled.h1`
@@ -58,35 +62,20 @@ const Title = styled.h1`
   background-position: 0 0;
   animation: ${Back} 30s linear infinite alternate;
   animation-timing-function: ease-in-out;
+
+  @media (width <= 800px) {
+    font-size: 7rem;
+  }
 `;
 
 const JobPosition = styled.p`
   font-size: 5rem;
   color: var(--terciary-color);
-`;
 
-/* const ArrowDownLink = styled(Link)`
-  background-color: var(--terciary-color);
-  font-size: 5rem;
-  padding: 1rem;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 2rem;
-
-  color: var(--primary-color);
-  border-radius: 5px;
-  animation: ${ZoomInZoomOut} 2s ease infinite;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
-  cursor: pointer;
-  transition: all 0.5s;
-
-  &:hover {
-    color: var(--secundary-color);
+  @media (width <= 800px) {
+    font-size: 4rem;
   }
-`; */
+`;
 
 function Presentation() {
   return (

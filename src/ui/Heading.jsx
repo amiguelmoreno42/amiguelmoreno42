@@ -7,6 +7,10 @@ const Heading = styled.h1`
       font-size: 5rem;
       font-weight: 700;
       align-self: flex-start;
+
+      @media (width <= 800px) {
+        align-self: center;
+      }
     `}
 
   ${(props) =>
