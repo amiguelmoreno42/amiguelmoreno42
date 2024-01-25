@@ -77,6 +77,10 @@ const DeploymentButton = styled.a`
     background-color: var(--secundary-color);
     color: var(--primary-color);
   }
+
+  @media (width <= 680px) {
+    bottom: 5dvh;
+  }
 `;
 
 const GitHubtButton = styled.a`
@@ -97,6 +101,10 @@ const GitHubtButton = styled.a`
   &:hover {
     background-color: var(--secundary-color);
     color: var(--primary-color);
+  }
+
+  @media (width <= 680px) {
+    bottom: 1dvh;
   }
 `;
 const TechEl = styled.div`
