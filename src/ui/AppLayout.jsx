@@ -21,6 +21,7 @@ const Main = styled.main`
 const Container = styled.div`
   max-width: 140rem;
   margin: 0 auto;
+  margin-bottom: 15rem;
   display: flex;
   align-items: center;
   //justify-content: center;

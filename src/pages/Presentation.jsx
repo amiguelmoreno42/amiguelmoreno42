@@ -65,6 +65,9 @@ const Title = styled.h1`
 
   @media (width <= 800px) {
     font-size: 7rem;
+    background-image: none;
+    color: white;
+    font-weight: 500;
   }
 `;
 
