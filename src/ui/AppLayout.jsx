@@ -15,6 +15,7 @@ const Main = styled.main`
 `;
 
 const Container = styled.div`
+  max-width: 140rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -22,7 +23,6 @@ const Container = styled.div`
   min-height: 100vh;
   flex-direction: column;
   gap: 3.2rem;
-  padding: 0rem 10rem;
 `;
 
 function AppLayout() {

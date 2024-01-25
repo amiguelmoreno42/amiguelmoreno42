@@ -20,7 +20,7 @@ const Image = styled.img`
 const Technologies = styled.div`
   position: absolute;
   top: 0;
-  right: 1rem;
+  right: 2rem;
   display: flex;
   gap: 1rem;
   margin-top: -1rem;

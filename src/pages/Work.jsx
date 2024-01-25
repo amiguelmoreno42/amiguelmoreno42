@@ -32,7 +32,7 @@ function Work() {
           key={course.id}
           onToggleDetails={() => handleToggleDetails(index)}
           isVisible={visibleDetailsIndex === index}
-          typeItem="work"
+          $typeItem="work"
         ></CourseCard>
       ))}
     </Section>

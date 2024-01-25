@@ -41,6 +41,30 @@ select:focus {
   outline-offset: 2px;
 }
 
+
+/* App.css */
+
+/* Estilos para las transiciones de entrada */
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+/* Estilos para las transiciones de salida */
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-out;
+}
+
+
 `;
 
 export default GlobalStyles;

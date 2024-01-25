@@ -28,7 +28,7 @@ function Education() {
           key={course.id}
           onToggleDetails={() => handleToggleDetails(index)}
           isVisible={visibleDetailsIndex === index}
-          typeItem="education"
+          $typeItem="education"
         ></CourseCard>
       ))}
     </Section>

@@ -24,10 +24,11 @@ export const projectsInfo = [
     id: 3,
     title: "MyMoney",
     type: "web",
-    description: "",
+    description:
+      "This is a small money app tracker built using React and some of his libraries functionalities like React-router-dom, React-Query, Reusable components (Modal, Butttons, Inputs...), Hooks, React-hook-form, ContextApi, Framer-motion",
     technologies: ["React", "Styled Components"],
     repoLink: "https://github.com/amiguelmoreno/MyMoney",
-    deployLink: "",
+    deployLink: "https://mymoneyio.netlify.app/",
     cover: import.meta.env.BASE_URL + "../../projects/mymoney.png",
   },
   {

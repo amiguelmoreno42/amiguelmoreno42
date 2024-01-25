@@ -40,7 +40,7 @@ const CourseDescription = styled.p`
 
 const CoverImage = styled.img`
   ${(props) =>
-    props.typeItem === "work" &&
+    props.$typeItem === "work" &&
     css`
       background-color: white;
       padding: 2rem;
@@ -126,7 +126,7 @@ const StyledList = styled.ul`
   }
 `;
 
-const CourseCard = ({ course, onToggleDetails, isVisible, typeItem }) => {
+const CourseCard = ({ course, onToggleDetails, isVisible, $typeItem }) => {
   const handleToggleDetails = () => {
     onToggleDetails(!isVisible);
   };
@@ -135,22 +135,22 @@ const CourseCard = ({ course, onToggleDetails, isVisible, typeItem }) => {
     <CourseContainer>
       <CourseHeader>
         <CoverImage
-          typeItem={typeItem}
+          $typeItem={$typeItem}
           src={
-            typeItem === "education"
+            $typeItem === "education"
               ? course.imageEducation
               : course.imageCompany
           }
           alt={course.title}
         />
-        {typeItem === "education" && (
+        {$typeItem === "education" && (
           <InstitutionImage
             src={course.imageInstitution}
             alt={course.institution}
           />
         )}
 
-        {typeItem === "work" && (
+        {$typeItem === "work" && (
           <Date>
             {course.date} ({course.duration})
           </Date>
@@ -172,11 +172,11 @@ const CourseCard = ({ course, onToggleDetails, isVisible, typeItem }) => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
           >
-            {course.duration && typeItem === "education" && (
+            {course.duration && $typeItem === "education" && (
               <Duration>Duration: {course.duration}</Duration>
             )}
             <StyledList>
-              {typeItem === "education" ? (
+              {$typeItem === "education" ? (
                 <p>I learned...</p>
               ) : (
                 <p>What did I do?</p>
