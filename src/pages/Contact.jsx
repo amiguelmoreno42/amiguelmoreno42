@@ -4,6 +4,7 @@ import FormContainer from "../ui/FormContainer";
 import Section from "../ui/Section";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithubSquare } from "react-icons/fa";
+import SectionDescription from "../ui/SectionDescription";
 
 const SocialLinks = styled.div`
   display: flex;

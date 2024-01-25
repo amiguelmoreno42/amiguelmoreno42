@@ -73,7 +73,7 @@ function FormContainer() {
           id="mensaje"
           name="mensaje"
           rows="5"
-          placeholder="Leave a message here..."
+          placeholder="Leave a message here...I will answer you as soon as possible 😊"
         ></Message>
 
         <input
