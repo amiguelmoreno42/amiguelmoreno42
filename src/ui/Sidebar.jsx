@@ -16,7 +16,7 @@ const StyledSidebar = styled.aside`
   z-index: 10;
 
   @media (width <= 800px) {
-    height: 8rem;
+    height: 5rem;
     width: 100dvw;
     display: flex;
     align-items: center;
@@ -40,8 +40,8 @@ const LogoContainer = styled(Link)`
     transition: all 0.3s;
 
     @media (width <= 800px) {
-      width: 7rem;
-      height: 7rem;
+      width: 5rem;
+      height: 5rem;
       fill: var(--terciary-color);
     }
 
@@ -55,9 +55,9 @@ const LogoContainer = styled(Link)`
     background-color: var(--primary-color-light);
     margin-right: -2rem;
     border: 3px solid var(--terciary-color);
-    padding: 0.2rem;
-    padding-bottom: 1.8rem;
-    padding-right: 1.8rem;
+    padding: 0;
+    padding-bottom: 1.4rem;
+    padding-right: 1.4rem;
     border-radius: 5px;
   }
 `;
@@ -102,7 +102,7 @@ const SectionLinkContainer = styled(Link)`
     background-color: unset;
     color: var(--terciary-color);
     box-shadow: unset;
-    font-size: 3.2rem;
+    font-size: 2.6rem;
 
     width: 100%;
   }

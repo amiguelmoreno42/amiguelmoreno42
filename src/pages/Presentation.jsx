@@ -51,7 +51,7 @@ const ProfileImage = styled.img`
   margin-bottom: 5rem;
 
   @media (width <= 800px) {
-    width: 30rem;
+    width: 20rem;
   }
 `;
 
@@ -69,7 +69,7 @@ const Title = styled.h1`
   animation-timing-function: ease-in-out;
 
   @media (width <= 800px) {
-    font-size: 7rem;
+    font-size: 6rem;
     background-image: none;
     color: white;
     font-weight: 500;
@@ -81,7 +81,7 @@ const JobPosition = styled.p`
   color: var(--terciary-color);
 
   @media (width <= 800px) {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 `;
 
