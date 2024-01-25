@@ -11,6 +11,10 @@ const StyledProjectCard = styled.div`
   @media (width <= 1350px) {
     width: 70rem;
   }
+
+  @media (width <= 680px) {
+    width: 38rem;
+  }
 `;
 const ImageContainer = styled.div`
   display: flex;
@@ -24,6 +28,10 @@ const Image = styled.img`
 
   @media (width <= 1350px) {
     height: 40rem;
+  }
+
+  @media (width <= 680px) {
+    height: 22rem;
   }
 `;
 const Technologies = styled.div`

@@ -13,6 +13,10 @@ const StyledProjectDetails = styled.div`
     width: 60rem;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  @media (width <= 600px) {
+    width: 38rem;
+  }
 `;
 const ImageContainer = styled.div`
   border-radius: 5px;
@@ -39,6 +43,10 @@ const Title = styled.h3`
   line-height: 1;
   text-align: center;
   color: var(--secundary-color);
+
+  @media (width <= 600px) {
+    margin-top: 0rem;
+  }
 `;
 const DeploymentButton = styled.a`
   position: absolute;

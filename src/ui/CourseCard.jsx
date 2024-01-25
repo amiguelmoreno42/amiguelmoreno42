@@ -9,7 +9,6 @@ const CourseContainer = styled(motion.div)`
   border-radius: 5px;
   margin: 2rem;
   padding: 1rem;
-  padding-left: 3rem;
   width: 100%;
   position: relative;
   max-width: 120rem;
@@ -139,7 +138,8 @@ const StyledList = styled.ul`
   gap: 1rem;
 
   p {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
     font-weight: 500;
   }
 
@@ -147,7 +147,7 @@ const StyledList = styled.ul`
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 `;
 
