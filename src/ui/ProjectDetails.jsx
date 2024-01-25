@@ -69,7 +69,7 @@ const DeploymentButton = styled.a`
   border-radius: 5px;
   font-weight: 600;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   transition: all 0.3s;
   width: 25rem;
 
@@ -79,7 +79,7 @@ const DeploymentButton = styled.a`
   }
 
   @media (width <= 680px) {
-    bottom: 9rem;
+    bottom: 7rem;
   }
 `;
 
@@ -95,7 +95,7 @@ const GitHubtButton = styled.a`
   padding: 0.2rem 1rem;
   border-radius: 5px;
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 2rem;
   transition: all 0.3s;
 
   &:hover {
@@ -104,7 +104,7 @@ const GitHubtButton = styled.a`
   }
 
   @media (width <= 680px) {
-    bottom: 4rem;
+    bottom: 3rem;
   }
 `;
 const TechEl = styled.div`
