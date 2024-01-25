@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import Heading from "../ui/Heading";
+import FormContainer from "../ui/FormContainer";
 import Section from "../ui/Section";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithubSquare } from "react-icons/fa";
 
 const SocialLinks = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 5rem;
 `;
 
 const SocialLinkContainer = styled.a`
@@ -27,6 +27,8 @@ function Contact() {
   return (
     <Section>
       <Heading as="h1">Contact</Heading>
+
+      <FormContainer></FormContainer>
 
       <SocialLinks>
         <SocialLinkContainer

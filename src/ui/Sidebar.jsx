@@ -13,7 +13,7 @@ const StyledSidebar = styled.aside`
   grid-template-rows: 1fr 3fr 1fr;
   grid-row: 1 / -1;
   //border-right: 1px dotted var(--secundary-color);
-  z-index: 9999;
+  z-index: 10;
 `;
 
 const LogoContainer = styled(Link)`

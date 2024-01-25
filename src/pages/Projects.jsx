@@ -1,4 +1,5 @@
 import Heading from "../ui/Heading";
+import ProjectsSectContainer from "../ui/ProjectsSectContainer";
 import Section from "../ui/Section";
 import SectionDescription from "../ui/SectionDescription";
 
@@ -15,6 +16,8 @@ function Projects() {
         to technical improvement. Step into my project corner and explore the
         culmination of my learning and development journey.
       </SectionDescription>
+
+      <ProjectsSectContainer></ProjectsSectContainer>
     </Section>
   );
 }

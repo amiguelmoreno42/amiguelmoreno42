@@ -4,9 +4,7 @@ const GlobalStyles = createGlobalStyle`
 :root{
     --primary-color: #262b31;
     --primary-color-light: #44505a; 
-    
     --secundary-color: #FFFFFF;
-    
     --terciary-color: #77f8e9;
 
   }
@@ -32,6 +30,15 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   font-size: 1.6rem;
+  user-select: none;
+}
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--terciary-color);
+  outline-offset: 2px;
 }
 
 `;

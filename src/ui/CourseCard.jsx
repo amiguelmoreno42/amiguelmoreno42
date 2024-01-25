@@ -9,11 +9,19 @@ const CourseContainer = styled(motion.div)`
   border-radius: 5px;
   margin: 2rem;
   padding: 1rem;
+  padding-left: 3rem;
   width: 100%;
   position: relative;
   max-width: 120rem;
   box-sizing: border-box;
   overflow: hidden;
+`;
+
+const CourseInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
 `;
 
 const CourseHeader = styled.div`
@@ -26,6 +34,7 @@ const CourseHeader = styled.div`
 const CourseDescription = styled.p`
   font-size: 1.8rem;
   padding: 2rem 0;
+  align-self: flex-start;
   text-align: justify;
 `;
 
@@ -40,14 +49,15 @@ const CoverImage = styled.img`
   align-self: center;
   border-radius: 5px;
   width: 100%;
-  min-width: 15rem;
-  max-width: 15rem;
+  min-width: 18rem;
+  max-width: 18rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `;
 
 const InstitutionImage = styled.img`
   width: 10rem;
   background-color: var(--secundary-color);
+
   padding: 0.5rem;
   margin: 1rem;
   border-radius: 5px;
@@ -145,10 +155,10 @@ const CourseCard = ({ course, onToggleDetails, isVisible, typeItem }) => {
             {course.date} ({course.duration})
           </Date>
         )}
-        <div>
+        <CourseInfo>
           <Heading as="h2">{course.title}</Heading>
           <CourseDescription>{course.description}</CourseDescription>
-        </div>
+        </CourseInfo>
         <ButtonDetails onClick={handleToggleDetails}>
           {isVisible ? "Hide Details" : "Show Details"}
         </ButtonDetails>
