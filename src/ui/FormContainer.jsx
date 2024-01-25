@@ -12,7 +12,7 @@ const StyledFormContainer = styled.div`
   }
 
   @media (width <= 800px) {
-    width: 45rem;
+    width: 40rem;
   }
 `;
 

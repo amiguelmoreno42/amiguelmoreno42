@@ -16,6 +16,11 @@ const StyledPresentation = styled.div`
   color: var(--secundary-color);
   align-items: center;
   position: relative;
+
+  @media (width <= 800px) {
+    justify-content: start;
+    padding-top: 16rem;
+  }
 `;
 
 const HelloText = styled.p`

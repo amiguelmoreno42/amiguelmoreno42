@@ -54,7 +54,7 @@ const LogoContainer = styled(Link)`
   @media (width <= 800px) {
     background-color: var(--primary-color-light);
     margin-right: -2rem;
-    border: 1px solid var(--terciary-color);
+    border: 3px solid var(--terciary-color);
     padding: 0.2rem;
     padding-bottom: 1.8rem;
     padding-right: 1.8rem;
@@ -77,7 +77,7 @@ const SectionsLinks = styled.div`
     width: 100%;
     gap: 0;
     height: 100%;
-    border-top: 1px solid var(--terciary-color);
+    border-top: 3px solid var(--terciary-color);
   }
 `;
 
