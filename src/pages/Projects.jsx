@@ -5,7 +5,7 @@ import SectionDescription from "../ui/SectionDescription";
 
 function Projects() {
   return (
-    <Section>
+    <Section id="projects">
       <Heading as="h1">Projects</Heading>
       <SectionDescription>
         Welcome to my projects section, each one reflects a step in my journey

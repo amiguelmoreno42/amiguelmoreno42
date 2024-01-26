@@ -87,7 +87,7 @@ const JobPosition = styled.p`
 
 function Presentation() {
   return (
-    <StyledPresentation>
+    <StyledPresentation id="presentation">
       <HelloText>
         {"Hello, World!"} <span className="wave">👋</span>
       </HelloText>

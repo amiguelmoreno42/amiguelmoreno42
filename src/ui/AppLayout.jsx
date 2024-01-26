@@ -1,6 +1,11 @@
 import { Outlet } from "react-router-dom";
 import styled from "styled-components";
 import Sidebar from "./Sidebar";
+import Presentation from "../pages/Presentation";
+import Education from "../pages/Education";
+import Work from "../pages/Work";
+import Projects from "../pages/Projects";
+import Contact from "../pages/Contact";
 
 const StyledAppLayout = styled.div`
   min-height: 100vh;
@@ -40,7 +45,11 @@ function AppLayout() {
       <Sidebar></Sidebar>
       <Main>
         <Container>
-          <Outlet></Outlet>
+          <Presentation />
+          <Work />
+          <Projects />
+          <Education />
+          <Contact />
         </Container>
       </Main>
     </StyledAppLayout>

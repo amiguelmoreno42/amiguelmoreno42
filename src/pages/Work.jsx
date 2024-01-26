@@ -14,7 +14,7 @@ function Work() {
   };
 
   return (
-    <Section>
+    <Section id="work">
       <Heading as="h1">Work Experience</Heading>
       <SectionDescription>
         Though my current work experience may not be directly tied to web

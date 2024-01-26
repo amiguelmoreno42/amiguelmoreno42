@@ -30,7 +30,7 @@ const SocialLinkContainer = styled.a`
 
 function Contact() {
   return (
-    <Section>
+    <Section id="contact">
       <Heading as="h1">Contact</Heading>
 
       <FormContainer></FormContainer>

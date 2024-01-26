@@ -15,7 +15,7 @@ function Education() {
   const educationInfoSorted = educationInfo.slice().reverse();
 
   return (
-    <Section>
+    <Section id="education">
       <Heading as="h1">Education</Heading>
       <SectionDescription>
         Explore through my web development courses and trainings. Discover the

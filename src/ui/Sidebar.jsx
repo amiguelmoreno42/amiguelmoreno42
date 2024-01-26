@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FaBriefcase, FaCodeFork, FaSchool } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
 import LogoM from "./LogoM";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 const StyledSidebar = styled.aside`
   height: 100vh;
@@ -27,7 +27,7 @@ const StyledSidebar = styled.aside`
   }
 `;
 
-const LogoContainer = styled(Link)`
+const LogoContainer = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +81,7 @@ const SectionsLinks = styled.div`
   }
 `;
 
-const SectionLinkContainer = styled(Link)`
+const SectionLinkContainer = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,27 +139,27 @@ const SectionLinkContainer = styled(Link)`
 function Sidebar() {
   return (
     <StyledSidebar>
-      <LogoContainer to={"/"}>
+      <LogoContainer href={"/#presentation"}>
         <LogoM />
       </LogoContainer>
 
       <SectionsLinks>
-        <SectionLinkContainer to="/education">
+        <SectionLinkContainer href="/#education">
           <FaSchool />
           <p>Education</p>
         </SectionLinkContainer>
 
-        <SectionLinkContainer to="/work">
+        <SectionLinkContainer href="/#work">
           <FaBriefcase />
           <p>Work Experience</p>
         </SectionLinkContainer>
 
-        <SectionLinkContainer to="/projects">
+        <SectionLinkContainer href="/#projects">
           <FaCodeFork />
           <p>Projects</p>
         </SectionLinkContainer>
 
-        <SectionLinkContainer to="/contact">
+        <SectionLinkContainer href="/#contact">
           <FaUser />
           <p>Contact</p>
         </SectionLinkContainer>
