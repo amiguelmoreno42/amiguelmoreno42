@@ -31,6 +31,10 @@ const Form = styled.form`
     padding: 1rem;
     border-radius: 5px;
     border: none;
+
+    @media (width <= 500px) {
+      font-size: 1.6rem;
+    }
   }
 `;
 

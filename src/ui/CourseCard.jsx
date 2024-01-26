@@ -14,6 +14,19 @@ const CourseContainer = styled(motion.div)`
   max-width: 120rem;
   box-sizing: border-box;
   overflow: hidden;
+
+  @media (width <= 1000px) {
+    width: 70%;
+  }
+
+  @media (width <= 800px) {
+    width: 90%;
+    margin: 2rem 0rem;
+  }
+
+  @media (width <= 500px) {
+    width: 95%;
+  }
 `;
 
 const CourseInfo = styled.div`
@@ -24,6 +37,10 @@ const CourseInfo = styled.div`
   @media (width <= 1000px) {
     margin-bottom: -2rem;
     margin-top: 1rem;
+  }
+
+  @media (width <= 800px) {
+    margin-top: 0rem;
   }
 `;
 
@@ -39,13 +56,42 @@ const CourseHeader = styled.div`
     padding: 1rem 2rem;
     gap: 2rem;
   }
+
+  @media (width <= 800px) {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: unset;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+
+  @media (width <= 500px) {
+    h2 {
+      font-size: 2rem;
+    }
+  }
 `;
 
 const CourseDescription = styled.p`
   font-size: 1.8rem;
-  padding: 2rem 0;
+  padding: 2rem 0 4rem;
   align-self: flex-start;
   text-align: justify;
+
+  @media (width <= 800px) {
+    display: none;
+  }
+`;
+
+const CourseDescriptionMobile = styled.p`
+  font-size: 1.8rem;
+  padding: 2rem 0 4rem;
+  align-self: flex-start;
+  text-align: justify;
+
+  @media (width >= 800px) {
+    display: none;
+  }
 `;
 
 const CoverImage = styled.img`
@@ -54,6 +100,10 @@ const CoverImage = styled.img`
     css`
       background-color: white;
       padding: 2rem;
+
+      @media (width <= 500px) {
+        padding: 1rem;
+      }
     `}
 
   align-self: center;
@@ -68,6 +118,18 @@ const CoverImage = styled.img`
     max-width: 25rem;
     margin-top: 3rem;
   }
+
+  @media (width <= 800px) {
+    min-width: 15rem;
+    max-width: 15rem;
+    margin-top: unset;
+  }
+
+  @media (width <= 500px) {
+    min-width: 10rem;
+    max-width: 10rem;
+    margin-top: unset;
+  }
 `;
 
 const InstitutionImage = styled.img`
@@ -80,6 +142,10 @@ const InstitutionImage = styled.img`
   position: absolute;
   right: 0;
   top: 0;
+
+  @media (width <= 500px) {
+    width: 7rem;
+  }
 `;
 
 const Date = styled.div`
@@ -93,10 +159,26 @@ const Date = styled.div`
     padding: 1.3rem;
     top: 0;
   }
+
+  @media (width <= 800px) {
+    display: none;
+  }
+`;
+
+const DateMobile = styled.div`
+  font-weight: 600;
+  font-size: 1.8rem;
+
+  color: var(--secundary-color);
+  padding: 1rem 2rem;
+
+  @media (width >= 800px) {
+    display: none;
+  }
 `;
 
 const ButtonDetails = styled.button`
-  min-width: 12rem;
+  white-space: nowrap;
   font-size: 1.6rem;
   font-weight: 600;
   align-self: flex-end;
@@ -111,12 +193,19 @@ const ButtonDetails = styled.button`
     background-color: var(--primary-color);
   }
 
-  @media (width <= 1000px) {
+  @media (width <= 800px) {
+    margin-top: 6rem;
+  }
+
+  @media (width <= 500px) {
+    font-size: 1.4rem;
   }
 `;
 
 const CourseDetails = styled(motion.div)`
   display: flex;
+  flex-direction: column;
+  padding: 2rem;
   align-items: center;
   img {
     width: 10rem;
@@ -131,8 +220,8 @@ const Duration = styled.p`
 `;
 
 const StyledList = styled.ul`
-  padding: 2rem;
   padding-bottom: 5rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -181,7 +270,7 @@ const CourseCard = ({ course, onToggleDetails, isVisible, $typeItem }) => {
           </Date>
         )}
         <CourseInfo>
-          <Heading as="h2">{course.title}</Heading>
+          <Heading as="h2">{course.title}</Heading>{" "}
           <CourseDescription>{course.description}</CourseDescription>
         </CourseInfo>
         <ButtonDetails onClick={handleToggleDetails}>
@@ -200,6 +289,15 @@ const CourseCard = ({ course, onToggleDetails, isVisible, $typeItem }) => {
             {course.duration && $typeItem === "education" && (
               <Duration>Duration: {course.duration}</Duration>
             )}
+            {$typeItem === "work" && (
+              <DateMobile>
+                {course.date} ({course.duration})
+              </DateMobile>
+            )}
+
+            <CourseDescriptionMobile>
+              {course.description}
+            </CourseDescriptionMobile>
             <StyledList>
               {$typeItem === "education" ? (
                 <p>I learned...</p>

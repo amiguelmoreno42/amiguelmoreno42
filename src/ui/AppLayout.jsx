@@ -1,4 +1,3 @@
-import { Outlet } from "react-router-dom";
 import styled from "styled-components";
 import Sidebar from "./Sidebar";
 import Presentation from "../pages/Presentation";

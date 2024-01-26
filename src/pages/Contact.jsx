@@ -13,14 +13,10 @@ const SocialLinks = styled.div`
 `;
 
 const SocialLinkContainer = styled.a`
-  font-size: 5rem;
+  font-size: 7rem;
   color: var(--secundary-color);
   transition: all 0.3s;
   line-height: 0;
-
-  @media (width <= 800px) {
-    font-size: 7rem;
-  }
 
   &:hover {
     transform: scale(1.1);
