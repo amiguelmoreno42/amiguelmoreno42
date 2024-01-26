@@ -9,7 +9,7 @@ const StyledPresentation = styled.div`
   ${NoSelect} // class to not let people select 
   
   width: 100%;
-  height: 100dvh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
