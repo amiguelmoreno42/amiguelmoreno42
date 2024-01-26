@@ -50,6 +50,10 @@ const ProfileImage = styled.img`
   border: 4px solid var(--terciary-color);
   margin-bottom: 5rem;
 
+  @media (width <= 1200px) {
+    width: 30rem;
+  }
+
   @media (width <= 800px) {
     width: 20rem;
   }

@@ -16,7 +16,7 @@ const StyledSidebar = styled.aside`
   z-index: 10;
 
   @media (width <= 800px) {
-    height: 8dvh;
+    height: 8rem;
     width: 100dvw;
     display: flex;
     align-items: center;
