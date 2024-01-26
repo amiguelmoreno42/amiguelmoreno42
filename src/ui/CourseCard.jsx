@@ -68,8 +68,10 @@ const CourseHeader = styled.div`
   }
 
   @media (width <= 500px) {
+    gap: unset;
     h2 {
       font-size: 1.6rem;
+      margin-left: 2rem;
     }
   }
 `;
