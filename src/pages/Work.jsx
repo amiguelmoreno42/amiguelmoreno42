@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { workInfo } from "../data/work-info";
 import CourseCard from "../ui/CourseCard";
 import Heading from "../ui/Heading";
@@ -6,12 +5,7 @@ import Section from "../ui/Section";
 import SectionDescription from "../ui/SectionDescription";
 
 function Work() {
-  const [visibleDetailsIndex, setVisibleDetailsIndex] = useState(null);
   const workInfoSorted = workInfo.slice().reverse();
-
-  const handleToggleDetails = (index) => {
-    setVisibleDetailsIndex((prevIndex) => (prevIndex === index ? null : index));
-  };
 
   return (
     <Section id="work">
@@ -26,12 +20,10 @@ function Work() {
         exciting industry.
       </SectionDescription>
 
-      {workInfoSorted.map((course, index) => (
+      {workInfoSorted.map((course) => (
         <CourseCard
           course={course}
           key={course.id}
-          onToggleDetails={() => handleToggleDetails(index)}
-          isVisible={visibleDetailsIndex === index}
           $typeItem="work"
         ></CourseCard>
       ))}

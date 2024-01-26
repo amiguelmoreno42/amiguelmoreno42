@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiChevronRight } from "react-icons/hi2";
 import Heading from "./Heading";
+import { useState } from "react";
 
 const CourseContainer = styled(motion.div)`
   background-color: var(--primary-color-light);
@@ -16,7 +17,7 @@ const CourseContainer = styled(motion.div)`
   overflow: hidden;
 
   @media (width <= 1000px) {
-    width: 70%;
+    width: 100%;
   }
 
   @media (width <= 800px) {
@@ -45,17 +46,18 @@ const CourseInfo = styled.div`
 `;
 
 const CourseHeader = styled.div`
+  position: relative;
   display: flex;
   align-items: flex-start;
   gap: 3rem;
   justify-content: space-between;
 
-  @media (width <= 1000px) {
+  /*   @media (width <= 1000px) {
     display: flex;
     flex-direction: column;
     padding: 1rem 2rem;
     gap: 2rem;
-  }
+  } */
 
   @media (width <= 800px) {
     flex-direction: row;
@@ -67,7 +69,7 @@ const CourseHeader = styled.div`
 
   @media (width <= 500px) {
     h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 `;
@@ -77,6 +79,12 @@ const CourseDescription = styled.p`
   padding: 2rem 0 4rem;
   align-self: flex-start;
   text-align: justify;
+  padding-right: 14rem;
+
+  @media (width <= 1000px) {
+    padding-right: 2rem;
+    margin-bottom: 4rem;
+  }
 
   @media (width <= 800px) {
     display: none;
@@ -113,11 +121,11 @@ const CoverImage = styled.img`
   max-width: 18rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-  @media (width <= 1000px) {
+  /* @media (width <= 1000px) {
     min-width: 25rem;
     max-width: 25rem;
     margin-top: 3rem;
-  }
+  } */
 
   @media (width <= 800px) {
     min-width: 15rem;
@@ -143,6 +151,12 @@ const InstitutionImage = styled.img`
   right: 0;
   top: 0;
 
+  @media (width <= 800px) {
+    margin: -0.5rem;
+    left: 0;
+    width: 7rem;
+  }
+
   @media (width <= 500px) {
     width: 7rem;
   }
@@ -151,13 +165,14 @@ const InstitutionImage = styled.img`
 const Date = styled.div`
   position: absolute;
   right: 0;
+
   font-weight: 500;
   color: var(--secundary-color);
   padding: 1rem 2rem;
 
   @media (width <= 1000px) {
     padding: 1.3rem;
-    top: 0;
+    top: -1rem;
   }
 
   @media (width <= 800px) {
@@ -178,15 +193,18 @@ const DateMobile = styled.div`
 `;
 
 const ButtonDetails = styled.button`
+  min-width: 12rem;
   white-space: nowrap;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  align-self: flex-end;
+  position: absolute;
   border-radius: 5px;
+  bottom: 0;
+  right: 0;
   border: none;
   background-color: transparent;
   color: var(--terciary-color);
-  padding: 0.5rem;
+  padding: 0.7rem;
   transition: all 0.4s;
 
   &:hover {
@@ -194,11 +212,14 @@ const ButtonDetails = styled.button`
   }
 
   @media (width <= 800px) {
-    margin-top: 6rem;
+    position: relative;
+    align-self: flex-end;
   }
 
   @media (width <= 500px) {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    right: 0;
+    padding: 0.3rem 0.7rem;
   }
 `;
 
@@ -240,9 +261,11 @@ const StyledList = styled.ul`
   }
 `;
 
-const CourseCard = ({ course, onToggleDetails, isVisible, $typeItem }) => {
+const CourseCard = ({ course, $typeItem }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
   const handleToggleDetails = () => {
-    onToggleDetails(!isVisible);
+    setIsVisible(!isVisible);
   };
 
   return (
