@@ -52,7 +52,7 @@ const LogoContainer = styled(Link)`
   }
 
   @media (width <= 800px) {
-    background-color: var(--primary-color-light);
+    background-color: var(--primary-color);
     margin-right: -2rem;
     border: 3px solid var(--terciary-color);
     padding: 0;
@@ -72,7 +72,7 @@ const SectionsLinks = styled.div`
 
   @media (width <= 800px) {
     flex-direction: row;
-    background-color: var(--primary-color-light);
+    background-color: var(--primary-color);
     justify-content: space-evenly;
     width: 100%;
     gap: 0;

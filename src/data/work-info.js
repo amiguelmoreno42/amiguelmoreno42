@@ -37,7 +37,7 @@ export const workInfo = [
     date: "Dec 2022 - Dec 2023",
     duration: "1 year",
     description:
-      "I started a successful project in collaboration with a friend, where we managed the social media accounts of different influencers. Our primary focus was to enhance reach, strengthen relationships with brands, and explore collaboration opportunities. At the end of the year, we decided to close the project to continue our learning journey and explore new career opportunities.",
+      "I started a successful project in collaboration with a friend, where we managed the social media accounts of different influencers. Our primary focus was to enhance reach, strengthen relationships with brands, and explore collaboration opportunities. At the end of the year, we decided to close the project to continue our learning journey and explore new career opportunities. I also created the website",
     skills: [
       "Executed various tasks related to community management, including content creation, moderation, and analytics tracking.",
       "Focused primarily on customer satisfaction through effective communication strategies and timely responses.",

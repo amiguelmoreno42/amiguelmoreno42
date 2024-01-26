@@ -12,7 +12,7 @@ export const projectsInfo = [
   },
   {
     id: 2,
-    title: "Social Live",
+    title: "Social Vibe",
     type: "web",
     description:
       "This website was created to improve the visibility of the services that I offered with my friend. We ended up reaching a lot of people and transforming them into our customers",
