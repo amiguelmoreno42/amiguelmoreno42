@@ -8,7 +8,7 @@ import Work from "./pages/Work";
 import Contact from "./pages/Contact";
 //import "./App.css";
 import { motion, AnimatePresence } from "framer-motion";
-import { pageVariants } from "./styles/FramerMotionHelpers";
+import { ScrollToTop, pageVariants } from "./styles/FramerMotionHelpers";
 
 const pageStyle = {
   width: "100%", // Establecer el ancho al 100%
@@ -19,6 +19,7 @@ function App() {
     <>
       <GlobalStyles></GlobalStyles>
       <BrowserRouter>
+        <ScrollToTop></ScrollToTop>
         <Routes>
           <Route path="/" element={<AppLayout />}>
             <Route

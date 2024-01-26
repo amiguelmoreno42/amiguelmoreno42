@@ -119,7 +119,7 @@ const TechEl = styled.div`
 const Description = styled.div`
   text-align: justify;
   margin-bottom: 4rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--secundary-color);
 `;
 const InfoContainer = styled.div`

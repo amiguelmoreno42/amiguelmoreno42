@@ -21,13 +21,17 @@ const Main = styled.main`
 const Container = styled.div`
   max-width: 140rem;
   margin: 0 auto;
-  margin-bottom: 15rem;
+
   display: flex;
   align-items: center;
   //justify-content: center;
   min-height: 100vh;
   flex-direction: column;
   gap: 3.2rem;
+
+  @media (width <= 800px) {
+    margin-bottom: 15rem;
+  }
 `;
 
 function AppLayout() {
