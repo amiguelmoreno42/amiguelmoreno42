@@ -63,14 +63,15 @@ const Title = styled.h1`
   font-size: 12rem;
   color: transparent;
   line-height: 1.6;
+  font-weight: 500;
   font-family: "Dangrek", cursive;
-  -webkit-text-stroke: 0.1px var(--secundary-color);
-  background-image: url(${backgroundImg});
+  color: white;
+  /*  background-image: url(${backgroundImg});
   -webkit-background-clip: text;
   background-clip: text;
   background-position: 0 0;
   animation: ${Back} 30s linear infinite alternate;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out; */
 
   @media (width <= 800px) {
     font-size: 6rem;

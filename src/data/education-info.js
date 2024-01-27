@@ -134,7 +134,7 @@ export const educationInfo = [
   },
   {
     id: 7,
-    title: "Sofware Engineering",
+    title: "Programming Campus 42 Malaga",
     institution: "42 Malaga",
     date: "Feb 2022 - Dec 2023",
     description:

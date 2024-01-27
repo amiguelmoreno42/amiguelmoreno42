@@ -80,7 +80,7 @@ const CourseDescription = styled.p`
   font-size: 1.8rem;
   padding: 2rem 0 4rem;
   align-self: flex-start;
-  text-align: justify;
+
   padding-right: 14rem;
 
   @media (width <= 1000px) {
@@ -95,9 +95,8 @@ const CourseDescription = styled.p`
 
 const CourseDescriptionMobile = styled.p`
   font-size: 1.8rem;
-  padding: 2rem 0 4rem;
+  padding: 4rem 2rem;
   align-self: flex-start;
-  text-align: justify;
 
   @media (width >= 800px) {
     display: none;
@@ -228,7 +227,6 @@ const ButtonDetails = styled.button`
 const CourseDetails = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  padding: 2rem;
   align-items: center;
   img {
     width: 10rem;
@@ -243,6 +241,7 @@ const Duration = styled.p`
 `;
 
 const StyledList = styled.ul`
+  padding: 2rem;
   padding-bottom: 5rem;
   width: 100%;
   display: flex;

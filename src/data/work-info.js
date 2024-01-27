@@ -37,13 +37,14 @@ export const workInfo = [
     date: "Dec 2022 - Dec 2023",
     duration: "1 year",
     description:
-      "I started a successful project in collaboration with a friend, where we managed the social media accounts of different influencers. Our primary focus was to enhance reach, strengthen relationships with brands, and explore collaboration opportunities. At the end of the year, we decided to close the project to continue our learning journey and explore new career opportunities. I also created the website",
+      "I started a successful project in collaboration with a friend, where we managed the social media accounts of different influencers. Our primary focus was to enhance reach, strengthen relationships with brands, and explore collaboration opportunities. At the end of the year, we decided to close the project to continue our learning journey and explore new career opportunities. I also created the website which helped us to reach and get a lot of clients",
     skills: [
-      "Executed various tasks related to community management, including content creation, moderation, and analytics tracking.",
-      "Focused primarily on customer satisfaction through effective communication strategies and timely responses.",
+      "I created the website which helped us to reach and get a lot of clients (you can find it in my projects section)",
+      "Executed tasks related to community management, including content creation, clients relations and analytics tracking.",
+      "Focused primarily on customer satisfaction through effective communication strategies and time responses.",
       "Optimization of work processes for smooth coordination within the team, enhancing community engagement.",
       "Developed skills to handle financial, administrative, and operational aspects of my business comprehensively.",
-      "Learned to adapt quickly and maintained resilience in the face of unexpected challenges.",
+      "Learned to adapt quickly and maintained resilience despite of unexpected challenges.",
       "Improved in building customer relationships, from acquisition to retention.",
       "Learned communication skills, crucial for negotiation, sales, and building a strong network of contacts.",
       "Became a constant learner, acquiring new skills and staying updated in a dynamic business environment.",

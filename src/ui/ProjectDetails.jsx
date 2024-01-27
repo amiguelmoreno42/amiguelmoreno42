@@ -117,7 +117,6 @@ const TechEl = styled.div`
 `;
 
 const Description = styled.div`
-  text-align: justify;
   margin-bottom: 4rem;
   font-size: 2rem;
   color: var(--secundary-color);
@@ -127,6 +126,7 @@ const InfoContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  text-align-last: auto;
   padding: 3rem;
 
   @media (width <= 1000px) {

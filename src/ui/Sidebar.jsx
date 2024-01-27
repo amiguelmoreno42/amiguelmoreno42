@@ -144,21 +144,18 @@ function Sidebar() {
       </LogoContainer>
 
       <SectionsLinks>
-        <SectionLinkContainer href="/#education">
-          <FaSchool />
-          <p>Education</p>
-        </SectionLinkContainer>
-
         <SectionLinkContainer href="/#work">
           <FaBriefcase />
           <p>Work Experience</p>
         </SectionLinkContainer>
-
         <SectionLinkContainer href="/#projects">
           <FaCodeFork />
           <p>Projects</p>
         </SectionLinkContainer>
-
+        <SectionLinkContainer href="/#education">
+          <FaSchool />
+          <p>Education</p>
+        </SectionLinkContainer>
         <SectionLinkContainer href="/#contact">
           <FaUser />
           <p>Contact</p>

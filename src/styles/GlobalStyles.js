@@ -26,7 +26,7 @@ html {
 scroll-behavior: smooth;
 transition: scroll-behavior 5s;
 
-  @media (width <= 1200px) {
+  @media (width <= 1500px) {
     font-size: 50%;
   }
 
