@@ -186,7 +186,7 @@ const DateMobile = styled.div`
   font-size: 1.8rem;
 
   color: var(--secundary-color);
-  padding: 1rem 2rem;
+  padding: 4rem 2rem 0;
 
   @media (width >= 800px) {
     display: none;
@@ -242,7 +242,7 @@ const Duration = styled.p`
 
 const StyledList = styled.ul`
   padding: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 8rem;
   width: 100%;
   display: flex;
   flex-direction: column;
