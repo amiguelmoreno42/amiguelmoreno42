@@ -7,6 +7,7 @@ import profileImg from "../assets/img/utils/profile-photo.jpeg";
 import { HiArrowDown } from "react-icons/hi2";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaFileDownload, FaGithubSquare } from "react-icons/fa";
+import cvPdf from "../../public/cv.pdf";
 
 const StyledPresentation = styled.div`
   //${NoSelect} // class to not let people select
@@ -176,7 +177,7 @@ function Presentation() {
 
         <SocialLinkContainer
           target="_blank"
-          href="public/cv.pdf"
+          href={cvPdf}
           download="MiguelMorenoCV"
           title="Click to download my CV"
           rel="noreferrer"
