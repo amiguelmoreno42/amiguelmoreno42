@@ -177,7 +177,7 @@ function Presentation() {
         <SocialLinkContainer
           target="_blank"
           href="../../public/cv.pdf"
-          download="Miguel Moreno CV.pdf"
+          download="MiguelMorenoCV.pdf"
           title="Click to download my CV"
           rel="noreferrer"
         >
