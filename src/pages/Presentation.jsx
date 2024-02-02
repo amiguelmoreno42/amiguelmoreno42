@@ -1,13 +1,16 @@
 import styled from "styled-components";
 //import { HiArrowDown } from "react-icons/hi2";
-import { WaveAnimation } from "../styles/Animations";
+import { WaveAnimation, ZoomInZoomOut } from "../styles/Animations";
 import { NoSelect } from "../styles/StylesHelpers";
 //import backgroundImg from "../assets/img/utils/background-name.png";
 import profileImg from "../assets/img/utils/profile-photo.jpeg";
+import { HiArrowDown } from "react-icons/hi2";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaFileDownload, FaGithubSquare } from "react-icons/fa";
 
 const StyledPresentation = styled.div`
-  ${NoSelect} // class to not let people select 
-  
+  //${NoSelect} // class to not let people select
+
   width: 100%;
   height: 100vh;
   display: flex;
@@ -84,16 +87,86 @@ const JobPosition = styled.p`
   }
 `;
 
+const SocialLinks = styled.div`
+  position: absolute;
+  right: 0;
+  top: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+`;
+
+const SocialLinkContainer = styled.div`
+  font-size: 5rem;
+  color: var(--secundary-color);
+  transition: all 0.5s;
+  line-height: 0;
+
+  &:hover {
+    color: var(--terciary-color);
+  }
+`;
+
+const ArrowDownLink = styled.a`
+  background-color: var(--terciary-color);
+  font-size: 5rem;
+  padding: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 2rem;
+
+  color: var(--primary-color);
+  border-radius: 5px;
+  animation: ${ZoomInZoomOut} 2s ease infinite;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    color: var(--secundary-color);
+  }
+`;
+
 function Presentation() {
   return (
     <StyledPresentation id="presentation">
       <HelloText>
         {"Hello, World!"} <span className="wave">👋</span>
       </HelloText>
+      <SocialLinks>
+        <SocialLinkContainer
+          target="_blank"
+          href="https://www.linkedin.com/in/miguelmoreno00/"
+          rel="noreferrer"
+        >
+          <FaLinkedin />
+        </SocialLinkContainer>
+
+        <SocialLinkContainer
+          target="_blank"
+          href="https://github.com/amiguelmoreno"
+          rel="noreferrer"
+        >
+          <FaGithubSquare />
+        </SocialLinkContainer>
+
+        <SocialLinkContainer
+          target="_blank"
+          href="https://github.com/amiguelmoreno"
+          rel="noreferrer"
+        >
+          <FaFileDownload />
+        </SocialLinkContainer>
+      </SocialLinks>
       <ProfileImage src={profileImg} alt="profile image" />
       <Title>Miguel Moreno</Title>
       <JobPosition>Software Developer</JobPosition>
-      <ArrowDownLink to="/education">
+      <ArrowDownLink href="#work">
         <HiArrowDown />
       </ArrowDownLink>
     </StyledPresentation>
