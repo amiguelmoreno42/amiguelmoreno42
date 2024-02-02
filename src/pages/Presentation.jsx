@@ -89,20 +89,39 @@ const JobPosition = styled.p`
 
 const SocialLinks = styled.div`
   position: absolute;
-  right: 0;
-  top: 15%;
+  right: 5rem;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 3rem;
+
+  @media (width <= 1050px) {
+    flex-direction: row;
+    top: 7rem;
+    left: 10rem;
+    right: unset;
+    transform: unset;
+  }
+
+  @media (width <= 800px) {
+    flex-direction: column;
+    left: 3rem;
+    top: 3rem;
+  }
 `;
 
-const SocialLinkContainer = styled.div`
-  font-size: 5rem;
+const SocialLinkContainer = styled.a`
+  font-size: 6rem;
   color: var(--secundary-color);
   transition: all 0.5s;
   line-height: 0;
+
+  @media (width <= 800px) {
+    font-size: 4rem;
+  }
 
   &:hover {
     color: var(--terciary-color);
@@ -157,7 +176,9 @@ function Presentation() {
 
         <SocialLinkContainer
           target="_blank"
-          href="https://github.com/amiguelmoreno"
+          href="../../public/Miguel Moreno CV English.pdf"
+          download="Miguel Moreno CV"
+          title="Click to download my CV"
           rel="noreferrer"
         >
           <FaFileDownload />
