@@ -1,8 +1,8 @@
 import styled from "styled-components";
 //import { HiArrowDown } from "react-icons/hi2";
-import { Back, WaveAnimation } from "../styles/Animations";
+import { WaveAnimation } from "../styles/Animations";
 import { NoSelect } from "../styles/StylesHelpers";
-import backgroundImg from "../assets/img/utils/background-name.png";
+//import backgroundImg from "../assets/img/utils/background-name.png";
 import profileImg from "../assets/img/utils/profile-photo.jpeg";
 
 const StyledPresentation = styled.div`
@@ -66,12 +66,6 @@ const Title = styled.h1`
   font-weight: 500;
   font-family: "Dangrek", cursive;
   color: white;
-  /*  background-image: url(${backgroundImg});
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-position: 0 0;
-  animation: ${Back} 30s linear infinite alternate;
-  animation-timing-function: ease-in-out; */
 
   @media (width <= 800px) {
     font-size: 6rem;
@@ -99,9 +93,9 @@ function Presentation() {
       <ProfileImage src={profileImg} alt="profile image" />
       <Title>Miguel Moreno</Title>
       <JobPosition>Software Developer</JobPosition>
-      {/*  <ArrowDownLink to="/education">
+      <ArrowDownLink to="/education">
         <HiArrowDown />
-      </ArrowDownLink> */}
+      </ArrowDownLink>
     </StyledPresentation>
   );
 }

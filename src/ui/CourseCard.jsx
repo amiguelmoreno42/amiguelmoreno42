@@ -15,6 +15,12 @@ const CourseContainer = styled(motion.div)`
   max-width: 120rem;
   box-sizing: border-box;
   overflow: hidden;
+  transition: box-shadow 0.3s;
+  box-shadow: rgba(170, 170, 170, 0.35) 0px 5px 15px;
+
+  &:hover {
+    box-shadow: unset;
+  }
 
   @media (width <= 1000px) {
     width: 100%;

@@ -6,7 +6,7 @@ export const educationInfo = [
     date: "Aug 2020 - Jan 2022",
     duration: "200 hours",
     description:
-      "Throughout my work experience, I discovered the motivation and enthusiasm to delve into web development during my free time. I   started a self-taught journey, dedicating time to explore and understand essential technologies such as HTML, CSS, Git, GitHub, JavaScript and more.",
+      "Throughout my work experience, I discovered the motivation and enthusiasm to delve into web development during my free time. I started a self-taught journey, dedicating time to explore and understand essential technologies such as HTML, CSS, Git, GitHub, JavaScript and more.",
     skills: [
       "Basic JavaScript Course",
       "CSS Grid Layout Course",
@@ -179,6 +179,6 @@ export const educationInfo = [
     imageInstitution:
       import.meta.env.BASE_URL + "../../education/logos/udemy-logo.svg.png",
     imageEducation:
-      import.meta.env.BASE_URL + "../../education/covers/react.jpeg",
+      import.meta.env.BASE_URL + "../../education/covers/react.jpg",
   },
 ];

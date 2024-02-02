@@ -27,12 +27,6 @@ export const WaveAnimation = keyframes`
   }
 `;
 
-export const Back = keyframes`
-  100% {
-      background-position: 2000px 0;
-  }
-`;
-
 export const ZoomInZoomOut = keyframes`
   0% {
       transform: scale(1, 1);
