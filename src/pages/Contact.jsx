@@ -13,7 +13,7 @@ const SocialLinks = styled.div`
 `;
 
 const SocialLinkContainer = styled.a`
-  font-size: 7rem;
+  font-size: 6rem;
   color: var(--secundary-color);
   transition: all 0.3s;
   line-height: 0;

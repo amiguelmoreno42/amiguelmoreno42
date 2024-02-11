@@ -7,7 +7,7 @@ import profileImg from "../assets/img/utils/profile-photo.jpeg";
 import { HiArrowDown } from "react-icons/hi2";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaFileDownload, FaGithubSquare } from "react-icons/fa";
-import cvPdf from "../../public/cv.pdf";
+import cvPdf from "/cv.pdf";
 
 const StyledPresentation = styled.div`
   //${NoSelect} // class to not let people select
@@ -149,6 +149,10 @@ const ArrowDownLink = styled.a`
 
   &:hover {
     color: var(--secundary-color);
+  }
+
+  @media (width <= 800px) {
+    bottom: 10rem;
   }
 `;
 
