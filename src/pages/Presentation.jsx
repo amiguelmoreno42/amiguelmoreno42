@@ -152,7 +152,7 @@ const ArrowDownLink = styled.a`
   }
 
   @media (width <= 800px) {
-    bottom: 10rem;
+    bottom: 20rem;
   }
 `;
 
