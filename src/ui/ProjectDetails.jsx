@@ -7,7 +7,7 @@ const StyledProjectDetails = styled.div`
   display: grid;
   position: relative;
 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
   @media (width <= 1000px) {
     width: 60rem;
@@ -46,7 +46,7 @@ const Technologies = styled.div`
   gap: 1rem;
 `;
 const Title = styled.h3`
-  font-size: 4.2rem;
+  font-size: 3.2rem;
   width: 100%;
   margin-top: 2rem;
   line-height: 1;
@@ -69,7 +69,7 @@ const DeploymentButton = styled.a`
   border-radius: 5px;
   font-weight: 600;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
   transition: all 0.3s;
   width: 25rem;
 
@@ -95,7 +95,7 @@ const GitHubtButton = styled.a`
   padding: 0.2rem 1rem;
   border-radius: 5px;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.8rem;
   transition: all 0.3s;
 
   &:hover {
@@ -110,15 +110,15 @@ const GitHubtButton = styled.a`
 const TechEl = styled.div`
   background-color: var(--secundary-color);
   color: var(--primary-color);
-  font-size: 1.8rem;
-  padding: 0.2rem 0.6rem;
+  font-size: 1.6rem;
+  padding: 0.1rem 0.6rem;
   font-weight: 600;
   border-radius: 5px;
 `;
 
 const Description = styled.div`
   margin-bottom: 4rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--secundary-color);
 `;
 const InfoContainer = styled.div`
@@ -128,6 +128,7 @@ const InfoContainer = styled.div`
   justify-content: space-evenly;
   text-align-last: auto;
   padding: 3rem;
+  grid-column: span 2;
 
   @media (width <= 1000px) {
     grid-column: span 2;
