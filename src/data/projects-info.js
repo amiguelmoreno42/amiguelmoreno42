@@ -15,7 +15,7 @@ export const projectsInfo = [
     title: "Social Vibe",
     type: "web",
     description:
-      "This website was created to improve the visibility of the services that I offered with my friend. We ended up reaching a lot of people and transforming them into our customers",
+      "This website was created to improve the visibility of the services that I offered with my friend. We ended up reaching a lot of people and turning them into our customers.",
     technologies: ["React", "Sass"],
     deployLink: "https://socialvibeagency.netlify.app/",
     cover: import.meta.env.BASE_URL + "../../projects/social-vibe.png",

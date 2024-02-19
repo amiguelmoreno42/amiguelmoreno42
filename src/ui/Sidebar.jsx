@@ -55,7 +55,7 @@ const LogoContainer = styled.a`
     margin-right: -2rem;
     border: 3px solid var(--terciary-color);
     padding: 0;
-    padding-bottom: 1.4rem;
+    padding-bottom: 1.2rem;
     padding-right: 1.4rem;
     border-radius: 5px;
   }

@@ -138,7 +138,7 @@ const InfoContainer = styled.div`
   justify-content: space-evenly;
   text-align-last: auto;
   gap: 3rem;
-  padding: 10rem 3rem;
+  padding: 3rem 3rem 10rem;
   grid-column: span 2;
 
   @media (width <= 1000px) {

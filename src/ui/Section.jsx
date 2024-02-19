@@ -8,6 +8,7 @@ const Section = styled.div`
   flex-direction: column;
   color: var(--secundary-color);
   align-items: center;
+  margin-top: 5rem;
   position: relative;
   padding: 5rem;
 
