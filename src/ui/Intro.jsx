@@ -7,7 +7,7 @@ import { Opacity } from "../styles/Animations";
 const StyledIntro = styled.div`
   background-color: var(--primary-color);
   border-bottom: 1rem solid var(--terciary-color);
-  height: 100vh;
+  height: 100dvh;
   top: 0;
   left: 0;
   width: 100%;
