@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import logo from "../assets/img/utils/favicon.png";
 import styled from "styled-components";
 import LogoM from "./LogoM";
 import { Opacity } from "../styles/Animations";

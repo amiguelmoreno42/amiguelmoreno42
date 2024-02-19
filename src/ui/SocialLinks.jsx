@@ -25,8 +25,8 @@ const StyledSocialLinks = styled.div`
 
   @media (width <= 800px) {
     flex-direction: column;
-    left: 3rem;
-    top: 3rem;
+    left: 1rem;
+    top: 1rem;
   }
 `;
 

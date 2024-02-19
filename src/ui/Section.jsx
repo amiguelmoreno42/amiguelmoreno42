@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Section = styled.div`
   width: 100%;
+
   display: flex;
   // min-height: 100vh;
   flex-direction: column;
@@ -12,6 +13,7 @@ const Section = styled.div`
 
   @media (width <= 800px) {
     padding: 2rem;
+    width: 100vw;
   }
 `;
 

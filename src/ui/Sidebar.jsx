@@ -143,10 +143,10 @@ function Sidebar() {
       </LogoContainer>
 
       <SectionsLinks>
-        <SectionLinkContainer href="/#about">
+        {/*  <SectionLinkContainer href="/#about">
           <FaUser />
           <p>About</p>
-        </SectionLinkContainer>
+        </SectionLinkContainer> */}
         <SectionLinkContainer href="/#work">
           <FaBriefcase />
           <p>Work Experience</p>

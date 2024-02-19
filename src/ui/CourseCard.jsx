@@ -20,6 +20,10 @@ const CourseContainer = styled(motion.div)`
 
   &:hover {
     box-shadow: rgba(170, 170, 170, 0.35) 0px 5px 15px;
+
+    @media (width <= 800px) {
+      box-shadow: none;
+    }
   }
 
   @media (width <= 1000px) {
@@ -27,12 +31,14 @@ const CourseContainer = styled(motion.div)`
   }
 
   @media (width <= 800px) {
-    width: 90%;
+    background-color: transparent;
+    border-bottom: 2px solid var(--terciary-color);
+    width: 90vw;
     margin: 2rem 0rem;
+    border-radius: 0px;
   }
 
   @media (width <= 500px) {
-    width: 95%;
   }
 `;
 

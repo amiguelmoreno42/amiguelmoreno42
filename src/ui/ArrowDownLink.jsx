@@ -31,7 +31,7 @@ const StyledArrowDownLink = styled.a`
 
 function ArrowDownLink() {
   return (
-    <StyledArrowDownLink href="#about">
+    <StyledArrowDownLink href="#work">
       <HiArrowDown />
     </StyledArrowDownLink>
   );

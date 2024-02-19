@@ -4,7 +4,7 @@ import Presentation from "../pages/Presentation";
 import Education from "../pages/Education";
 import Work from "../pages/Work";
 import Projects from "../pages/Projects";
-import About from "../pages/About";
+//import About from "../pages/About";
 import Intro from "./Intro";
 //import Contact from "../pages/Contact";
 
@@ -48,7 +48,7 @@ function AppLayout() {
       <Main>
         <Container>
           <Presentation />
-          <About></About>
+          {/*  <About></About> */}
           <Work />
           <Projects />
           <Education />

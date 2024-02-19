@@ -3,7 +3,8 @@ import styled from "styled-components";
 const StyledProjectCard = styled.div`
   background-color: var(--primary-color-light);
   width: 35rem;
-
+  display: flex;
+  flex-direction: column;
   border-radius: 5px;
   position: relative;
   padding: 1rem;
@@ -15,12 +16,13 @@ const StyledProjectCard = styled.div`
     box-shadow: rgba(170, 170, 170, 0.35) 0px 5px 15px;
   }
 
-  @media (width <= 1350px) {
-    width: 70rem;
-  }
-
-  @media (width <= 680px) {
-    width: 38rem;
+  @media (width <= 800px) {
+    width: 90vw;
+    flex-direction: row;
+    flex: 1;
+    background-color: transparent;
+    border-bottom: 2px solid var(--terciary-color);
+    border-radius: 0px;
   }
 `;
 const ImageContainer = styled.div`
@@ -33,12 +35,9 @@ const Image = styled.img`
   width: 100%;
   border-radius: 5px;
 
-  @media (width <= 1350px) {
-    height: 40rem;
-  }
-
-  @media (width <= 680px) {
-    height: 22rem;
+  @media (width <= 880px) {
+    height: unset;
+    width: 12rem;
   }
 `;
 const Technologies = styled.div`
@@ -48,11 +47,22 @@ const Technologies = styled.div`
   display: flex;
   gap: 1rem;
   margin-top: -1rem;
+
+  @media (width <= 880px) {
+    top: unset;
+    bottom: -1.7rem;
+    right: unset;
+    left: 0;
+  }
 `;
 const Title = styled.h3`
   font-size: 2.4rem;
   line-height: 2.5;
   padding: 1rem;
+
+  @media (width <= 880px) {
+    padding-left: 2rem;
+  }
 `;
 const MoreButton = styled.div`
   position: absolute;
@@ -94,8 +104,10 @@ function ProjectCard({ project }) {
       <ImageContainer>
         <Image src={project.cover}></Image>
       </ImageContainer>
-      <Title>{project.title}</Title>
-      <MoreButton>See More</MoreButton>
+      <div>
+        <Title>{project.title}</Title>
+        <MoreButton>See More</MoreButton>
+      </div>
     </StyledProjectCard>
   );
 }

@@ -9,6 +9,7 @@ const Heading = styled.h1`
       align-self: center;
 
       @media (width <= 800px) {
+        font-size: 5rem;
         align-self: center;
       }
     `}

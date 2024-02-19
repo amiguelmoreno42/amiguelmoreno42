@@ -6,7 +6,6 @@ const StyledProjectDetails = styled.div`
   width: 120rem;
   display: grid;
   position: relative;
-
   grid-template-columns: repeat(4, 1fr);
 
   @media (width <= 1000px) {
@@ -25,18 +24,29 @@ const StyledProjectDetails = styled.div`
 const ImageContainer = styled.div`
   border-radius: 5px;
   grid-column: span 2;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (width <= 680px) {
+    display: unset;
+    padding: unset;
+    border-radius: unset;
+  }
 `;
 const Image = styled.img`
   width: 100%;
-  height: 100%;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
+  border-radius: 5px;
+  border: 5px solid var(--secundary-color);
 
   @media (width <= 1000px) {
     border-radius: 5px;
   }
 
   @media (width <= 680px) {
+    border-radius: unset;
+    border: none;
     width: 100dvw;
     height: auto;
   }
@@ -127,7 +137,8 @@ const InfoContainer = styled.div`
   align-items: center;
   justify-content: space-evenly;
   text-align-last: auto;
-  padding: 3rem;
+  gap: 3rem;
+  padding: 10rem 3rem;
   grid-column: span 2;
 
   @media (width <= 1000px) {

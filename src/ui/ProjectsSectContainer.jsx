@@ -5,13 +5,19 @@ import ProjectModal from "./ProjectModal";
 const StyledProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  //width: 100vw;
   margin-top: 2rem;
 `;
 const HeaderProyectSect = styled.h2`
   width: max-content;
+
   font-size: 2.8rem;
-  margin-bottom: 6rem;
+  margin: 4rem 0;
+
+  @media (width <= 800px) {
+    align-self: center;
+    //e width: 100vw;
+  }
 `;
 
 const ProyectsContainer = styled.div`
@@ -25,6 +31,12 @@ const ProyectsContainer = styled.div`
   justify-content: center;
   column-gap: 3rem;
   row-gap: 6rem;
+
+  @media (width <= 800px) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 
 const StyledProjectsSectContainer = styled.div`

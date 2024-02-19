@@ -1,14 +1,14 @@
 export const projectsInfo = [
   {
     id: 1,
-    title: "Magic Home",
+    title: "MyMoney",
     type: "web",
     description:
-      "The main goal of this project is to use almost everything I have learnt about HTML5, CSS3 and Sass. Achiving a proffesional looking website and a clean design.",
-    technologies: ["HTML5", "CSS3", "Sass", "JavaScript"],
-    repoLink: "https://github.com/amiguelmoreno/MagicHome?tab=readme-ov-file",
-    deployLink: "https://magichome.netlify.app/",
-    cover: import.meta.env.BASE_URL + "../../projects/magic-home-cover.png",
+      "This is a small money app tracker built using React and some of his libraries functionalities like React-router-dom, React-Query, Reusable components (Modal, Butttons, Inputs...), Hooks, React-hook-form, ContextApi, Framer-motion",
+    technologies: ["React", "Styled Components"],
+    repoLink: "https://github.com/amiguelmoreno/MyMoney",
+    deployLink: "https://mymoneyio.netlify.app/",
+    cover: import.meta.env.BASE_URL + "../../projects/mymoney.png",
   },
   {
     id: 2,
@@ -22,14 +22,14 @@ export const projectsInfo = [
   },
   {
     id: 3,
-    title: "MyMoney",
+    title: "Magic Home",
     type: "web",
     description:
-      "This is a small money app tracker built using React and some of his libraries functionalities like React-router-dom, React-Query, Reusable components (Modal, Butttons, Inputs...), Hooks, React-hook-form, ContextApi, Framer-motion",
-    technologies: ["React", "Styled Components"],
-    repoLink: "https://github.com/amiguelmoreno/MyMoney",
-    deployLink: "https://mymoneyio.netlify.app/",
-    cover: import.meta.env.BASE_URL + "../../projects/mymoney.png",
+      "The main goal of this project is to use almost everything I have learnt about HTML5, CSS3 and Sass. Achiving a proffesional looking website and a clean design.",
+    technologies: ["HTML5", "CSS3", "Sass"],
+    repoLink: "https://github.com/amiguelmoreno/MagicHome?tab=readme-ov-file",
+    deployLink: "https://magichome.netlify.app/",
+    cover: import.meta.env.BASE_URL + "../../projects/magic-home-cover.png",
   },
   {
     id: 4,
