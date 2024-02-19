@@ -4,7 +4,9 @@ import Presentation from "../pages/Presentation";
 import Education from "../pages/Education";
 import Work from "../pages/Work";
 import Projects from "../pages/Projects";
-import Contact from "../pages/Contact";
+import About from "../pages/About";
+import Intro from "./Intro";
+//import Contact from "../pages/Contact";
 
 const StyledAppLayout = styled.div`
   min-height: 100vh;
@@ -41,14 +43,16 @@ const Container = styled.div`
 function AppLayout() {
   return (
     <StyledAppLayout>
+      <Intro></Intro>
       <Sidebar></Sidebar>
       <Main>
         <Container>
           <Presentation />
+          <About></About>
           <Work />
           <Projects />
           <Education />
-          <Contact />
+          {/*  <Contact /> */}
         </Container>
       </Main>
     </StyledAppLayout>

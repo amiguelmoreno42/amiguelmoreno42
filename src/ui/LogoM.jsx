@@ -6,14 +6,15 @@ const StyledLogo = styled.div`
   align-items: center;
   padding: 1rem;
   svg {
-    fill: var(--secundary-color);
-    width: 8rem;
-    height: 8rem;
+    fill: var(--terciary-color);
+
+    width: 10rem;
+    height: 10rem;
     transition: all 0.3s;
 
     &:hover {
       transform: scale(1.1);
-      fill: var(--terciary-color);
+      fill: var(--secundary-color);
     }
   }
 `;

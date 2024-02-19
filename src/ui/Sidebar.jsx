@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { FaBriefcase, FaCodeFork, FaSchool } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
 import LogoM from "./LogoM";
-//import { Link } from "react-router-dom";
 
 const StyledSidebar = styled.aside`
   height: 100vh;
@@ -144,6 +143,10 @@ function Sidebar() {
       </LogoContainer>
 
       <SectionsLinks>
+        <SectionLinkContainer href="/#about">
+          <FaUser />
+          <p>About</p>
+        </SectionLinkContainer>
         <SectionLinkContainer href="/#work">
           <FaBriefcase />
           <p>Work Experience</p>
@@ -155,10 +158,6 @@ function Sidebar() {
         <SectionLinkContainer href="/#education">
           <FaSchool />
           <p>Education</p>
-        </SectionLinkContainer>
-        <SectionLinkContainer href="/#contact">
-          <FaUser />
-          <p>Contact</p>
         </SectionLinkContainer>
       </SectionsLinks>
     </StyledSidebar>

@@ -38,3 +38,10 @@ export const ZoomInZoomOut = keyframes`
       transform: scale(1, 1);
   }
 `;
+
+export const Opacity = keyframes`
+    100% {
+      opacity: 1;
+      // transform: translateX(0%);
+    }
+  `;

@@ -8,10 +8,11 @@ const StyledProjectCard = styled.div`
   position: relative;
   padding: 1rem;
   transition: box-shadow 0.3s;
-  box-shadow: rgba(170, 170, 170, 0.35) 0px 5px 15px;
+  //
+  //border: 1px solid var(--terciary-color);
 
   &:hover {
-    box-shadow: unset;
+    box-shadow: rgba(170, 170, 170, 0.35) 0px 5px 15px;
   }
 
   @media (width <= 1350px) {

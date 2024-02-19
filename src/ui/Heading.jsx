@@ -4,9 +4,9 @@ const Heading = styled.h1`
   ${(props) =>
     props.as === "h1" &&
     css`
-      font-size: 5rem;
+      font-size: 7rem;
       font-weight: 700;
-      align-self: flex-start;
+      align-self: center;
 
       @media (width <= 800px) {
         align-self: center;
