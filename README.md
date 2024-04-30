@@ -2,7 +2,7 @@
 <br><br/>
 <p>  I study Front-End Development, delving into HTML5, CSS3, JavaScript, Git, React, as well as other essential frameworks and libraries. 💻
   
-  Here, you will find all the interesting projects that I have done or I'm currently doing. I hope you like it and enjoy! 😁👍
+  Here, you will find all the interesting projects that I have done or I'm currently doing. I hope you like them and enjoy! 😁👍
 </p> 
 <br><br/>
 <p align="center">
