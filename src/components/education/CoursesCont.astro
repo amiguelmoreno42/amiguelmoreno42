@@ -1,0 +1,15 @@
+---
+import { educationInfo } from '@/assets/data/education-info'
+import { Image } from 'astro:assets'
+---
+
+<div class="flex flex-col gap-6">
+	{
+		educationInfo.map((course) => (
+			<div class="flex gap-5">
+				<h1 class="text-secondary">{course.title}</h1>
+				<Image src={course.imageEducation} alt={course.title} width={50} height={50} />
+			</div>
+		))
+	}
+</div>

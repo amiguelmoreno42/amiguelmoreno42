@@ -1,12 +1,15 @@
 ---
 import Layout from '../layouts/MainLayout.astro'
+import SocialsImage from '../components/home/SocialsImage.astro'
+import Description from '@/components/home/Description.astro'
 ---
 
-<Layout title="Welcome to Astro.">
-	<h1 class="text-3xl text-red-100">hello</h1><h1
-		class="font-robotoSlab font-200 text-2xl text-white"
-	>
-		Este es un título con Roboto Slab.
-	</h1>
-	<p class="text-2xl font-[300] text-white">Este es un párrafo con Lato.</p>
+<Layout title="Miguel Moreno's Portfolio">
+	<div class="mt-20 flex w-full flex-col items-center justify-center">
+		<SocialsImage />
+		<h1 class="mt-10 text-3xl dark:text-secondary">Miguel Moreno</h1>
+		<h2 class="p-2 dark:text-secondary">Software Developer</h2>
+
+		<Description />
+	</div>
 </Layout>

@@ -1,10 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	darkMode: ['class'],
+	darkMode: ['media'],
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	prefix: '',
 	theme: {
 		fontFamily: {
+			sans: [
+				'RobotoSlab',
+				'system-ui',
+				'-apple-system',
+				'ui-sans-serif',
+				'BlinkMacSystemFont',
+				'Segoe UI',
+				'Roboto',
+				'Helvetica Neue',
+				'Arial',
+				'sans-serif'
+			],
 			robotoSlab: ['RobotoSlab', 'serif'],
 			lato: ['Lato', 'sans-serif']
 		},

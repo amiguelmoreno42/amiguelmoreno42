@@ -1,7 +1,12 @@
 ---
 import Layout from '../layouts/MainLayout.astro'
+import CoursesCont from '../components/education/CoursesCont.astro'
+import TechnologiesCont from '@/components/education/TechnologiesCont.astro'
 ---
 
 <Layout title="Education">
-	<h1>education</h1>
+	<div class="flex flex-col gap-20">
+		<TechnologiesCont />
+		<CoursesCont />
+	</div>
 </Layout>

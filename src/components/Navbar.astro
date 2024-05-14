@@ -4,11 +4,11 @@ import { FaBriefcase, FaCodeFork, FaSchool } from 'react-icons/fa6'
 import NavbarItem from './react/NavbarItem'
 ---
 
-<nav class="fixed left-6 top-1/2 -translate-y-1/2 transform">
+<nav class="fixed left-6 top-1/2 z-50 -translate-y-1/2 transform">
 	<ul class="flex flex-col items-center gap-8">
-		<NavbarItem client:only path="/" type="svg" tooltipText="Home" />
-		<NavbarItem client:only type="project" path="/projects" tooltipText="Projects" />
-		<NavbarItem client:only path="/work" type="work" tooltipText="Work Experience" />
-		<NavbarItem client:only path="/education" type="education" tooltipText="Education" />
+		<NavbarItem client:visible path="/" type="svg" tooltipText="Home" />
+		<NavbarItem client:visible type="project" path="/projects" tooltipText="Projects" />
+		<NavbarItem client:visible path="/work" type="work" tooltipText="Work Experience" />
+		<NavbarItem client:visible path="/education" type="education" tooltipText="Education" />
 	</ul>
 </nav>

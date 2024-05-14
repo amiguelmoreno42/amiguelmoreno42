@@ -10,7 +10,7 @@ interface NavbarItemProps {
 
 export default function NavbarItem({ path, type, tooltipText }: NavbarItemProps) {
 	return (
-		<TooltipProvider delayDuration={300}>
+		<TooltipProvider delayDuration={400}>
 			<Tooltip>
 				<TooltipTrigger>
 					<li>

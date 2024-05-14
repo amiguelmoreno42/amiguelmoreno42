@@ -1,0 +1,34 @@
+---
+import { Image } from 'astro:assets'
+import SocialsLinks from '../react/SocialsLinks'
+---
+
+<div class="relative">
+	<div
+		class="relative m-[20px] flex items-center justify-center before:pointer-events-none before:absolute before:bottom-[0] before:left-[0] before:right-[0] before:top-[0] before:z-0 before:animate-[shimmer_6s_infinite] before:rounded-[100%] before:content-[''] before:[box-shadow:0_0_10px_5px_rgba(255,_255,_255,_0.75)]"
+	>
+		<Image
+			src="/profile-photo.jpeg"
+			width={300}
+			height={300}
+			alt="profile photo"
+			class="rounded-full border-4 border-primary"
+		/>
+
+		<SocialsLinks />
+	</div>
+
+	<style>
+		@keyframes shimmer {
+			0% {
+				box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.75);
+			}
+			50% {
+				box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.95);
+			}
+			100% {
+				box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.75);
+			}
+		}
+	</style>
+</div>
