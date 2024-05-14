@@ -2,8 +2,12 @@
 import { SiAstro } from 'react-icons/si'
 ---
 
-<footer class="mt-20 flex items-center justify-center gap-2 p-4 dark:text-secondary/50">
-	<p class="text-sm">By <span class="font-700">Miguel Moreno</span> with</p>
+<footer class="mt-20 flex w-full items-center justify-center p-4 dark:text-secondary/50">
+	<div
+		class="flex w-fit cursor-default items-center justify-center gap-2 p-4 transition hover:dark:text-white"
+	>
+		<p class="text-sm">By <span class="font-700">Miguel Moreno</span> with</p>
 
-	<SiAstro className="h-5 w-5" />
+		<SiAstro className="h-5 w-5 " />
+	</div>
 </footer>
