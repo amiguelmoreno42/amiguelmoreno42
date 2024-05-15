@@ -16,24 +16,42 @@ import ShadcnIcon from '../../assets/svgs/technologies/shadcn-svg.astro'
 import StorybookIcon from '../../assets/svgs/technologies/storybook-svg.astro'
 import TailwindIcon from '../../assets/svgs/technologies/tailwind-svg.astro'
 import TypescriptIcon from '../../assets/svgs/technologies/typescript-svg.astro'
+import TechnologiesSubCont from './TechnologiesSubCont.astro'
 ---
 
 <div>
-	<AstroIcon />
-	<AppwriteIcon />
-	<ClerkIcon />
-	<Convex />
-	<CssIcon />
-	<JavascriptIcon />
-	<MongodbIcon />
-	<MongooseIcon />
-	<MuxIcon />
-	<NextjsIcon />
-	<NodejsIcon />
-	<ReactIcon />
-	<SassIcon />
-	<ShadcnIcon />
-	<StorybookIcon />
-	<TailwindIcon />
-	<TypescriptIcon />
+	<h2 class="mb-10 dark:text-secondary">Technologies</h2>
+	<div class="flex w-full max-w-[900px] flex-wrap justify-center gap-12">
+		<TechnologiesSubCont title="Languages">
+			<JavascriptIcon />
+			<TypescriptIcon />
+		</TechnologiesSubCont>
+
+		<TechnologiesSubCont title="Frameworks and Libraries">
+			<ReactIcon />
+			<NextjsIcon />
+			<NodejsIcon />
+			<TailwindIcon />
+			<AstroIcon />
+		</TechnologiesSubCont>
+
+		<TechnologiesSubCont title="Styling">
+			<CssIcon />
+			<SassIcon />
+			<ShadcnIcon />
+			<StorybookIcon />
+		</TechnologiesSubCont>
+
+		<TechnologiesSubCont title="Databases">
+			<MongodbIcon />
+			<MongooseIcon />
+		</TechnologiesSubCont>
+
+		<TechnologiesSubCont title="Backend Services">
+			<AppwriteIcon />
+			<ClerkIcon />
+			<Convex />
+			<MuxIcon />
+		</TechnologiesSubCont>
+	</div>
 </div>
