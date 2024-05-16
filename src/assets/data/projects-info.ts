@@ -30,8 +30,8 @@ export const projectsInfo = [
 		repoLink: 'https://github.com/amiguelmoreno/MyMoney',
 		deployLink: 'https://mymoneyio.netlify.app/',
 		cover: import.meta.env.BASE_URL + '../../../projects/mymoney.png'
-	},
-	{
+	}
+	/* 	{
 		id: 4,
 		title: 'Philosophers',
 		type: 'software',
@@ -80,5 +80,5 @@ export const projectsInfo = [
 		technologies: ['Shell', 'C', 'Makefile'],
 		repoLink: 'https://github.com/amiguelmoreno/ft_printf',
 		cover: import.meta.env.BASE_URL + '../../../projects/ft_printf.png'
-	}
+	} */
 ]

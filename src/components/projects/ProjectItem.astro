@@ -1,0 +1,18 @@
+---
+interface Props {
+	id: number
+	title: string
+	type: string
+	description: string
+	technologies: string[]
+	repoLink?: string
+	deployLink?: string
+	cover: string
+}
+
+const { id, title } = Astro.props
+---
+
+<div class="text-secondary">
+	<a href=`/projects/${id}`>{title}</a>
+</div>

@@ -1,0 +1,37 @@
+---
+import NavbarItem from './NavbarItem'
+
+const url = new URL(Astro.request.url)
+const path = url.pathname
+
+const isActive = (name: string) => {
+	path.includes(name)
+}
+---
+
+<nav class="fixed left-6 top-1/2 z-50 -translate-y-1/2 transform">
+	<ul class="flex flex-col items-center gap-8">
+		<NavbarItem client:visible active={path === '/'} path="/" type="svg" tooltipText="Home" />
+		<NavbarItem
+			client:visible
+			active={path.includes('/projects')}
+			path="/projects"
+			type="project"
+			tooltipText="Projects"
+		/>
+		<NavbarItem
+			client:visible
+			active={path.includes('/work')}
+			path="/work"
+			type="work"
+			tooltipText="Work Experience"
+		/>
+		<NavbarItem
+			client:visible
+			active={path.includes('/education')}
+			path="/education"
+			type="education"
+			tooltipText="Education"
+		/>
+	</ul>
+</nav>
