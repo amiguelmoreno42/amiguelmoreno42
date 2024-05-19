@@ -3,6 +3,7 @@ import Footer from '@/components/Footer.astro'
 import Navbar from '@/components/navigation/Navbar.astro'
 import '@/styles/globals.css'
 import { ViewTransitions } from 'astro:transitions'
+import { ModeToggle } from '@/components/ModeToggle'
 
 interface Props {
 	title: string
@@ -11,7 +12,16 @@ interface Props {
 const { title } = Astro.props
 ---
 
-<!doctype html>
+<script is:inline>
+	const setInitialTheme = () => {
+		const theme =
+			localStorage.getItem('theme') ||
+			(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+		document.documentElement.classList[theme === 'dark' ? 'add' : 'remove']('dark')
+	}
+	setInitialTheme()
+</script>
+
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -21,9 +31,13 @@ const { title } = Astro.props
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="relative flex min-h-[100vh] flex-col bg-secondary dark:bg-primary">
+	<body
+		class="scrollbar-none scrollbar-webkit-none relative flex min-h-[100vh] flex-col items-center overflow-y-scroll bg-secondary"
+	>
+		<ModeToggle client:load />
 		<Navbar />
-		<main class="mx-40 mt-20 flex flex-1 bg-secondary dark:bg-primary">
+
+		<main class="mt-20 flex w-full max-w-[1200px] flex-1 flex-col px-40">
 			<slot />
 		</main>
 		<Footer />

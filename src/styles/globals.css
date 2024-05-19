@@ -75,6 +75,17 @@
 	}
 }
 
+@layer utilities {
+	.scrollbar-none {
+		-ms-overflow-style: none; /* Internet Explorer 10+ */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	.scrollbar-webkit-none::-webkit-scrollbar {
+		display: none; /* Chrome, Safari y Opera */
+	}
+}
+
 @font-face {
 	font-family: 'RobotoSlab';
 	src: url('/src/assets/fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf') format('truetype');

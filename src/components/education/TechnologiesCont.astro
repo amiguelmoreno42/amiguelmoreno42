@@ -2,7 +2,7 @@
 import AstroIcon from '../../assets/svgs/technologies/astro-svg.astro'
 import AppwriteIcon from '../../assets/svgs/technologies/appwrite-svg.astro'
 import ClerkIcon from '../../assets/svgs/technologies/clerk-svg.astro'
-import Convex from '../../assets/svgs/technologies/convex-svg.astro'
+import ConvexIcon from '../../assets/svgs/technologies/convex-svg.astro'
 import CssIcon from '../../assets/svgs/technologies/css-svg.astro'
 import JavascriptIcon from '../../assets/svgs/technologies/javascript-svg.astro'
 import MongodbIcon from '../../assets/svgs/technologies/mongodb-svg.astro'
@@ -18,43 +18,52 @@ import TailwindIcon from '../../assets/svgs/technologies/tailwind-svg.astro'
 import TypescriptIcon from '../../assets/svgs/technologies/typescript-svg.astro'
 import ReactQueryIcon from '../../assets/svgs/technologies/react-query-svg.astro'
 import TechnologiesSubCont from './TechnologiesSubCont.astro'
-import ReactQuerySvg from '../../assets/svgs/technologies/react-query-svg.astro'
+import SocketIOIcon from '../../assets/svgs/technologies/socketio-svg.astro'
+import Heading from '../Heading.astro'
 ---
 
 <div>
-	<h2 class="mb-10 dark:text-secondary">Technologies</h2>
-	<div class="flex w-full max-w-[900px] flex-wrap justify-center gap-12">
-		<TechnologiesSubCont title="Languages">
-			<JavascriptIcon />
-			<TypescriptIcon />
-		</TechnologiesSubCont>
+	<Heading title="Technologies" type="h2" />
+	<div class="flex justify-center">
+		<div class="flex
+		w-full
+		max-w-[900px]
+		flex-wrap
+		justify-center
+		gap-12">
+			<TechnologiesSubCont title="Languages">
+				<JavascriptIcon />
+				<TypescriptIcon />
+			</TechnologiesSubCont>
 
-		<TechnologiesSubCont title="Frameworks and Libraries">
-			<ReactIcon />
-			<NextjsIcon />
-			<NodejsIcon />
-			<TailwindIcon />
-			<AstroIcon />
-			<ReactQuerySvg />
-		</TechnologiesSubCont>
+			<TechnologiesSubCont title="Frameworks and Libraries">
+				<ReactIcon />
+				<NextjsIcon />
+				<NodejsIcon />
+				<TailwindIcon />
+				<AstroIcon />
+				<ReactQueryIcon />
+			</TechnologiesSubCont>
 
-		<TechnologiesSubCont title="Styling">
-			<CssIcon />
-			<SassIcon />
-			<ShadcnIcon />
-			<StorybookIcon />
-		</TechnologiesSubCont>
+			<TechnologiesSubCont title="Styling">
+				<CssIcon />
+				<SassIcon />
+				<ShadcnIcon />
+				<StorybookIcon />
+			</TechnologiesSubCont>
 
-		<TechnologiesSubCont title="Databases">
-			<MongodbIcon />
-			<MongooseIcon />
-		</TechnologiesSubCont>
+			<TechnologiesSubCont title="Databases">
+				<MongodbIcon />
+				<MongooseIcon />
+			</TechnologiesSubCont>
 
-		<TechnologiesSubCont title="Backend Services">
-			<AppwriteIcon />
-			<ClerkIcon />
-			<Convex />
-			<MuxIcon />
-		</TechnologiesSubCont>
+			<TechnologiesSubCont title="Backend Services">
+				<AppwriteIcon />
+				<SocketIOIcon />
+				<ClerkIcon />
+				<ConvexIcon />
+				<MuxIcon />
+			</TechnologiesSubCont>
+		</div>
 	</div>
 </div>

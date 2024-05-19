@@ -23,7 +23,7 @@ interface CourseProps {
 export default function CourseItem({ course }: { course: CourseProps }) {
 	return (
 		<Dialog key={course.id}>
-			<DialogTrigger className="dark:text-secondary">{course.title}</DialogTrigger>
+			<DialogTrigger>{course.title}</DialogTrigger>
 			<DialogContent className="h-[500px]">
 				<DialogHeader>
 					<DialogTitle>{course.title}</DialogTitle>
@@ -38,8 +38,8 @@ export default function CourseItem({ course }: { course: CourseProps }) {
 							<p>description: {course.description}</p>
 							<div className="flex flex-col gap-5">
 								skills:
-								{course.skills.map((skill) => (
-									<p>{skill}</p>
+								{course.skills.map((skill, i) => (
+									<p key={i}>{skill}</p>
 								))}
 							</div>
 						</div>

@@ -2,83 +2,253 @@ export const projectsInfo = [
 	{
 		id: 1,
 		title: 'Magic Home',
-		type: 'web',
+		topProjects: false,
 		description:
 			'The main goal of this project is to use almost everything I have learnt about HTML5, CSS3 and Sass. Achiving a proffesional looking website and a clean design.',
-		technologies: ['HTML5', 'CSS3', 'Sass', 'JavaScript'],
-		repoLink: 'https://github.com/amiguelmoreno/MagicHome?tab=readme-ov-file',
+		technologies: ['html', 'css', 'sass', 'javascript'],
+		skills: [
+			'Best Practices: BEM method to name classes in CSS and HTML, Keep It Organized ,Make It Understandable',
+			'Sass as a CSS pre-processor, that offers: Efficient syntax, Readable styles files, Reusable components (@mixins and @extends)',
+			'CSS3 features: Flexbox, Grid, Animations, Variables, Pseudo-elements, Pseudo-classes, Media Queries',
+			'JavaScript most used methods: querySelector(), querySelectorAll(), toggle(), forEach(), addEventListener(), insertAdjacentHTML(), contains()'
+		],
+		improvements: [
+			'Compress the size of the images reducing them to the maximum size used on the page',
+			'Use different size images for each media query to improve performance'
+		],
+		interest: [
+			'PRO Navigation Bar, that converts itself into a floating menu on smaller devices',
+			'Testimonials Slider',
+			'Modal Window Form'
+		],
+		shortDescription: 'Full Responsive Landing Page build with HTML, CSS using SASS and JS',
+		videoLink: 'https://www.youtube.com/watch?v=A8DbiMp3MNo&ab_channel=midulive',
+		repoLink: 'https://github.com/amiguelmoreno/MagicHome',
 		deployLink: 'https://magichome.netlify.app/',
 		cover: import.meta.env.BASE_URL + '../../../projects/magic-home-cover.png'
 	},
 	{
 		id: 2,
 		title: 'Social Vibe',
-		type: 'web',
+		topProjects: false,
 		description:
-			'This website was created to improve the visibility of the services that I offered with my friend. We ended up reaching a lot of people and transforming them into our customers',
-		technologies: ['React', 'Sass'],
+			'The main goal of this project was to give visibility to all the services that I offered as a Community Manager, explaining them, answering common questions and give contact information with a form.',
+		technologies: ['react', 'sass'],
+		skills: [],
+		improvements: [],
+		interest: [],
+		shortDescription: 'Web used to show my services as a Community Manager',
+		videoLink: 'https://www.youtube.com/watch?v=A8DbiMp3MNo&ab_channel=midulive',
+		repoLink: 'https://github.com/amiguelmoreno/SocialVibe',
 		deployLink: 'https://socialvibeagency.netlify.app/',
 		cover: import.meta.env.BASE_URL + '../../../../projects/social-vibe.png'
 	},
 	{
 		id: 3,
-		title: 'MyMoney',
-		type: 'web',
+		title: 'My Money',
+		topProjects: false,
 		description:
-			'This is a small money app tracker built using React and some of his libraries functionalities like React-router-dom, React-Query, Reusable components (Modal, Butttons, Inputs...), Hooks, React-hook-form, ContextApi, Framer-motion',
-		technologies: ['React', 'Styled Components'],
+			'The main goal of this project is to use almost everything I have learnt about React, using a lot of main functionalities of React, Supabase and more.',
+		technologies: ['react', 'styled-components', 'react-query'],
+		skills: [
+			'React-router-dom',
+			'React-Query',
+			'Organized and clean code',
+			'Reusable components (Modal, Buttons, Inputs...)',
+			'Hooks',
+			'React-hook-form',
+			'ContextApi',
+			'Framer-motion'
+		],
+		improvements: [
+			'Notifications when a certain limit of expenses or incomes is reached',
+			"Login (I didn't do it to let people see the project without login)",
+			'Functionality to download a PDF with the main info you want',
+			'Compress the size of the images reducing them to the maximum size used on the page',
+			'Use different size images for each media query to improve performance'
+		],
+		interest: [
+			'Dashboard with visual graphics',
+			'List of transactions with a PRO Filter',
+			'Dark Mode'
+		],
+		shortDescription: 'App to track your incomes and expenses easily',
+		videoLink: 'https://www.youtube.com/watch?v=A8DbiMp3MNo&ab_channel=midulive',
 		repoLink: 'https://github.com/amiguelmoreno/MyMoney',
 		deployLink: 'https://mymoneyio.netlify.app/',
 		cover: import.meta.env.BASE_URL + '../../../projects/mymoney.png'
-	}
-	/* 	{
+	},
+	{
 		id: 4,
-		title: 'Philosophers',
-		type: 'software',
+		title: 'Routine App',
+		topProjects: false,
 		description:
-			'The Philosophers project involves implementing a solution for the dining philosophers problem using threads. The focus is on addressing synchronization challenges to prevent deadlocks, emphasizing practical understanding of concurrent programming concepts.',
-		technologies: ['Shell', 'C', 'Makefile'],
-		repoLink: 'https://github.com/amiguelmoreno/Philosophers',
-		cover: import.meta.env.BASE_URL + '../../../projects/philosophers.png'
+			'The main goal of this project was to do something I used on my daily basis and that is useful. This project have and habits page that allows you to create and manage all the tasks you have and a timer to track how productive you are while doing the tasks.',
+		technologies: ['react', 'tailwind'],
+		skills: [
+			'Learn how to work with reusable components in React',
+			'Use contexts to manage states and data inside the app',
+			'Learn how to work with tricky functions like setTimeout to make the Timer working'
+		],
+		improvements: [
+			'Calendar page where all the habits are displayed',
+			'Login with some auth and account',
+			'Save the data in a database and not in localStorage'
+		],
+		interest: [
+			'PRO Timer, to keep track of the time while you work on the computer',
+			'Habits page, where you can manage your own habits'
+		],
+		shortDescription: 'App to check your habits and timer to focus on your activities',
+		videoLink: 'https://www.youtube.com/watch?v=A8DbiMp3MNo&ab_channel=midulive',
+		repoLink: 'https://github.com/amiguelmoreno/RoutineApp',
+		deployLink: 'https://routinetimer.netlify.app/',
+		cover: import.meta.env.BASE_URL + '../../../projects/mymoney.png'
 	},
 	{
 		id: 5,
-		title: 'So_long',
-		type: 'software',
+		title: 'Forkify',
+		topProjects: false,
 		description:
-			'This project is a very small 2D game. Its purpose is to make you work with textures, sprites, and some other very basic gameplay elements.',
-		technologies: ['Shell', 'C', 'Makefile'],
-		repoLink: 'https://github.com/amiguelmoreno/so_long',
-		cover: import.meta.env.BASE_URL + '../../../projects/so_long.png'
+			'The main goal of this project was to learn the basics of JavaScript, async data, Classes and all applied with the MVC pattern design. I did this project in the course of Jonas Schmedtmann',
+		technologies: ['javascript', 'css'],
+		skills: [
+			'How to work with async data',
+			'How an app with a MVC code pattern design works',
+			'Get better working with objects, logic, and general data flow in an app',
+			'How to do pagination and load the data partially from an API'
+		],
+		improvements: [],
+		interest: [],
+		shortDescription: 'Vanilla JS app to search and create recipes',
+		videoLink: 'https://www.youtube.com/watch?v=A8DbiMp3MNo&ab_channel=midulive',
+		repoLink: 'https://github.com/amiguelmoreno/forkify',
+		deployLink: 'https://my-forkify-js.netlify.app/',
+		cover: import.meta.env.BASE_URL + '../../../projects/mymoney.png'
 	},
 	{
 		id: 6,
-		title: 'Push-swap',
-		type: 'software',
+		title: 'NoteFlow',
+		topProjects: false,
 		description:
-			'This project involves sorting data on a stack with a restricted set of instructions, aiming to use the fewest actions possible. To succeed, one must employ various algorithms and choose the most suitable solution from multiple options to achieve optimized data sorting.',
-		technologies: ['Shell', 'C', 'Makefile'],
-		repoLink: 'https://github.com/amiguelmoreno/push-swap',
-		cover: import.meta.env.BASE_URL + '../../../projects/push-swap.png'
+			'The main goal of this project was to learn the fundamentals of NextJS, folders routing system, reusable components, databases, api endpoints and more. This is a project that I did in Code with Antonio course.',
+		technologies: ['nextjs', 'prisma', 'typescript', 'tailwind', 'react', 'clerk'],
+		skills: [
+			'How to make an App with NextJS',
+			'How folder routing system works',
+			'How to create, connect and update a database using Prisma',
+			'Implement OAuth 2.0 with Clerk, allowing to sign in with GitHub, Google, etc.',
+			'How to do a robust project code structure',
+			'Create dynamic routes with NextJS',
+			'Use Edgestore to upload files',
+			'Use Blocknote to create a text editor like Notion',
+			'How to create nested dynamic and editable pages in a sidebar',
+			'How to manage recovering deleted notes and filtering data'
+		],
+		improvements: ['Faster charge between pages using a faster service.'],
+		interest: [
+			'Text Editor to add images, notes, and more',
+			'Sidebar with all notes pages organized and nested'
+		],
+		shortDescription: 'Notes management App with NextJS',
+		videoLink: 'https://www.youtube.com/watch?v=A8DbiMp3MNo&ab_channel=midulive',
+		repoLink: 'https://github.com/amiguelmoreno/NoteFlow',
+		deployLink: 'https://note-flow-weld.vercel.app/',
+		cover: import.meta.env.BASE_URL + '../../../projects/mymoney.png'
 	},
 	{
 		id: 7,
-		title: 'Born2BeRoot',
-		type: 'software',
+		title: 'Coursify',
+		topProjects: false,
 		description:
-			'Born2beroot project involves creating a secure server environment by configuring a virtual machine, setting up a firewall, implementing secure SSH access, and configuring system monitoring tools. The project helps to get solid understanding of system administration and security practices',
-		technologies: ['VirtualBox', 'Shell'],
-		repoLink: 'https://github.com/amiguelmoreno/Born2beroot',
-		cover: import.meta.env.BASE_URL + '../../../projects/born2beroot.png'
+			'The main goal of this project was to learn the fundamentals of NextJS, folders routing system, reusable components, databases, api endpoints, video storage and more. This is a project that I did in Code with Antonio course.',
+		technologies: ['nextjs', 'prisma', 'typescript', 'tailwind', 'react', 'clerk'],
+		skills: [
+			'How to make an App with NextJS',
+			'How folder routing system works',
+			'How to create, connect and update a database using Prisma',
+			'Implement OAuth 2.0 with Clerk, allowing to sign in with GitHub, Google, etc.',
+			'How to do a robust project code structure',
+			'Create dynamic routes with NextJS',
+			'Use Mux as a video player'
+		],
+		improvements: ['Faster charge between pages using a faster service'],
+		interest: [
+			'Courses catalog page',
+			'Teacher MODE that allows you to create your own courses and watch statistics',
+			'Buy Courses with Stripe',
+			'Track progress of every course you have bought'
+		],
+		shortDescription: 'Course Plattform Full Stack Application made with NextJS',
+		videoLink: 'https://www.youtube.com/watch?v=A8DbiMp3MNo&ab_channel=midulive',
+		repoLink: 'https://github.com/amiguelmoreno/Coursify',
+		deployLink: 'https://coursify-kappa.vercel.app/',
+		cover: import.meta.env.BASE_URL + '../../../projects/mymoney.png'
 	},
 	{
 		id: 8,
-		title: 'ft_printf',
-		type: 'software',
+		title: 'Discord Clone',
+		topProjects: false,
 		description:
-			'This project aims to reproduce the printf() function, used for output in programming. The focus is on improving formatting and creating a more efficient printf()-like function.',
-		technologies: ['Shell', 'C', 'Makefile'],
-		repoLink: 'https://github.com/amiguelmoreno/ft_printf',
-		cover: import.meta.env.BASE_URL + '../../../projects/ft_printf.png'
-	} */
+			'The main goal of this project was to learn the fundamentals of NextJS, folders routing system, reusable components, databases, api endpoints, SocketIO and more. This is a project that I did in Code with Antonio course.',
+		technologies: ['nextjs', 'prisma', 'typescript', 'tailwind', 'react', 'clerk'],
+		skills: [
+			'How to make an App with NextJS',
+			'How folder routing system works',
+			'How to create, connect and update a database using Prisma',
+			'Implement OAuth 2.0 with Clerk, allowing to sign in with GitHub, Google, etc.',
+			'How to do a robust project code structure',
+			'Create dynamic routes with NextJS',
+			'Use Uploadthing to let users update their pics and upload images',
+			'Create a Real Time chat with Socket.IO',
+			'Implement Video and Audio streaming with Livekit'
+		],
+		improvements: ['Faster charge between pages using a faster service'],
+		interest: [
+			'Text, Audio, and Video channels like in the real Discord app',
+			'Create and manage your own servers and channels',
+			'Private chat with your friend'
+		],
+		shortDescription: 'Discord clone app made with NextJS',
+		videoLink: 'https://www.youtube.com/watch?v=A8DbiMp3MNo&ab_channel=midulive',
+		repoLink: 'https://github.com/amiguelmoreno/Discord',
+		deployLink: 'https://discord-production-a577.up.railway.app/',
+		cover: import.meta.env.BASE_URL + '../../../projects/mymoney.png'
+	},
+	{
+		id: 9,
+		title: 'MyComponentsUI',
+		topProjects: false,
+		description:
+			'This is a React components library which offers a wide variety of fully accessible components and a very minimalist design that allows you to customize every component.',
+		technologies: ['react', 'tailwind', 'storybook', 'shadcnui', 'react', 'typescript'],
+		skills: [
+			'How to use Storybook to show isolated components',
+			'How to public an npm package',
+			'How to make reusable components'
+		],
+		improvements: [],
+		interest: [],
+		shortDescription: 'React components library',
+		videoLink: 'https://www.youtube.com/watch?v=A8DbiMp3MNo&ab_channel=midulive',
+		repoLink: 'https://github.com/amiguelmoreno/MyComponentsUI',
+		deployLink: 'https://mycomponentsui.netlify.app/',
+		cover: import.meta.env.BASE_URL + '../../../projects/mymoney.png'
+	},
+	{
+		id: 10,
+		title: 'Hakuna Matata',
+		topProjects: false,
+		description:
+			'This a page a client whit a dog groomer shop in Malga requested. The requested sections where: Services for pets, Products, Clients Reviews form google, location display with google and a whatsapp button to book a date',
+		technologies: ['react', 'sass'],
+		skills: [],
+		improvements: [],
+		interest: [],
+		shortDescription: 'Website for a dog groomer shop in Malaga',
+		videoLink: 'https://www.youtube.com/watch?v=A8DbiMp3MNo&ab_channel=midulive',
+		repoLink: 'https://github.com/amiguelmoreno/hakuna-matata',
+		deployLink: 'https://hakunamatataweb.netlify.app/',
+		cover: import.meta.env.BASE_URL + '../../../projects/mymoney.png'
+	}
 ]

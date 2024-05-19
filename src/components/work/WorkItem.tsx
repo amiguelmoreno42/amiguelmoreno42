@@ -21,7 +21,7 @@ interface WorkProps {
 export default function WorkItem({ work }: { work: WorkProps }) {
 	return (
 		<Dialog key={work.id}>
-			<DialogTrigger className="dark:text-secondary">{work.title}</DialogTrigger>
+			<DialogTrigger>{work.title}</DialogTrigger>
 			<DialogContent className="h-[500px]">
 				<DialogHeader>
 					<DialogTitle>Are you absolutely sure?</DialogTitle>
@@ -34,8 +34,8 @@ export default function WorkItem({ work }: { work: WorkProps }) {
 							<p>duration: {work.duration}</p>
 							<p>description: {work.description}</p>
 							<div className="flex flex-col gap-5">
-								{work.skills.map((skill) => (
-									<p key={skill}>{skill}</p>
+								{work.skills.map((skill, i) => (
+									<p key={i}>{skill}</p>
 								))}
 							</div>
 						</div>

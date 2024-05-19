@@ -7,16 +7,20 @@ import ReactNativeIcon from '../../assets/svgs/technologies/react-native-svg.ast
 import FigmaIcon from '../../assets/svgs/technologies/figma-svg.astro'
 import MysqlIcon from '../../assets/svgs/technologies/mysql-svg.astro'
 import AngularIcon from '../../assets/svgs/technologies/angular-svg.astro'
+import Heading from '../Heading.astro'
 ---
 
 <div>
-	<h2 class="dark:text-secondary">Next steps</h2>
-	<TypescriptIcon />
-	<GithubActionsIcon />
-	<JestIcon />
-	<PlaywriteIcon />
-	<ReactNativeIcon />
-	<FigmaIcon />
-	<MysqlIcon />
-	<AngularIcon />
+	<Heading title="Next steps" type="h2">Next steps</Heading>
+
+	<div class="flex flex-col items-center justify-center gap-4">
+		<TypescriptIcon />
+		<GithubActionsIcon />
+		<JestIcon />
+		<PlaywriteIcon />
+		<ReactNativeIcon />
+		<FigmaIcon />
+		<MysqlIcon />
+		<AngularIcon />
+	</div>
 </div>

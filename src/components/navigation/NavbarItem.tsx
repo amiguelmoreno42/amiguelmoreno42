@@ -19,11 +19,11 @@ export default function NavbarItem({ path, type, tooltipText, active }: NavbarIt
 						<a
 							href={path}
 							className={cn(
-								'flex h-12 w-12  items-center justify-center rounded-sm bg-secondary fill-primary p-1.5 [transition:all_0.4s] hover:bg-primary hover:fill-secondary hover:text-secondary',
-								active && 'bg-primary fill-secondary text-secondary'
+								'flex h-12 w-12  items-center justify-center rounded-sm bg-primary fill-secondary p-1.5  text-secondary [transition:all_0.4s] hover:bg-secondary hover:fill-primary hover:text-primary',
+								active && 'bg-transparent fill-primary text-primary'
 							)}
 						>
-							{type === 'svg' && <LogoM styles="h-full w-full hover:fill-white" />}
+							{type === 'svg' && <LogoM styles="h-full w-full  hover:fill-primary" />}
 							{type === 'work' && <FaBriefcase className="h-7 w-7" />}
 							{type === 'project' && <FaCodeFork className="h-7 w-7" />}
 							{type === 'education' && <FaSchool className="h-7 w-7" />}
