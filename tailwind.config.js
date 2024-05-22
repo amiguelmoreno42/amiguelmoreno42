@@ -28,6 +28,9 @@ export default {
 			}
 		},
 		extend: {
+			rotate: {
+				360: '360deg'
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

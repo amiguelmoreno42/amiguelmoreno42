@@ -3,6 +3,10 @@ import type { GetStaticPaths } from 'astro'
 import { projectsInfo } from '@/assets/data/projects-info'
 import Layout from '@/layouts/MainLayout.astro'
 import { Image } from 'astro:assets'
+import VideoPlayer from '@/components/projects/VideoPlayer.astro'
+import Buttons from '@/components/projects/project-page/buttons.astro'
+import ProjectTechEl from '@/components/projects/project-page/ProjectTechEl'
+import { SiSkillshare } from 'react-icons/si'
 
 const { id } = Astro.params
 
@@ -13,16 +17,76 @@ let project = projectsInfo.filter((project) => +id === project.id)[0]
 export const getStaticPaths = (() => {
 	return projectsInfo.map((project) => ({ params: { id: project.id } }))
 }) satisfies GetStaticPaths
+
+const videoId = project.videoLink.slice(project.videoLink.lastIndexOf('/'))
 ---
 
-<Layout title=`Miguel Moreno - ${project.title}` `>
-	<div class="flex flex-col gap-6">
-		<p>title: {project.title}</p>
-		<p>deployLink: {project.deployLink}</p>
-		<p>repoLink: {project.repoLink}</p>
-		<p>description: {project.description}</p>
-		<div class="flex gap-2">technologies: {project.technologies.map((tec) => <p>{tec}</p>)}</div>
-		<p>type: {project.type}</p>
-		<Image src={project.cover} width={500} height={500} alt=`${project.title} cover` />
+<Layout title=`Miguel Moreno - ${project.title}`>
+	<h1 class="text-center text-5xl font-bold">{project.title}</h1>
+	<div class="flex flex-col gap-10">
+		<div class="flex w-full flex-col gap-12">
+			<div class="mb-5 mt-16 flex justify-center">
+				<VideoPlayer width={700} videoId={videoId} />
+			</div>
+
+			<div class="flex justify-evenly gap-3">
+				<Buttons deployLink={project.deployLink} repoLink={project.repoLink} />
+			</div>
+
+			<p class="text-sm font-light">{project.description}</p>
+		</div>
+
+		<div class="flex flex-col gap-3">
+			<p text-sm font-light>Technologies used:</p>
+			<div class="flex w-fit gap-5 rounded-sm bg-white px-4 py-3">
+				{project.technologies.map((tech) => <ProjectTechEl tech={tech} />)}
+			</div>
+		</div>
+
+		<div class="flex flex-col gap-10">
+			{
+				project.skills.length > 0 && (
+					<div>
+						<div>
+							<h3 class="mb-5">What did I learn with this project?</h3>
+
+							<div class="flex flex-col gap-2">
+								{project.skills.map((skill) => (
+									<p class="pl-5 text-sm font-light">- {skill}</p>
+								))}
+							</div>
+						</div>
+					</div>
+				)
+			}
+
+			{
+				project.interest.length > 0 && (
+					<div>
+						<h3 class="mb-5">What interesting things can I find in this project?</h3>
+
+						<div class="flex flex-col gap-2">
+							{project.interest.map((interest) => (
+								<p class="pl-5 text-sm font-light">- {interest}</p>
+							))}
+						</div>
+					</div>
+				)
+			}
+
+			{
+				project.improvements.length > 0 && (
+					<div>
+						<h3 class="mb-5">Improvements and ideas</h3>
+
+						<div class="flex flex-col gap-2">
+							{project.improvements.map((improvement) => (
+								<p class="pl-5 text-sm font-light">- {improvement}</p>
+							))}
+						</div>
+					</div>
+				)
+			}
+		</div>
 	</div>
 </Layout>

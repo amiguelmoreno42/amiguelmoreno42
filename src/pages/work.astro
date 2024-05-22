@@ -8,7 +8,7 @@ import WorkItem from '@/components/work/WorkItem'
 <Layout title="Miguel Moreno - Work Experience">
 	<Heading title="Work Experience" type="h1" />
 	<div class="flex w-full flex-col gap-5">
-		<p>
+		<p class="font-light">
 			Though my current work experience may not be directly tied to web development, it has granted
 			me a unique perspective. Despite coming from different fields, I&apos;m really keen on jumping
 			into web development. I&apos;m excited to take on new challenges and put my energy into
@@ -16,6 +16,8 @@ import WorkItem from '@/components/work/WorkItem'
 			way and committed to making my mark in this exciting industry.
 		</p>
 
-		{workInfo?.map((work) => <WorkItem client:visible work={work} />).reverse()}
+		<div class="mt-10 flex w-[500px] flex-col gap-6 self-center">
+			{workInfo?.map((work) => <WorkItem client:visible work={work} />).reverse()}
+		</div>
 	</div>
 </Layout>

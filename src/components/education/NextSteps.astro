@@ -1,26 +1,55 @@
 ---
-import TypescriptIcon from '../../assets/svgs/technologies/typescript-svg.astro'
-import GithubActionsIcon from '../../assets/svgs/technologies/github-actions-svg.astro'
-import JestIcon from '../../assets/svgs/technologies/jest-svg.astro'
-import PlaywriteIcon from '../../assets/svgs/technologies/playwright-svg.astro'
-import ReactNativeIcon from '../../assets/svgs/technologies/react-native-svg.astro'
-import FigmaIcon from '../../assets/svgs/technologies/figma-svg.astro'
-import MysqlIcon from '../../assets/svgs/technologies/mysql-svg.astro'
-import AngularIcon from '../../assets/svgs/technologies/angular-svg.astro'
+import TypescriptIcon from '../../assets/svgs/technologies/typescript-svg.tsx'
+import GithubActionsIcon from '../../assets/svgs/technologies/github-actions-svg.tsx'
+import JestIcon from '../../assets/svgs/technologies/jest-svg.tsx'
+import PlaywriteIcon from '../../assets/svgs/technologies/playwright-svg.tsx'
+import ReactNativeIcon from '../../assets/svgs/technologies/react-native-svg.tsx'
+import FigmaIcon from '../../assets/svgs/technologies/figma-svg.tsx'
+import MysqlIcon from '../../assets/svgs/technologies/mysql-svg.tsx'
+import AngularIcon from '../../assets/svgs/technologies/angular-svg.tsx'
 import Heading from '../Heading.astro'
+import NextStepsElement from './NextStepsElement.astro'
+import { Footprints } from 'lucide-react'
 ---
 
 <div>
 	<Heading title="Next steps" type="h2">Next steps</Heading>
 
-	<div class="flex flex-col items-center justify-center gap-4">
-		<TypescriptIcon />
-		<GithubActionsIcon />
-		<JestIcon />
-		<PlaywriteIcon />
-		<ReactNativeIcon />
-		<FigmaIcon />
-		<MysqlIcon />
-		<AngularIcon />
+	<div class="flex justify-center">
+		<div class="flex w-fit flex-col justify-center gap-4">
+			<NextStepsElement title="Typescript" tech="typescript">
+				<TypescriptIcon />
+			</NextStepsElement>
+
+			<!-- <Footprints className="h-4 w-4 rotate-180 self-center" /> -->
+
+			<NextStepsElement title="GitHub Actions" tech="github-actions">
+				<GithubActionsIcon />
+			</NextStepsElement>
+
+			<NextStepsElement title="Jest" tech="jest">
+				<JestIcon />
+			</NextStepsElement>
+
+			<NextStepsElement title="Playwrite" tech="playwrite">
+				<PlaywriteIcon />
+			</NextStepsElement>
+
+			<NextStepsElement title="React Native" tech="react-native">
+				<ReactNativeIcon />
+			</NextStepsElement>
+
+			<NextStepsElement title="Figma" tech="figma">
+				<FigmaIcon />
+			</NextStepsElement>
+
+			<NextStepsElement title="Angular" tech="angular">
+				<AngularIcon />
+			</NextStepsElement>
+
+			<NextStepsElement title="MySQL" tech="mysql">
+				<MysqlIcon />
+			</NextStepsElement>
+		</div>
 	</div>
 </div>
