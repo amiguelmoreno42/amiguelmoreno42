@@ -32,7 +32,7 @@ export default function Project42Item({
 					<img src={cover} alt={title} className="h-32 rounded-sm object-cover"></img>
 				</div>
 				<div className="flex flex-col justify-between">
-					<p className="mt-2 font-light">{description}</p>
+					<p className="mt-2 text-base font-light">{description}</p>
 
 					<a
 						href={repoLink}

@@ -16,7 +16,7 @@ const sortedProjects = projectsInfo.sort((a, b) => {
 	<Heading title="Projects" type="h1" />
 
 	<div class="flex flex-col gap-20">
-		<p class="font-light">
+		<p class="text-xl font-light">
 			Welcome to my projects section, each one reflects a step in my journey of learning and
 			development. From web applications to more experimental projects, these works showcase my
 			dedication to tackling diverse challenges and applying creative solutions. Through every line
@@ -26,7 +26,7 @@ const sortedProjects = projectsInfo.sort((a, b) => {
 		</p>
 
 		<!-- <SelectBuild client:visible /> -->
-		<div class="grid grid-cols-1 gap-x-6 gap-y-10 p-4 md:grid-cols-2 lg:grid-cols-3">
+		<div class="grid grid-cols-1 gap-x-8 gap-y-12 p-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
 			{
 				sortedProjects.map((project) => (
 					<ProjectItem
@@ -44,7 +44,7 @@ const sortedProjects = projectsInfo.sort((a, b) => {
 		</div>
 
 		<div>
-			<p class="mb-8 font-light">
+			<p class="mb-8 text-xl font-light">
 				This are some of the projects I did while I was studing at Campus 42 Telefonica in Malaga:
 			</p>
 

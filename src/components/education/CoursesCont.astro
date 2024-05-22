@@ -7,7 +7,7 @@ import Heading from '../Heading.astro'
 <div class="flex flex-col items-center">
 	<Heading title="Certifications and Learning" type="h2" />
 
-	<div class="flex w-[500px] flex-1 flex-col items-start gap-3">
+	<div class="flex w-[700px] flex-1 flex-col items-start gap-4">
 		{educationInfo.map((course) => <CourseItem client:visible course={course} />).reverse()}
 	</div>
 </div>

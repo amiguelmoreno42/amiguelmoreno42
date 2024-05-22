@@ -15,8 +15,8 @@ import TailwindSvg from '@/assets/svgs/technologies/tailwind-svg.tsx'
 import ReactQuerySvg from '@/assets/svgs/technologies/react-query-svg.tsx'
 
 export default function TechElement({ tech }: { tech: string }) {
-	const width = 15
-	const height = 15
+	const width = 22
+	const height = 22
 
 	return (
 		<>

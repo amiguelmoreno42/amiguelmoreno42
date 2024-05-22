@@ -5,7 +5,7 @@ import Project42Item from './Project42Item'
 
 export default function Projects42Cont() {
 	return (
-		<Accordion type="single" collapsible className="rounded-lg bg-primary text-secondary">
+		<Accordion type="single" collapsible className="rounded-lg bg-primary/90 text-secondary">
 			{projects42Info.map((project) => {
 				return (
 					<Project42Item

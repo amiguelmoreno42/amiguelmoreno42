@@ -33,11 +33,11 @@ const videoId = project.videoLink.slice(project.videoLink.lastIndexOf('/'))
 				<Buttons deployLink={project.deployLink} repoLink={project.repoLink} />
 			</div>
 
-			<p class="text-sm font-light">{project.description}</p>
+			<p class="text-xl font-light">{project.description}</p>
 		</div>
 
 		<div class="flex flex-col gap-3">
-			<p text-sm font-light>Technologies used:</p>
+			<p class="text-xl font-normal" font-light>Technologies used:</p>
 			<div class="flex w-fit gap-5 rounded-sm bg-white px-4 py-3">
 				{project.technologies.map((tech) => <ProjectTechEl tech={tech} />)}
 			</div>
@@ -48,11 +48,11 @@ const videoId = project.videoLink.slice(project.videoLink.lastIndexOf('/'))
 				project.skills.length > 0 && (
 					<div>
 						<div>
-							<h3 class="mb-5">What did I learn with this project?</h3>
+							<h3 class="mb-5 text-xl">What did I learn with this project?</h3>
 
 							<div class="flex flex-col gap-2">
 								{project.skills.map((skill) => (
-									<p class="pl-5 text-sm font-light">- {skill}</p>
+									<p class="pl-5 text-xl font-light">- {skill}</p>
 								))}
 							</div>
 						</div>
@@ -63,11 +63,11 @@ const videoId = project.videoLink.slice(project.videoLink.lastIndexOf('/'))
 			{
 				project.interest.length > 0 && (
 					<div>
-						<h3 class="mb-5">What interesting things can I find in this project?</h3>
+						<h3 class="mb-5 text-xl">What interesting things can I find in this project?</h3>
 
 						<div class="flex flex-col gap-2">
 							{project.interest.map((interest) => (
-								<p class="pl-5 text-sm font-light">- {interest}</p>
+								<p class="pl-5 text-xl font-light">- {interest}</p>
 							))}
 						</div>
 					</div>
@@ -77,11 +77,11 @@ const videoId = project.videoLink.slice(project.videoLink.lastIndexOf('/'))
 			{
 				project.improvements.length > 0 && (
 					<div>
-						<h3 class="mb-5">Improvements and ideas</h3>
+						<h3 class="mb-5 text-xl">Improvements and ideas</h3>
 
 						<div class="flex flex-col gap-2">
 							{project.improvements.map((improvement) => (
-								<p class="pl-5 text-sm font-light">- {improvement}</p>
+								<p class="pl-5 text-xl font-light">- {improvement}</p>
 							))}
 						</div>
 					</div>

@@ -9,7 +9,7 @@ const { deployLink, repoLink } = Astro.props
 	><a
 		href={deployLink}
 		target="_blank"
-		class="group flex h-8 items-center gap-2 rounded-sm bg-primary px-3 text-sm text-secondary transition-all"
+		class="group flex h-10 items-center gap-2 rounded-sm bg-primary px-3 text-base text-secondary transition-all"
 	>
 		<p class="font-bold">Go to Website</p>
 		<Globe className="h-5 w-5 transition-all duration-500 group-hover:rotate-180" />
@@ -20,8 +20,8 @@ const { deployLink, repoLink } = Astro.props
 	><a
 		href={repoLink}
 		target="_blank"
-		class="group flex h-8 items-center gap-2 rounded-sm bg-primary px-3 text-sm text-secondary transition-all"
+		class="group flex h-10 items-center gap-2 rounded-sm bg-primary px-3 text-base text-secondary transition-all"
 		><p class="font-bold">Go to Repo</p>
-		<FolderInput className="group-hover:rotate-360 h-5 w-5 transition-all duration-700" /></a
+		<FolderInput className="h-5 w-5 transition-all duration-700 group-hover:rotate-360" /></a
 	></Button
 >

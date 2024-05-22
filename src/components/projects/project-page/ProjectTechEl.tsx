@@ -35,7 +35,7 @@ export default function ProjectTechEl({ tech }: { tech: string }) {
 			{tech === 'storybook' && <StorybookSvg width={width} height={height} />}
 			{tech === 'shadcnui' && <ShadcnSvg width={width} height={height} />}
 			{tech === 'socketio' && <SocketioSvg width={width} height={height} />}
-			<p className="text-xs text-blue-950">{tech[0].toUpperCase().concat(tech.slice(1))}</p>
+			<p className="text-sm text-black">{tech[0].toUpperCase().concat(tech.slice(1))}</p>
 		</div>
 	)
 }

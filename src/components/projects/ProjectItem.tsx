@@ -27,7 +27,7 @@ export default function ProjectItem({
 			{topProjects === true && (
 				<div className="absolute right-0 top-0 z-50 flex h-6 items-center justify-center gap-1 rounded-bl-sm bg-yellow-300 p-1 text-blue-950">
 					<Crown className="h-4 min-w-4" />
-					<span className=" w-8 text-sm">TOP</span>
+					<span className=" w-8 text-base">TOP</span>
 				</div>
 			)}
 
@@ -46,7 +46,7 @@ export default function ProjectItem({
 				</div>
 			</div>
 			<div className="mt-4 flex items-center justify-between">
-				<h3 className="ml-1">{title}</h3>
+				<h3 className="ml-1 text-xl">{title}</h3>
 				<SquareMousePointer className="h-6 w-6 rounded-sm p-0.5 transition-all duration-500 hover:bg-secondary hover:text-primary" />
 			</div>
 		</a>
