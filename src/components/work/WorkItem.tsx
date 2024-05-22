@@ -22,14 +22,14 @@ interface WorkProps {
 export default function WorkItem({ work }: { work: WorkProps }) {
 	return (
 		<Dialog key={work.id}>
-			<DialogTrigger className="flex items-center gap-6 rounded-sm bg-primary/20 p-2 pr-4 ">
+			<DialogTrigger className="flex flex-col items-center gap-6 rounded-sm bg-primary/10 p-2  pr-4 md:flex-row">
 				<img
 					src={work.imageCompany}
 					width={150}
 					alt={work.institution}
 					className="rounded-sm bg-white p-1"
 				/>
-				<div className="flex w-full items-center justify-between">
+				<div className="flex w-full flex-col items-center justify-center gap-4 md:flex-row md:justify-between md:gap-[unset]">
 					<p className="text-xl">{work.title}</p>
 					<div className="flex items-center gap-3">
 						<p className="text-base font-light">{work.duration}</p>
@@ -37,12 +37,12 @@ export default function WorkItem({ work }: { work: WorkProps }) {
 					</div>
 				</div>
 			</DialogTrigger>
-			<DialogContent className="h-[500px] min-w-[600px] bg-secondary pr-0">
+			<DialogContent className="h-[700px] w-[90%] rounded-sm bg-secondary pr-0 sm:h-[500px] md:w-[700px]">
 				<DialogHeader>
 					<DialogTitle className="pb-4 text-2xl font-normal">{work.title}</DialogTitle>
-					<DialogDescription className="max-h-[410px] w-full overflow-y-scroll px-4 pr-8">
+					<DialogDescription className="max-h-[610px] w-full overflow-y-scroll px-4 pr-8 sm:max-h-[410px]">
 						<div className="mb-8 flex flex-col gap-5">
-							<div className="flex gap-5">
+							<div className="flex flex-col items-center gap-6 sm:flex-row">
 								<img
 									src={work.imageCompany}
 									width={250}

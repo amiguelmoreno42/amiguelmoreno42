@@ -1,12 +1,14 @@
 ---
-const { width, videoId } = Astro.props
+import { cn } from '@/lib/utils'
+
+const { width, videoId, className } = Astro.props
 
 const height = width / 1.78
 ---
 
 <div class="aspect-w-16 aspect-h-9">
 	<iframe
-		class="rounded-md"
+		class={cn('rounded-md', className)}
 		width={width}
 		height={height}
 		src=`https://www.youtube.com/embed/${videoId}?rel=0&autoplay=1&modestbranding=1`

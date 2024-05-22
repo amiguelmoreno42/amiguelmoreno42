@@ -26,7 +26,8 @@ const videoId = project.videoLink.slice(project.videoLink.lastIndexOf('/'))
 	<div class="flex flex-col gap-10">
 		<div class="flex w-full flex-col gap-12">
 			<div class="mb-5 mt-16 flex justify-center">
-				<VideoPlayer width={700} videoId={videoId} />
+				<VideoPlayer width={700} videoId={videoId} className="hidden md:block" />
+				<VideoPlayer width={600} videoId={videoId} className="md:hidden" />
 			</div>
 
 			<div class="flex justify-evenly gap-3">

@@ -16,7 +16,7 @@ import WorkItem from '@/components/work/WorkItem'
 			way and committed to making my mark in this exciting industry.
 		</p>
 
-		<div class="mt-10 flex w-[700px] flex-col gap-8 self-center">
+		<div class="mt-10 flex w-[90%] flex-col gap-8 self-center md:w-[700px]">
 			{workInfo?.map((work) => <WorkItem client:visible work={work} />).reverse()}
 		</div>
 	</div>

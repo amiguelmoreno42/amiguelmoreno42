@@ -10,8 +10,10 @@ const isActive = (name: string) => {
 }
 ---
 
-<nav class="fixed left-6 top-1/2 z-50 -translate-y-1/2 transform">
-	<ul class="flex flex-col items-center gap-8">
+<nav
+	class="fixed bottom-0 z-50 w-full transform bg-secondary p-4 lg:bottom-[unset] lg:left-6 lg:top-1/2 lg:w-[unset] lg:-translate-y-1/2 lg:bg-transparent lg:p-[unset]"
+>
+	<ul class="flex items-center justify-around gap-8 lg:flex-col lg:justify-center">
 		<NavbarItem client:visible active={path === '/'} path="/" type="svg" tooltipText="Home" />
 		<NavbarItem
 			client:visible
