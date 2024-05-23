@@ -25,18 +25,16 @@ export default function CourseItem({ course }: { course: CourseProps }) {
 	return (
 		<Dialog key={course.id}>
 			<DialogTrigger className="group flex w-full items-center justify-between rounded-sm bg-primary/20 p-2 pl-4 ">
-				<p className="text-xl font-light group-hover:font-normal">{course.title}</p>
+				<p className="text-base font-light group-hover:font-normal md:text-xl">{course.title}</p>
 
 				<div className="flex items-center gap-2 text-xs">
-					<p className="text-sm font-normal">More Details</p>
+					<p className="hidden text-sm font-normal sm:block md:text-xs">More Details</p>
 					<ReceiptText />
 				</div>
 			</DialogTrigger>
 			<DialogContent className="h-[700px] w-[90%] rounded-sm bg-secondary pr-0 sm:h-[500px] md:w-[700px]">
 				<DialogHeader>
-					<DialogTitle className="pb-4 text-center text-2xl font-normal ">
-						{course.title}
-					</DialogTitle>
+					<DialogTitle className="pb-4  text-2xl font-normal ">{course.title}</DialogTitle>
 					<DialogDescription className="max-h-[610px] w-full overflow-y-scroll px-4 pr-8 sm:max-h-[410px]">
 						<div className="mb-8 flex flex-col gap-5">
 							<div className="flex flex-col items-center gap-6 sm:flex-row ">

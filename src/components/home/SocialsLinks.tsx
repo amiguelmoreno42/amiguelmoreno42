@@ -2,7 +2,7 @@ import { FaLinkedin, FaGithubSquare, FaEnvelopeSquare } from 'react-icons/fa'
 
 export default function SocialsLinks() {
 	return (
-		<div className="absolute -right-24 top-1/2 flex -translate-y-1/2 flex-col gap-12 text-secondary">
+		<div className="absolute -right-16 top-1/2 flex -translate-y-1/2 flex-col gap-12 text-secondary sm:-right-24">
 			<a href="https://www.linkedin.com/in/miguelmoreno00" className="-ml-4">
 				<FaLinkedin className=" h-9 w-9 rounded-sm bg-primary [transition:all_0.6s] hover:bg-secondary hover:text-primary" />
 			</a>

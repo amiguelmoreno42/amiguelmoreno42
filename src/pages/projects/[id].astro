@@ -22,24 +22,26 @@ const videoId = project.videoLink.slice(project.videoLink.lastIndexOf('/'))
 ---
 
 <Layout title=`Miguel Moreno - ${project.title}`>
-	<h1 class="text-center text-5xl font-bold">{project.title}</h1>
+	<h1 class="text-center text-3xl font-bold md:text-5xl">{project.title}</h1>
 	<div class="flex flex-col gap-10">
 		<div class="flex w-full flex-col gap-12">
 			<div class="mb-5 mt-16 flex justify-center">
 				<VideoPlayer width={700} videoId={videoId} className="hidden md:block" />
-				<VideoPlayer width={600} videoId={videoId} className="md:hidden" />
+				<VideoPlayer width={600} videoId={videoId} className="hidden sm:block md:hidden" />
+				<VideoPlayer width={450} videoId={videoId} className="xs:block hidden sm:hidden" />
+				<VideoPlayer width={340} videoId={videoId} className="xs:hidden" />
 			</div>
 
 			<div class="flex justify-evenly gap-3">
 				<Buttons deployLink={project.deployLink} repoLink={project.repoLink} />
 			</div>
 
-			<p class="text-xl font-light">{project.description}</p>
+			<p class="text-base font-light md:text-xl">{project.description}</p>
 		</div>
 
 		<div class="flex flex-col gap-3">
 			<p class="text-xl font-normal" font-light>Technologies used:</p>
-			<div class="flex w-fit gap-5 rounded-sm bg-white px-4 py-3">
+			<div class="flex w-fit flex-wrap gap-5 rounded-sm px-4 py-3">
 				{project.technologies.map((tech) => <ProjectTechEl tech={tech} />)}
 			</div>
 		</div>
@@ -53,7 +55,7 @@ const videoId = project.videoLink.slice(project.videoLink.lastIndexOf('/'))
 
 							<div class="flex flex-col gap-2">
 								{project.skills.map((skill) => (
-									<p class="pl-5 text-xl font-light">- {skill}</p>
+									<p class="pl-5 text-base font-light md:text-xl">- {skill}</p>
 								))}
 							</div>
 						</div>
@@ -68,7 +70,7 @@ const videoId = project.videoLink.slice(project.videoLink.lastIndexOf('/'))
 
 						<div class="flex flex-col gap-2">
 							{project.interest.map((interest) => (
-								<p class="pl-5 text-xl font-light">- {interest}</p>
+								<p class="pl-5 text-base font-light md:text-xl">- {interest}</p>
 							))}
 						</div>
 					</div>
@@ -82,7 +84,7 @@ const videoId = project.videoLink.slice(project.videoLink.lastIndexOf('/'))
 
 						<div class="flex flex-col gap-2">
 							{project.improvements.map((improvement) => (
-								<p class="pl-5 text-xl font-light">- {improvement}</p>
+								<p class="pl-5 text-base font-light md:text-xl">- {improvement}</p>
 							))}
 						</div>
 					</div>

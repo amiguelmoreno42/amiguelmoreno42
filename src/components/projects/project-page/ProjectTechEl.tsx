@@ -19,7 +19,7 @@ export default function ProjectTechEl({ tech }: { tech: string }) {
 	const height = 30
 
 	return (
-		<div className="flex flex-col items-center gap-2">
+		<div className="flex flex-1 flex-col items-center gap-2 rounded-sm  bg-white p-2 px-4">
 			{tech === 'react' && <ReactSvg width={width} height={height} />}
 			{tech === 'html' && <HtmlSVG width={width} height={height} />}
 			{tech === 'css' && <CssSvg width={width} height={height} />}
