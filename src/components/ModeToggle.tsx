@@ -31,7 +31,7 @@ export function ModeToggle() {
 	}, [theme])
 
 	const toggleTheme = () => {
-		setThemeState((prevTheme) => (prevTheme === 'dark' ? 'theme-light' : 'dark'))
+		setThemeState((prevTheme) => (prevTheme === 'dark' ? 'theme-light' : prevTheme))
 	}
 
 	return (
