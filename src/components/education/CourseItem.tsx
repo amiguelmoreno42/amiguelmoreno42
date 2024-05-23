@@ -43,9 +43,8 @@ export default function CourseItem({ course }: { course: CourseProps }) {
 								<div className="relative w-fit shadow-md">
 									<img
 										src={course.imageEducation}
-										width={250}
 										alt={course.title}
-										className="rounded-sm"
+										className="h-40 rounded-sm"
 									></img>
 									<img
 										className="absolute -bottom-1 -right-1 rounded-sm bg-white p-1 shadow-md"

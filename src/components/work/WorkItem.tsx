@@ -45,9 +45,8 @@ export default function WorkItem({ work }: { work: WorkProps }) {
 							<div className="flex flex-col items-center gap-6 sm:flex-row">
 								<img
 									src={work.imageCompany}
-									width={250}
 									alt={work.title}
-									className="rounded-sm bg-white object-contain p-2 shadow-md "
+									className="h-24 rounded-lg bg-white object-contain p-2 shadow-md"
 								></img>
 								<div className="flex flex-col gap-2">
 									<p className="text-base font-light">

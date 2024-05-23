@@ -103,7 +103,7 @@ export const educationInfo = [
 		duration: '17 hours',
 		certification: 'https://www.udemy.com/certificate/UC-e8a35d61-e4e5-42c5-baff-ea219a30f899/',
 		description:
-			'Delve into the essentials of Git and GitHub, mastering actions like adding, pushing, committing, rebasing, squashing, stashing, exploring reflogs, and more.',
+			'I learned the essentials of Git and GitHub, mastering actions like adding, pushing, committing, rebasing, squashing, stashing, exploring reflogs, and more.',
 		skills: [
 			'Understand how Git works behind the scenes',
 			'Master the essential Git workflow: adding & committing',
