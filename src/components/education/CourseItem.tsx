@@ -24,7 +24,7 @@ interface CourseProps {
 export default function CourseItem({ course }: { course: CourseProps }) {
 	return (
 		<Dialog key={course.id}>
-			<DialogTrigger className="group flex w-full items-center justify-between rounded-sm bg-primary/20 p-2 pl-4 ">
+			<DialogTrigger className="group flex w-full items-center justify-between rounded-sm bg-primary/10 p-2 pl-4 ">
 				<p className="text-base font-light group-hover:font-normal md:text-xl">{course.title}</p>
 
 				<div className="flex items-center gap-2 text-xs">
@@ -32,13 +32,13 @@ export default function CourseItem({ course }: { course: CourseProps }) {
 					<ReceiptText />
 				</div>
 			</DialogTrigger>
-			<DialogContent className="h-[700px] w-[90%] rounded-sm bg-secondary pr-0 sm:h-[500px] md:w-[700px]">
+			<DialogContent className="h-[500px] w-[90%] rounded-sm bg-secondary pr-0 md:h-[700px]   md:w-[700px]">
 				<DialogHeader>
 					<DialogTitle className="pb-4  text-2xl font-normal ">{course.title}</DialogTitle>
-					<DialogDescription className="max-h-[610px] w-full overflow-y-scroll px-4 pr-8 sm:max-h-[410px]">
+					<DialogDescription className="max-h-[410px] w-full overflow-y-scroll px-4 pr-8 md:max-h-[610px] ">
 						<div className="mb-8 flex flex-col gap-5">
-							<div className="flex flex-col items-center gap-6 sm:flex-row ">
-								<div className="relative w-fit">
+							<div className="flex flex-col items-center gap-6  sm:flex-row ">
+								<div className="relative w-fit shadow-md">
 									<img
 										src={course.imageEducation}
 										width={250}
@@ -46,7 +46,7 @@ export default function CourseItem({ course }: { course: CourseProps }) {
 										className="rounded-sm"
 									></img>
 									<img
-										className="absolute -bottom-1 -right-1 rounded-sm bg-primary p-1"
+										className="absolute -bottom-1 -right-1 rounded-sm bg-white p-1 shadow-md"
 										src={course.imageInstitution}
 										width={70}
 										alt={course.title}

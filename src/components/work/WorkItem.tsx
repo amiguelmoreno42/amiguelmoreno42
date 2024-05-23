@@ -37,17 +37,17 @@ export default function WorkItem({ work }: { work: WorkProps }) {
 					</div>
 				</div>
 			</DialogTrigger>
-			<DialogContent className="h-[700px] w-[90%] rounded-sm bg-secondary pr-0 sm:h-[500px] md:w-[700px]">
+			<DialogContent className=" h-[500px] w-[90%] rounded-sm bg-secondary pr-0 md:h-[700px] md:w-[700px]">
 				<DialogHeader>
 					<DialogTitle className="pb-4 text-2xl font-normal">{work.title}</DialogTitle>
-					<DialogDescription className="max-h-[610px] w-full overflow-y-scroll px-4 pr-8 sm:max-h-[410px]">
+					<DialogDescription className=" max-h-[400px] w-full overflow-y-scroll px-4 pr-8 md:max-h-[610px]">
 						<div className="mb-8 flex flex-col gap-5">
 							<div className="flex flex-col items-center gap-6 sm:flex-row">
 								<img
 									src={work.imageCompany}
 									width={250}
 									alt={work.title}
-									className="rounded-sm bg-white object-contain p-2 "
+									className="rounded-sm bg-white object-contain p-2 shadow-md "
 								></img>
 								<div className="flex flex-col gap-2">
 									<p className="text-base font-light">

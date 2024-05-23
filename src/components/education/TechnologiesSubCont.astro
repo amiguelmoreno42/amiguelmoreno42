@@ -2,9 +2,11 @@
 const { title } = Astro.props
 ---
 
-<div class="rounded-sm bg-primary/50 px-3 py-2 text-center text-white dark:bg-primary/20">
+<div
+	class="xs:flex-none flex flex-1 flex-col rounded-sm bg-primary/10 px-3 py-2 text-center text-primary dark:bg-primary/20"
+>
 	<h3 class="mb-3 text-base font-light">{title}</h3>
-	<div class="flex items-center justify-center gap-3 pb-2">
+	<div class="flex items-center justify-around gap-3 pb-2">
 		<slot />
 	</div>
 </div>
