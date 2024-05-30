@@ -161,5 +161,24 @@ export const educationInfo = [
 		],
 		imageInstitution: import.meta.env.BASE_URL + '../../education/logos/udemy-logo.svg.png',
 		imageEducation: import.meta.env.BASE_URL + '../../education/covers/react.jpeg'
+	},
+	{
+		id: 9,
+		title: 'Typescript Course',
+		institution: 'Udemy',
+		date: 'May 2024',
+		duration: '15 hours',
+		certification: 'https://www.udemy.com/certificate/UC-fc252add-1316-4724-bdcd-64ab2160cd3f/',
+		description:
+			'In this course I learned how to work with TypeScript, learning features like types, interfaces, classes...',
+		skills: [
+			'Use TypeScript and its Features like Types, ES6 Support, Classes, Modules, Interfaces and more.',
+			'Understand what TypeScript really is about and how it works',
+			'Why TypeScript offers a real advantage over vanilla JavaScript',
+			'Learn TypeScript both in theory as well as applied to real use-cases and projects',
+			'How to combine TypeScript with ReactJS or NodeJS / Express'
+		],
+		imageInstitution: import.meta.env.BASE_URL + '../../education/logos/udemy-logo.svg.png',
+		imageEducation: import.meta.env.BASE_URL + '../../education/covers/typescript.jpg'
 	}
 ]
