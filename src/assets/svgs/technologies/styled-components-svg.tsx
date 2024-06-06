@@ -7,6 +7,7 @@ export default function styledComponentsSvg({ width = 40, height = 40, fill = 'n
 			width={width}
 			height={height}
 			fill={fill}
+			className="bg-white "
 		>
 			<defs>
 				<path id="a" d="M0 0h318v318H0z"></path>

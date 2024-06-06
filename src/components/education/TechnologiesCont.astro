@@ -1,7 +1,7 @@
 ---
 import AstroIcon from '../../assets/svgs/technologies/astro-svg.tsx'
 import AppwriteIcon from '../../assets/svgs/technologies/appwrite-svg.tsx'
-import ClerkIcon from '../../assets/svgs/technologies/clerk-svg.tsx'
+import ClerkSvg from '@/assets/svgs/technologies/clerk-svg'
 import ConvexIcon from '../../assets/svgs/technologies/convex-svg.tsx'
 import CssSvg from '../../assets/svgs/technologies/css-svg'
 import JavascriptIcon from '../../assets/svgs/technologies/javascript-svg.tsx'
@@ -16,9 +16,16 @@ import StorybookIcon from '../../assets/svgs/technologies/storybook-svg.tsx'
 import TailwindIcon from '../../assets/svgs/technologies/tailwind-svg.tsx'
 import TypescriptSvg from '../../assets/svgs/technologies/typescript-svg.tsx'
 import ReactQueryIcon from '../../assets/svgs/technologies/react-query-svg.tsx'
-import TechnologiesSubCont from './TechnologiesSubCont.astro'
+import ReactTestingIcon from '../../assets/svgs/technologies/react-testing-svg.tsx'
+import BootstrapIcon from '../../assets/svgs/technologies/bootstrap-svg.tsx'
+import JQueryIcon from '../../assets/svgs/technologies/jquery-svg.tsx'
+import JestIcon from '../../assets/svgs/technologies/jest-svg.tsx'
+import StyledIcon from '../../assets/svgs/technologies/styled-components-svg.tsx'
 import SocketIOIcon from '../../assets/svgs/technologies/socketio-svg.tsx'
+import TechnologiesSubCont from './TechnologiesSubCont.astro'
 import Heading from '../Heading.astro'
+import TechnologyCont from './TechnologyCont.astro'
+import TechElement from '../projects/TechElement'
 
 const width = 30
 const height = 30
@@ -27,43 +34,96 @@ const height = 30
 <div>
 	<Heading title="Technologies" type="h2" />
 	<div class="flex justify-center">
-		<div class="flex
-		w-full
+		<div class="flex w-full
 		max-w-[900px]
 		flex-wrap
 		justify-center
 		gap-4">
 			<TechnologiesSubCont title="Languages">
-				<JavascriptIcon width={width} height={height} />
-				<TypescriptSvg width={width} height={height} />
+				<TechnologyCont title="JavaScript">
+					<JavascriptIcon width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="TypeScript">
+					<TypescriptSvg width={width} height={height} />
+				</TechnologyCont>
 			</TechnologiesSubCont>
 
 			<TechnologiesSubCont title="Frameworks and Libraries">
-				<ReactIcon width={width} height={height} />
-				<NextjsIcon width={width} height={height} />
-				<NodejsIcon width={width} height={height} />
-				<TailwindIcon width={width} height={height} />
-				<AstroIcon width={width} height={height} />
-				<ReactQueryIcon width={width} height={height} />
+				<TechnologyCont title="React">
+					<ReactIcon width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="NextJS">
+					<NextjsIcon width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="NodeJS">
+					<NodejsIcon width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="Tailwind">
+					<TailwindIcon width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="Astro">
+					<AstroIcon width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="React Query">
+					<ReactQueryIcon width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="jQuery">
+					<JQueryIcon width={width} height={height} />
+				</TechnologyCont>
 			</TechnologiesSubCont>
 
 			<TechnologiesSubCont title="Styling">
-				<CssSvg width={width} height={height} />
-				<SassIcon width={width} height={height} />
-				<ShadcnIcon width={width} height={height} />
-				<StorybookIcon width={width} height={height} />
+				<TechnologyCont title="CSS">
+					<CssSvg width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="Sass">
+					<SassIcon width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="Shadcn">
+					<ShadcnIcon width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="Storybook">
+					<StorybookIcon width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="Bootstrap">
+					<BootstrapIcon width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="Styled Comp">
+					<StyledIcon width={width} height={height} />
+				</TechnologyCont>
 			</TechnologiesSubCont>
 
 			<TechnologiesSubCont title="Databases">
-				<MongodbIcon width={width} height={height} />
-				<MongooseIcon width={width} height={height} />
+				<TechnologyCont title="MongoDB">
+					<MongodbIcon width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="Mongoose">
+					<MongooseIcon width={width} height={height} />
+				</TechnologyCont>
+			</TechnologiesSubCont>
+
+			<TechnologiesSubCont title="Testing">
+				<TechnologyCont title="RTL">
+					<ReactTestingIcon width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="Jest">
+					<JestIcon width={width} height={height} />
+				</TechnologyCont>
 			</TechnologiesSubCont>
 
 			<TechnologiesSubCont title="Backend Services">
-				<AppwriteIcon width={width} height={height} />
-				<SocketIOIcon width={width} height={height} />
-				<ClerkIcon width={width} height={height} />
-				<ConvexIcon width={width} height={height} />
+				<TechnologyCont title="Appwrite">
+					<AppwriteIcon width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="Socket.IO">
+					<SocketIOIcon width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="Clerk">
+					<ClerkSvg width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="Convex">
+					<ConvexIcon width={width} height={height} />
+				</TechnologyCont>
 			</TechnologiesSubCont>
 		</div>
 	</div>

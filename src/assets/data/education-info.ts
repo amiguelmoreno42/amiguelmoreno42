@@ -81,7 +81,7 @@ export const educationInfo = [
 	},
 	{
 		id: 5,
-		title: 'FrontEnd and Entrepreneurship',
+		title: 'Digital Marketing and SEO',
 		institution: 'Incyde Fundation',
 		date: 'Sep 2021 - Nov 2021',
 		duration: '80 hours',
@@ -90,7 +90,8 @@ export const educationInfo = [
 		skills: [
 			'Introduction to Web Development and Gamification',
 			'Digital Marketing and Finance - SEO, SEM, SMO, and ASO',
-			'Gamification Solutions and Soft Skills'
+			'Gamification Solutions and Soft Skills',
+			'Create a WordPress E-commerce website'
 		],
 		imageInstitution: import.meta.env.BASE_URL + '../../education/logos/incyde-logo.png',
 		imageEducation: import.meta.env.BASE_URL + '../../education/covers/marketing-front.webp'
