@@ -31,7 +31,7 @@ export const workInfo = [
 	},
 	{
 		id: 3,
-		title: 'Community Manager / Web Developer',
+		title: 'Web Developer / Community Manager',
 		institution: 'Social Vibe / Self-Employed',
 		date: 'Dec 2022 - Dec 2023',
 		duration: '1 year',
