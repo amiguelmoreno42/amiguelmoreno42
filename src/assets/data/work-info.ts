@@ -32,7 +32,7 @@ export const workInfo = [
 	{
 		id: 3,
 		title: 'Web Developer / Community Manager',
-		institution: 'Social Vibe / Self-Employed',
+		institution: 'Social Vibe Agency',
 		date: 'Dec 2022 - Dec 2023',
 		duration: '1 year',
 		description:
