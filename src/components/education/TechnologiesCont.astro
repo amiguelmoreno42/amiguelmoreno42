@@ -1,45 +1,45 @@
 ---
-import AstroIcon from '../../assets/svgs/technologies/astro-svg.tsx'
-import AppwriteIcon from '../../assets/svgs/technologies/appwrite-svg.tsx'
+import AstroIcon from '../../assets/svgs/technologies/astro-svg'
+import AppwriteIcon from '../../assets/svgs/technologies/appwrite-svg'
 import ClerkSvg from '@/assets/svgs/technologies/clerk-svg'
-import ConvexIcon from '../../assets/svgs/technologies/convex-svg.tsx'
+import ConvexIcon from '../../assets/svgs/technologies/convex-svg'
 import CssSvg from '../../assets/svgs/technologies/css-svg'
-import JavascriptIcon from '../../assets/svgs/technologies/javascript-svg.tsx'
-import CIcon from '../../assets/svgs/technologies/c-svg.tsx'
-import MongodbIcon from '../../assets/svgs/technologies/mongodb-svg.tsx'
-import MongooseIcon from '../../assets/svgs/technologies/mongoose-svg.tsx'
-import NextjsIcon from '../../assets/svgs/technologies/nextjs-svg.tsx'
-import NodejsIcon from '../../assets/svgs/technologies/nodejs-svg.tsx'
-import ReactIcon from '../../assets/svgs/technologies/react-svg.tsx'
-import SassIcon from '../../assets/svgs/technologies/sass-svg.tsx'
-import ShadcnIcon from '../../assets/svgs/technologies/shadcn-svg.tsx'
-import StorybookIcon from '../../assets/svgs/technologies/storybook-svg.tsx'
-import TailwindIcon from '../../assets/svgs/technologies/tailwind-svg.tsx'
-import TypescriptSvg from '../../assets/svgs/technologies/typescript-svg.tsx'
-import ReactQueryIcon from '../../assets/svgs/technologies/react-query-svg.tsx'
-import ReactTestingIcon from '../../assets/svgs/technologies/react-testing-svg.tsx'
-import BootstrapIcon from '../../assets/svgs/technologies/bootstrap-svg.tsx'
-import JQueryIcon from '../../assets/svgs/technologies/jquery-svg.tsx'
-import JestIcon from '../../assets/svgs/technologies/jest-svg.tsx'
-import StyledIcon from '../../assets/svgs/technologies/styled-components-svg.tsx'
-import SocketIOIcon from '../../assets/svgs/technologies/socketio-svg.tsx'
+import JavascriptIcon from '../../assets/svgs/technologies/javascript-svg'
+import CIcon from '../../assets/svgs/technologies/c-svg'
+import MongodbIcon from '../../assets/svgs/technologies/mongodb-svg'
+import MongooseIcon from '../../assets/svgs/technologies/mongoose-svg'
+import NextjsIcon from '../../assets/svgs/technologies/nextjs-svg'
+import NodejsIcon from '../../assets/svgs/technologies/nodejs-svg'
+import ReactIcon from '../../assets/svgs/technologies/react-svg'
+import SassIcon from '../../assets/svgs/technologies/sass-svg'
+import ShadcnIcon from '../../assets/svgs/technologies/shadcn-svg'
+import StorybookIcon from '../../assets/svgs/technologies/storybook-svg'
+import TailwindIcon from '../../assets/svgs/technologies/tailwind-svg'
+import TypescriptSvg from '../../assets/svgs/technologies/typescript-svg'
+import ReactQueryIcon from '../../assets/svgs/technologies/react-query-svg'
+import ReactTestingIcon from '../../assets/svgs/technologies/react-testing-svg'
+import BootstrapIcon from '../../assets/svgs/technologies/bootstrap-svg'
+import JQueryIcon from '../../assets/svgs/technologies/jquery-svg'
+import JestIcon from '../../assets/svgs/technologies/jest-svg'
+import StyledIcon from '../../assets/svgs/technologies/styled-components-svg'
+import SocketIOIcon from '../../assets/svgs/technologies/socketio-svg'
 import TechnologiesSubCont from './TechnologiesSubCont.astro'
 import Heading from '../Heading.astro'
 import TechnologyCont from './TechnologyCont.astro'
 import TechElement from '../projects/TechElement'
 
-const width = 30
-const height = 30
+const width = 50
+const height = 50
 ---
 
 <div>
 	<Heading title="Technologies" type="h2" />
-	<div class="flex justify-center">
-		<div class="flex w-full
-		max-w-[900px]
+	<div class="flex items-center justify-center">
+		<div class="flex max-w-[700px]
 		flex-wrap
+		items-center
 		justify-center
-		gap-4">
+		gap-6">
 			<TechnologiesSubCont title="Languages">
 				<TechnologyCont title="JavaScript">
 					<JavascriptIcon width={width} height={height} />
@@ -62,9 +62,7 @@ const height = 30
 				<TechnologyCont title="NodeJS">
 					<NodejsIcon width={width} height={height} />
 				</TechnologyCont>
-				<TechnologyCont title="Tailwind">
-					<TailwindIcon width={width} height={height} />
-				</TechnologyCont>
+
 				<TechnologyCont title="Astro">
 					<AstroIcon width={width} height={height} />
 				</TechnologyCont>
@@ -79,6 +77,9 @@ const height = 30
 			<TechnologiesSubCont title="Styling">
 				<TechnologyCont title="CSS">
 					<CssSvg width={width} height={height} />
+				</TechnologyCont>
+				<TechnologyCont title="Tailwind">
+					<TailwindIcon width={width} height={height} />
 				</TechnologyCont>
 				<TechnologyCont title="Sass">
 					<SassIcon width={width} height={height} />

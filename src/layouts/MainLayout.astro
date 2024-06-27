@@ -12,13 +12,6 @@ interface Props {
 const { title } = Astro.props
 ---
 
-<script defer is:inline>
-	const theme =
-		localStorage.getItem('theme') ||
-		(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-	document.write(`<style>:root { --theme-color: ${theme === 'dark' ? '#333' : '#FFF'}; }</style>`)
-</script>
-
 <html lang="en">
 	<head>
 		<ViewTransitions />
@@ -28,6 +21,25 @@ const { title } = Astro.props
 		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<script defer is:inline>
+			const theme =
+				localStorage.getItem('theme') ||
+				(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+			document.write(
+				`<style>:root { --theme-color: ${theme === 'dark' ? '#333' : '#FFF'}; }</style>`
+			)
+		</script>
+		<style>
+			:root[data-theme='dark'] {
+				--theme-color: #333;
+			}
+			:root[data-theme='light'] {
+				--theme-color: #fff;
+			}
+			body {
+				background-color: var(--theme-color);
+			}
+		</style>
 	</head>
 	<body
 		class="scrollbar-none scrollbar-webkit-none relative flex min-h-[100vh] flex-col items-center overflow-y-scroll bg-secondary"

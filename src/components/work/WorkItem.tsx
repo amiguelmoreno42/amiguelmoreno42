@@ -39,8 +39,8 @@ export default function WorkItem({ work }: { work: WorkProps }) {
 			</DialogTrigger>
 			<DialogContent className="h-[500px] w-[90%] rounded-sm bg-secondary pr-0 md:h-[700px] md:w-[700px]">
 				<DialogHeader>
-					<DialogTitle className="pb-4 text-xl font-normal md:text-2xl">{work.title}</DialogTitle>
-					<DialogDescription className=" max-h-[410px] w-full overflow-y-scroll px-4 pr-8 md:max-h-[610px]">
+					<DialogTitle className="pb-6 text-xl font-normal md:text-2xl">{work.title}</DialogTitle>
+					<DialogDescription className=" scrollbar-hide max-h-[410px] w-full overflow-y-scroll px-4 pr-8 md:max-h-[610px]">
 						<div className="mb-8 flex flex-col gap-5">
 							<div className="flex flex-col items-center gap-6 sm:flex-row">
 								<img

@@ -37,7 +37,7 @@ export default function CourseItem({ course }: { course: CourseProps }) {
 					<DialogTitle className="pb-4 text-xl font-normal md:text-2xl ">
 						{course.title}
 					</DialogTitle>
-					<DialogDescription className="max-h-[410px] w-full overflow-y-scroll px-4 pr-8 md:max-h-[610px] ">
+					<DialogDescription className="scrollbar-hide max-h-[410px] w-full overflow-y-scroll scroll-smooth px-4 pr-8 md:max-h-[610px] ">
 						<div className="mb-8 flex flex-col gap-5">
 							<div className="flex flex-col items-center gap-6  sm:flex-row ">
 								<div className="relative w-fit shadow-md">

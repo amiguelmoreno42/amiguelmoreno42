@@ -3,7 +3,7 @@ import Layout from '../../layouts/MainLayout.astro'
 import Projects42Cont from '@/components/projects/Projects42Cont'
 import Heading from '@/components/Heading.astro'
 import { projectsInfo } from '@/assets/data/projects-info'
-import ProjectItem from '@/components/projects/ProjectItem.tsx'
+import ProjectItem from '@/components/projects/ProjectItem'
 
 const sortedProjects = projectsInfo.sort((a, b) => {
 	if (a.topProjects && !b.topProjects) return -1
@@ -16,7 +16,7 @@ const sortedProjects = projectsInfo.sort((a, b) => {
 	<Heading title="Projects" type="h1" />
 
 	<div class="flex flex-col gap-20">
-		<p class="text-base font-light md:text-xl">
+		<p class="font-lato text-base font-light md:text-xl">
 			Welcome to my projects section, each one reflects a step in my journey of learning and
 			development. From web applications to more experimental projects, these works showcase my
 			dedication to tackling diverse challenges and applying creative solutions.

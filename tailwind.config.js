@@ -95,5 +95,39 @@ export default {
 			}
 		}
 	},
-	plugins: [require('tailwindcss-animate')]
+	plugins: [
+		require('tailwindcss-animate'),
+		function ({ addUtilities }) {
+			const newUtilities = {
+				'.scrollbar-hide': {
+					/* Ocultar la barra de desplazamiento */
+					'scrollbar-width': 'none' /* Firefox */,
+					'-ms-overflow-style': 'none' /* IE 10+ */,
+					'&::-webkit-scrollbar': {
+						display: 'none' /* Safari y Chrome */
+					}
+				},
+				'.scrollbar-custom': {
+					/* Personalizar la barra de desplazamiento */
+					'&::-webkit-scrollbar': {
+						width: '10px',
+						height: '12px'
+					},
+					'&::-webkit-scrollbar-track': {
+						background: '#f1f1f1',
+						'border-radius': '10px'
+					},
+					'&::-webkit-scrollbar-thumb': {
+						background: '#888',
+						'border-radius': '10px'
+					},
+					'&::-webkit-scrollbar-thumb:hover': {
+						background: '#555'
+					}
+				}
+			}
+
+			addUtilities(newUtilities, ['responsive', 'hover'])
+		}
+	]
 }
