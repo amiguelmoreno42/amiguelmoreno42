@@ -7,6 +7,7 @@ import VideoPlayer from '@/components/projects/VideoPlayer.astro'
 import Buttons from '@/components/projects/project-page/buttons.astro'
 import ProjectTechEl from '@/components/projects/project-page/ProjectTechEl'
 import { SiSkillshare } from 'react-icons/si'
+import { transitionEnabledOnThisPage } from 'astro:transitions/client'
 
 const { id } = Astro.params
 
@@ -23,17 +24,30 @@ const videoId = project.videoLink.slice(project.videoLink.lastIndexOf('/'))
 
 <Layout title=`Miguel Moreno - ${project.title}`>
 	<h1 class="text-center text-3xl font-bold md:text-5xl">{project.title}</h1>
+
 	<div class="flex flex-col gap-10">
 		<div class="flex w-full flex-col gap-12">
-			<div class="mb-5 mt-16 flex justify-center">
+			<div class="mb-5 mt-16 flex flex-col items-center justify-center gap-4">
+				{
+					project.disable === true && (
+						<p class="text-orange-500">
+							Note: The deployment of this project is currently unavailable due to the limitations
+							of free service plans.
+						</p>
+					)
+				}
 				<VideoPlayer width={700} videoId={videoId} className="hidden md:block" />
 				<VideoPlayer width={600} videoId={videoId} className="hidden sm:block md:hidden" />
-				<VideoPlayer width={450} videoId={videoId} className="xs:block hidden sm:hidden" />
+				<VideoPlayer width={450} videoId={videoId} className="hidden xs:block sm:hidden" />
 				<VideoPlayer width={340} videoId={videoId} className="xs:hidden" />
 			</div>
 
 			<div class="flex justify-evenly gap-3">
-				<Buttons deployLink={project.deployLink} repoLink={project.repoLink} />
+				<Buttons
+					disabled={project?.disable}
+					deployLink={project.deployLink}
+					repoLink={project.repoLink}
+				/>
 			</div>
 
 			<p class="text-base font-light md:text-xl">{project.description}</p>

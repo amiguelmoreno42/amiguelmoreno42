@@ -188,6 +188,7 @@ export const projectsInfo = [
 	{
 		id: 8,
 		title: 'Discord Clone',
+		disable: true,
 		topProjects: true,
 		description:
 			'The main goal of this project was to learn the fundamentals of NextJS, folders routing system, reusable components, databases, api endpoints, SocketIO and more. This is a project that I did in Code with Antonio course.',

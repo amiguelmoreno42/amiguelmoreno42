@@ -1,21 +1,17 @@
 ---
 import Layout from '../../layouts/MainLayout.astro'
-import Projects42Cont from '@/components/projects/Projects42Cont'
 import Heading from '@/components/Heading.astro'
 import { projectsInfo } from '@/assets/data/projects-info'
 import ProjectItem from '@/components/projects/ProjectItem'
+import { ChevronsRight } from 'lucide-react'
 
-const sortedProjects = projectsInfo.sort((a, b) => {
-	if (a.topProjects && !b.topProjects) return -1
-	else if (!a.topProjects && b.topProjects) return 1
-	return 0 // Ambos son true o ambos son false, no cambian de orden
-})
+const sortedProjects = projectsInfo.filter((project) => project.topProjects === true)
 ---
 
 <Layout title="Miguel Moreno - Projects">
 	<Heading title="Projects" type="h1" />
 
-	<div class="flex flex-col gap-20">
+	<div class="flex flex-col gap-14">
 		<p class="font-lato text-base font-light md:text-xl">
 			Welcome to my projects section, each one reflects a step in my journey of learning and
 			development. From web applications to more experimental projects, these works showcase my
@@ -23,29 +19,37 @@ const sortedProjects = projectsInfo.sort((a, b) => {
 		</p>
 
 		<!-- <SelectBuild client:visible /> -->
-		<div class="grid grid-cols-1 gap-x-8 gap-y-12 p-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
-			{
-				sortedProjects.map((project) => (
-					<ProjectItem
-						id={project.id}
-						topProjects={project.topProjects}
-						title={project.title}
-						description={project.description}
-						technologies={project.technologies}
-						repoLink={project?.repoLink}
-						deployLink={project?.deployLink}
-						cover={project.cover}
-					/>
-				))
-			}
-		</div>
 
-		<div>
-			<p class="mb-8 text-base font-light md:text-xl">
-				This are some of the projects I did while I was studing at Campus 42 Telefonica in Malaga:
-			</p>
+		<div class="flex flex-col items-center gap-14">
+			<div class="flex flex-wrap justify-center gap-5">
+				{
+					sortedProjects.map((project) => (
+						<div class="max-w-[45%]">
+							<ProjectItem
+								id={project.id}
+								topProjects={project.topProjects}
+								title={project.title}
+								description={project.description}
+								technologies={project.technologies}
+								repoLink={project?.repoLink}
+								deployLink={project?.deployLink}
+								cover={project.cover}
+							/>
+						</div>
+					))
+				}
+			</div>
 
-			<div class="flex flex-col gap-3"><Projects42Cont client:visible /></div>
+			<div class="flex w-full flex-1 items-center gap-16">
+				<div class="h-[2px] w-full rounded-sm bg-primary/30"></div>
+				<a
+					href="/projects/all"
+					class="flex min-w-fit items-center justify-around gap-1 self-center rounded-sm bg-primary/10 p-2 text-primary/80 transition hover:text-primary"
+				>
+					<p>See More Projects</p> <ChevronsRight className="h-5 w-5" /></a
+				>
+				<div class="h-[2px] w-full rounded-sm bg-primary/30"></div>
+			</div>
 		</div>
 	</div>
 </Layout>

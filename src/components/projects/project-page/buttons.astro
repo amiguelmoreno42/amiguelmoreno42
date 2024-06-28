@@ -2,25 +2,27 @@
 import { Button } from '@/components/ui/button'
 import { FolderInput, Globe } from 'lucide-react'
 
-const { deployLink, repoLink } = Astro.props
+const { deployLink, repoLink, disabled } = Astro.props
 ---
 
-<Button asChild
-	><a
-		href={deployLink}
-		target="_blank"
-		class="group flex h-10 items-center gap-2 rounded-sm bg-primary px-3 text-base text-secondary transition-all"
-	>
-		<p class="font-bold">Go to Website</p>
-		<Globe className="h-5 w-5 transition-all duration-500 group-hover:rotate-180" />
-	</a></Button
->
+{
+	disabled !== true && (
+		<Button className="px-0 py-0 hover:bg-primary">
+			<a href={deployLink} target="_blank">
+				<div class="group flex h-10 items-center gap-2 rounded-sm bg-primary px-5 py-2 text-base text-secondary transition-all">
+					<p class="font-bold">Go to Website</p>
+					<Globe className="h-5 w-5 transition-all duration-500 group-hover:rotate-180" />
+				</div>
+			</a>
+		</Button>
+	)
+}
 
-<Button asChild
+<Button className="px-0 py-0 hover:bg-primary"
 	><a
 		href={repoLink}
 		target="_blank"
-		class="group flex h-10 items-center gap-2 rounded-sm bg-primary px-3 text-base text-secondary transition-all"
+		class="group flex h-10 items-center gap-2 rounded-sm bg-primary px-5 py-2 text-base text-secondary transition-all"
 		><p class="font-bold">Go to Repo</p>
 		<FolderInput className="h-5 w-5 transition-all duration-700 group-hover:rotate-360" /></a
 	></Button
