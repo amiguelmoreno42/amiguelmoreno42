@@ -122,6 +122,7 @@ export const educationInfo = [
 		id: 7,
 		title: 'Coding Campus 42 Malaga',
 		institution: '42 Malaga Telefonica',
+		topEducation: true,
 		duration: '1 year 10 months',
 		date: 'Feb 2022 - Dec 2023',
 		description:

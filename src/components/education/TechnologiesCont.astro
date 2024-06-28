@@ -28,18 +28,14 @@ import Heading from '../Heading.astro'
 import TechnologyCont from './TechnologyCont.astro'
 import TechElement from '../projects/TechElement'
 
-const width = 50
-const height = 50
+const width = 45
+const height = 45
 ---
 
 <div>
 	<Heading title="Technologies" type="h2" />
 	<div class="flex items-center justify-center">
-		<div class="flex max-w-[700px]
-		flex-wrap
-		items-center
-		justify-center
-		gap-6">
+		<div class="flex flex-col flex-wrap items-center justify-center gap-6 md:flex-row">
 			<TechnologiesSubCont title="Languages">
 				<TechnologyCont title="JavaScript">
 					<JavascriptIcon width={width} height={height} />

@@ -6,7 +6,8 @@ import {
 	DialogTitle,
 	DialogTrigger
 } from '@/components/ui/dialog'
-import { Info, Link, ReceiptText } from 'lucide-react'
+import { cn } from '@/lib/utils'
+import { Info, Link, ReceiptText, Star } from 'lucide-react'
 
 interface CourseProps {
 	id: number
@@ -17,6 +18,7 @@ interface CourseProps {
 	description: string
 	skills: string[]
 	imageInstitution: string
+	topEducation: boolean
 	imageEducation: string
 	certification?: string
 }
@@ -24,7 +26,16 @@ interface CourseProps {
 export default function CourseItem({ course }: { course: CourseProps }) {
 	return (
 		<Dialog key={course.id}>
-			<DialogTrigger className="group flex w-full items-center justify-between rounded-sm bg-primary/10 p-2 pl-4 ">
+			<DialogTrigger
+				className={cn(
+					'group relative flex w-full items-center justify-between rounded-sm bg-primary/10 p-2 pl-4 ',
+					course.topEducation === true && 'border-2 border-yellow-400'
+				)}
+			>
+				{course.topEducation === true && (
+					<Star className="absolute left-0 top-0 h-5 w-5 -translate-x-1/2 -translate-y-1/2 fill-yellow-400 text-primary/10" />
+				)}
+
 				<p className="text-base font-light group-hover:font-normal md:text-xl">{course.title}</p>
 
 				<div className="flex items-center gap-2 text-xs">
@@ -37,7 +48,7 @@ export default function CourseItem({ course }: { course: CourseProps }) {
 					<DialogTitle className="pb-4 text-xl font-normal md:text-2xl ">
 						{course.title}
 					</DialogTitle>
-					<DialogDescription className="scrollbar-hide max-h-[410px] w-full overflow-y-scroll scroll-smooth px-4 pr-8 md:max-h-[610px] ">
+					<DialogDescription className="max-h-[410px] w-full overflow-y-scroll scroll-smooth px-4 pr-8 scrollbar-hide md:max-h-[610px] ">
 						<div className="mb-8 flex flex-col gap-5">
 							<div className="flex flex-col items-center gap-6  sm:flex-row ">
 								<div className="relative w-fit shadow-md">

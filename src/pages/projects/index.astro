@@ -24,7 +24,7 @@ const sortedProjects = projectsInfo.filter((project) => project.topProjects === 
 			<div class="flex flex-wrap justify-center gap-5">
 				{
 					sortedProjects.map((project) => (
-						<div class="max-w-[45%]">
+						<div class="md:max-w-[45%]">
 							<ProjectItem
 								id={project.id}
 								topProjects={project.topProjects}
@@ -40,7 +40,7 @@ const sortedProjects = projectsInfo.filter((project) => project.topProjects === 
 				}
 			</div>
 
-			<div class="flex w-full flex-1 items-center gap-16">
+			<div class="flex w-full flex-1 items-center gap-8 md:gap-16">
 				<div class="h-[2px] w-full rounded-sm bg-primary/30"></div>
 				<a
 					href="/projects/all"
