@@ -18,7 +18,7 @@ interface CourseProps {
 	description: string
 	skills: string[]
 	imageInstitution: string
-	topEducation: boolean
+	topEducation?: boolean
 	imageEducation: string
 	certification?: string
 }
