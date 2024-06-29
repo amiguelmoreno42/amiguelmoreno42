@@ -1,14 +1,6 @@
 export default function styledComponentsSvg({ width = 40, height = 40, fill = 'none' }) {
 	return (
-		<svg
-			viewBox="0 0 318 318"
-			xmlns="http://www.w3.org/2000/svg"
-			xmlnsXlink="http://www.w3.org/1999/xlink"
-			width={width}
-			height={height}
-			fill={fill}
-			className="bg-white "
-		>
+		<svg viewBox="0 0 318 318" width={width} height={height} fill={fill} className="bg-white">
 			<defs>
 				<path id="a" d="M0 0h318v318H0z"></path>
 				<mask id="b" fill="#fff" height="318" width="318" x="0" y="0">
