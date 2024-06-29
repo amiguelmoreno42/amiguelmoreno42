@@ -22,8 +22,8 @@ export default function astroSvg({ width = 40, height = 40, fill = 'none' }) {
 					y2="84.9468"
 					gradientUnits="userSpaceOnUse"
 				>
-					<stop stop-color="#D83333"></stop>
-					<stop offset="1" stop-color="#F041FF"></stop>
+					<stop stopColor="#D83333"></stop>
+					<stop offset="1" stopColor="#F041FF"></stop>
 				</linearGradient>
 			</defs>
 		</svg>
