@@ -5,7 +5,7 @@ export default function bootstrapSvg({ width = 40, height = 40, fill = 'none' })
 		<div className="relative">
 			{/* 	<div className={`w-[${width}px] h-[${height}px] bg-white`}></div> */}
 			<div
-				style={{ height: `${height - 8}px`, width: `${width - 8}px`, backgroundColor: 'white' }}
+				style={{ height: `${height - 15}px`, width: `${width - 15}px`, backgroundColor: 'white' }}
 				className="absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 "
 			></div>
 			<svg
