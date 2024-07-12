@@ -2,12 +2,9 @@
 import type { GetStaticPaths } from 'astro'
 import { projectsInfo } from '@/assets/data/projects-info'
 import Layout from '@/layouts/MainLayout.astro'
-import { Image } from 'astro:assets'
-import VideoPlayer from '@/components/projects/VideoPlayer.astro'
+import VideoPlayer from '@/components/projects/VideoPlayer'
 import Buttons from '@/components/projects/project-page/buttons.astro'
 import ProjectTechEl from '@/components/projects/project-page/ProjectTechEl'
-import { SiSkillshare } from 'react-icons/si'
-import { transitionEnabledOnThisPage } from 'astro:transitions/client'
 
 const { id } = Astro.params
 
@@ -27,7 +24,7 @@ const videoId = project.videoLink.slice(project.videoLink.lastIndexOf('/'))
 
 	<div class="flex flex-col gap-10">
 		<div class="flex w-full flex-col gap-12">
-			<div class="mb-5 mt-16 flex flex-col items-center justify-center gap-4">
+			<div class="mb-5 mt-16 flex flex-col items-center justify-center gap-12">
 				{
 					project.disable === true && (
 						<p class="text-orange-500">
@@ -36,74 +33,71 @@ const videoId = project.videoLink.slice(project.videoLink.lastIndexOf('/'))
 						</p>
 					)
 				}
-				<VideoPlayer width={700} videoId={videoId} className="hidden md:block" />
-				<VideoPlayer width={600} videoId={videoId} className="hidden sm:block md:hidden" />
-				<VideoPlayer width={450} videoId={videoId} className="hidden xs:block sm:hidden" />
-				<VideoPlayer width={340} videoId={videoId} className="xs:hidden" />
+				<VideoPlayer client:only="react" videoId={videoId} />
+
+				<div class="mt-6 flex justify-evenly gap-10">
+					<Buttons
+						disabled={project?.disable}
+						deployLink={project.deployLink}
+						repoLink={project.repoLink}
+					/>
+				</div>
+
+				<p class="text-base font-light md:text-xl">{project.description}</p>
 			</div>
 
-			<div class="flex justify-evenly gap-3">
-				<Buttons
-					disabled={project?.disable}
-					deployLink={project.deployLink}
-					repoLink={project.repoLink}
-				/>
+			<div class="flex flex-col gap-3">
+				<p class="text-xl font-normal" font-light>Technologies used:</p>
+				<div class="flex w-fit flex-wrap gap-5 rounded-sm px-4 py-3">
+					{project.technologies.map((tech) => <ProjectTechEl tech={tech} />)}
+				</div>
 			</div>
 
-			<p class="text-base font-light md:text-xl">{project.description}</p>
-		</div>
-
-		<div class="flex flex-col gap-3">
-			<p class="text-xl font-normal" font-light>Technologies used:</p>
-			<div class="flex w-fit flex-wrap gap-5 rounded-sm px-4 py-3">
-				{project.technologies.map((tech) => <ProjectTechEl tech={tech} />)}
-			</div>
-		</div>
-
-		<div class="flex flex-col gap-10">
-			{
-				project.skills.length > 0 && (
-					<div>
+			<div class="flex flex-col gap-10">
+				{
+					project.skills.length > 0 && (
 						<div>
-							<h3 class="mb-5 text-xl">What did I learn with this project?</h3>
+							<div>
+								<h3 class="mb-5 text-xl">What did I learn with this project?</h3>
+
+								<div class="flex flex-col gap-2">
+									{project.skills.map((skill) => (
+										<p class="pl-5 text-base font-light md:text-xl">- {skill}</p>
+									))}
+								</div>
+							</div>
+						</div>
+					)
+				}
+
+				{
+					project.interest.length > 0 && (
+						<div>
+							<h3 class="mb-5 text-xl">What interesting things can I find in this project?</h3>
 
 							<div class="flex flex-col gap-2">
-								{project.skills.map((skill) => (
-									<p class="pl-5 text-base font-light md:text-xl">- {skill}</p>
+								{project.interest.map((interest) => (
+									<p class="pl-5 text-base font-light md:text-xl">- {interest}</p>
 								))}
 							</div>
 						</div>
-					</div>
-				)
-			}
+					)
+				}
 
-			{
-				project.interest.length > 0 && (
-					<div>
-						<h3 class="mb-5 text-xl">What interesting things can I find in this project?</h3>
+				{
+					project.improvements.length > 0 && (
+						<div>
+							<h3 class="mb-5 text-xl">Improvements and ideas</h3>
 
-						<div class="flex flex-col gap-2">
-							{project.interest.map((interest) => (
-								<p class="pl-5 text-base font-light md:text-xl">- {interest}</p>
-							))}
+							<div class="flex flex-col gap-2">
+								{project.improvements.map((improvement) => (
+									<p class="pl-5 text-base font-light md:text-xl">- {improvement}</p>
+								))}
+							</div>
 						</div>
-					</div>
-				)
-			}
-
-			{
-				project.improvements.length > 0 && (
-					<div>
-						<h3 class="mb-5 text-xl">Improvements and ideas</h3>
-
-						<div class="flex flex-col gap-2">
-							{project.improvements.map((improvement) => (
-								<p class="pl-5 text-base font-light md:text-xl">- {improvement}</p>
-							))}
-						</div>
-					</div>
-				)
-			}
+					)
+				}
+			</div>
 		</div>
 	</div>
 </Layout>
