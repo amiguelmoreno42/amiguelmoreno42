@@ -46,7 +46,7 @@ export const projectsInfo = [
 	{
 		id: 3,
 		title: 'My Money',
-		topProjects: false,
+		topProjects: true,
 		description:
 			'The main goal of this project is to use almost everything I have learnt about React, using a lot of main functionalities of React, Supabase and more.',
 		technologies: ['react', 'styled-components', 'react-query'],
@@ -131,7 +131,7 @@ export const projectsInfo = [
 		title: 'NoteFlow',
 		topProjects: false,
 		description:
-			'The main goal of this project was to learn the fundamentals of NextJS, folders routing system, reusable components, databases, api endpoints and more. This is a project that I did in Code with Antonio course.',
+			'The main goal of this project was to learn the fundamentals of NextJS, folders routing system, reusable components, databases, api endpoints and more. I did this project in the course of Code with Antonio.',
 		technologies: ['nextjs', 'prisma', 'typescript', 'tailwind', 'react', 'clerk'],
 		skills: [
 			'How to make an App with NextJS.',
@@ -161,7 +161,7 @@ export const projectsInfo = [
 		title: 'Coursify',
 		topProjects: true,
 		description:
-			'The main goal of this project was to learn the fundamentals of NextJS, folders routing system, reusable components, databases, api endpoints, video storage and more. This is a project that I did in Code with Antonio course.',
+			'The main goal of this project was to learn the fundamentals of NextJS, folders routing system, reusable components, databases, api endpoints, video storage and more. I did this project in the course of Code with Antonio.',
 		technologies: ['nextjs', 'prisma', 'typescript', 'tailwind', 'react', 'clerk'],
 		skills: [
 			'How to make an App with NextJS.',
@@ -191,7 +191,7 @@ export const projectsInfo = [
 		disable: true,
 		topProjects: true,
 		description:
-			'The main goal of this project was to learn the fundamentals of NextJS, folders routing system, reusable components, databases, api endpoints, SocketIO and more. This is a project that I did in Code with Antonio course.',
+			'The main goal of this project was to learn the fundamentals of NextJS, folders routing system, reusable components, databases, api endpoints, SocketIO and more. I did this project in the course of Code with Antonio.',
 		technologies: ['nextjs', 'prisma', 'typescript', 'socketio', 'react', 'tailwind'],
 		skills: [
 			'How to make an App with NextJS',
