@@ -1,14 +1,11 @@
 ---
+import VideoPlayer from '../projects/VideoPlayer'
 import SocialsLinks from './SocialsLinks'
 ---
 
 <div class="relative">
 	<div class="relative m-[20px] flex flex-col items-center justify-center">
-		<img
-			src="/profile-photo.jpeg"
-			alt="profile photo"
-			class="w-[200px] rounded-lg border-primary md:w-[300px]"
-		/>
+		<VideoPlayer client:only="react" videoId="FCY8LFWa-h0" />
 
 		<SocialsLinks />
 	</div>
