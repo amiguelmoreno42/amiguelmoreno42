@@ -3,7 +3,7 @@ export const workInfo = [
 		id: 1,
 		title: 'Administrative Assistant',
 		institution: 'Grupo Uno Asesores',
-		date: 'Jan 2019 - Jul 2019',
+		date: 'Jan 2020 - Jul 2020',
 		duration: '7 months',
 		description:
 			'During my internship as an administrative assistant, I had the chance to apply my academic knowledge in a real-world work environment. I contributed to key administrative tasks, gained practical experience, and strengthened my professional skills.',
