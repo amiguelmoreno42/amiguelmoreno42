@@ -124,7 +124,7 @@ export const educationInfo = [
 		institution: '42 Malaga Telefonica',
 		topEducation: true,
 		duration: '1 year 10 months',
-		date: 'Feb 2022 - Dec 2023',
+		date: 'Feb 2022 - Dec 2022',
 		description:
 			"At 42 Malaga, education transcends traditional classrooms. It's a full immersion into exciting challenges and hands-on projects. As a campus student, I've developed solid skills in development and coding within a collaborative and innovative environment. This unique experience has equipped me to stand out in the tech world, going beyond conventional forms of learning.",
 		skills: [
